@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MAINBOARD MDI:  Fichier source de D:/Projets/CERES/SW/MainBoard_v_1_3_4.X/execption.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../rasoftware.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MAINBOARD MDI
+   &#160;<span id="projectnumber">1.3.4</span>
+   </div>
+   <div id="projectbrief">Gestion de la centrale d&#39;une laverie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/ddf/execption_8c_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/Projets/CERES/SW/MainBoard_v_1_3_4.X/execption.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/ddf/execption_8c.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../db/d7e/execption_8h.html">execption.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="../../d3/d02/group__EXCEPTION.html#gab447301f9b8180a3c4144762e789dff0">    3</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#gab447301f9b8180a3c4144762e789dff0">_general_exception_handler</a>(<span class="keywordtype">void</span>)</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  {</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;      <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mfc0 %0,$13&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (<a class="code" href="../../d3/d02/group__EXCEPTION.html#gab78d1efc82ddae807220fbb12bfffd8e">_excep_code</a>));</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;      <span class="keyword">asm</span> <span class="keyword">volatile</span>(<span class="stringliteral">&quot;mfc0 %0,$14&quot;</span> : <span class="stringliteral">&quot;=r&quot;</span> (<a class="code" href="../../d3/d02/group__EXCEPTION.html#ga8bae044fd64ca19d794c409d4162ed9a">_excep_addr</a>));</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;      <a class="code" href="../../d3/d02/group__EXCEPTION.html#gab78d1efc82ddae807220fbb12bfffd8e">_excep_code</a> = (<a class="code" href="../../d3/d02/group__EXCEPTION.html#gab78d1efc82ddae807220fbb12bfffd8e">_excep_code</a> &amp; 0x0000007C) &gt;&gt; 2;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;      (<span class="stringliteral">&quot;\r\nGeneral Exception &quot;</span>);</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      <span class="keywordflow">switch</span>(<a class="code" href="../../d3/d02/group__EXCEPTION.html#gab78d1efc82ddae807220fbb12bfffd8e">_excep_code</a>){</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8eab414f838b577c2c6401e339bda67d2e7">EXCEP_IRQ</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;interrupt&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea9c2c7263488f2a1a0a2809d75c9e7025">EXCEP_AdEL</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;address error exception (load or ifetch)&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea557a3be6c8166e6a575bb59ededcaf9a">EXCEP_AdES</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;address error exception (store)&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea9422274f7eada035e39ef8c2966b9508">EXCEP_IBE</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;bus error (ifetch)&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea913b2feda6d4ba14ed4eaeef00389340">EXCEP_DBE</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;bus error (load/store)&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea83b532419d7e3867a19258b9e5fa89ed">EXCEP_Sys</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;syscall&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8eae973f34528ef38c87094ba0bcd11f819">EXCEP_Bp</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;breakpoint&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea4f10a29c8a02e2a271e90107250fa077">EXCEP_RI</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;reserved instruction&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8eada40c30ca0879f8875f7f245f6ba0402">EXCEP_CpU</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;coprocessor unusable&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8eace13f3b9ef0134c62175bb3a62256181">EXCEP_Overflow</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;arithmetic overflow&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea92fa9e18f7ad22542464b6fb943e1566">EXCEP_Trap</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;trap (possible divide by zero)&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea62665a60bb438a81084f4544a9497ff2">EXCEP_IS1</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;implementation specfic 1&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8eae0fcf518a17c92851992a59f70bb397d">EXCEP_CEU</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;CorExtend Unuseable&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea63271f1514e4e46444640846f15b6654">EXCEP_C2E</a>: Uart1TxStringPolled (<span class="stringliteral">&quot;coprocessor 2&quot;</span>);<span class="keywordflow">break</span>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      Uart1TxStringPolled(<span class="stringliteral">&quot; at 0x&quot;</span>);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;      Uart1TxUint32HexPolled(<a class="code" href="../../d3/d02/group__EXCEPTION.html#ga8bae044fd64ca19d794c409d4162ed9a">_excep_addr</a>);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;      Uart1TxStringPolled(<span class="stringliteral">&quot;\r\n&quot;</span>);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      <span class="keywordflow">while</span> (1) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;          <span class="comment">// Examine _excep_code to identify the type of exception</span></div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;          <span class="comment">// Examine _excep_addr to find the address that caused the exception</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      }</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8eae973f34528ef38c87094ba0bcd11f819"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8eae973f34528ef38c87094ba0bcd11f819">EXCEP_Bp</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00036">exception.h:36</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_gab447301f9b8180a3c4144762e789dff0"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#gab447301f9b8180a3c4144762e789dff0">_general_exception_handler</a></div><div class="ttdeci">void _general_exception_handler(void)</div><div class="ttdoc">traitement de l&amp;#39;exception </div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddf/execption_8c_source.html#l00003">execption.c:3</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8ea63271f1514e4e46444640846f15b6654"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea63271f1514e4e46444640846f15b6654">EXCEP_C2E</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00043">exception.h:43</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8ea9422274f7eada035e39ef8c2966b9508"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea9422274f7eada035e39ef8c2966b9508">EXCEP_IBE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00033">exception.h:33</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8eae0fcf518a17c92851992a59f70bb397d"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8eae0fcf518a17c92851992a59f70bb397d">EXCEP_CEU</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00042">exception.h:42</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8ea4f10a29c8a02e2a271e90107250fa077"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea4f10a29c8a02e2a271e90107250fa077">EXCEP_RI</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00037">exception.h:37</a></div></div>
+<div class="ttc" id="execption_8h_html"><div class="ttname"><a href="../../db/d7e/execption_8h.html">execption.h</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8ea557a3be6c8166e6a575bb59ededcaf9a"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea557a3be6c8166e6a575bb59ededcaf9a">EXCEP_AdES</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00032">exception.h:32</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8ea92fa9e18f7ad22542464b6fb943e1566"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea92fa9e18f7ad22542464b6fb943e1566">EXCEP_Trap</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00040">exception.h:40</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ga8bae044fd64ca19d794c409d4162ed9a"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ga8bae044fd64ca19d794c409d4162ed9a">_excep_addr</a></div><div class="ttdeci">static unsigned int _excep_addr</div><div class="ttdoc">adresse de l&amp;#39;exception. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00059">exception.h:59</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8ea83b532419d7e3867a19258b9e5fa89ed"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea83b532419d7e3867a19258b9e5fa89ed">EXCEP_Sys</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00035">exception.h:35</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8ea9c2c7263488f2a1a0a2809d75c9e7025"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea9c2c7263488f2a1a0a2809d75c9e7025">EXCEP_AdEL</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00031">exception.h:31</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8eab414f838b577c2c6401e339bda67d2e7"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8eab414f838b577c2c6401e339bda67d2e7">EXCEP_IRQ</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00030">exception.h:30</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8ea913b2feda6d4ba14ed4eaeef00389340"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea913b2feda6d4ba14ed4eaeef00389340">EXCEP_DBE</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00034">exception.h:34</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8eace13f3b9ef0134c62175bb3a62256181"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8eace13f3b9ef0134c62175bb3a62256181">EXCEP_Overflow</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00039">exception.h:39</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_gab78d1efc82ddae807220fbb12bfffd8e"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#gab78d1efc82ddae807220fbb12bfffd8e">_excep_code</a></div><div class="ttdeci">_excep_code</div><div class="ttdoc">liste des cas d&amp;#39;exception. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00028">exception.h:28</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8ea62665a60bb438a81084f4544a9497ff2"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8ea62665a60bb438a81084f4544a9497ff2">EXCEP_IS1</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00041">exception.h:41</a></div></div>
+<div class="ttc" id="group__EXCEPTION_html_ggab78d1efc82ddae807220fbb12bfffd8eada40c30ca0879f8875f7f245f6ba0402"><div class="ttname"><a href="../../d3/d02/group__EXCEPTION.html#ggab78d1efc82ddae807220fbb12bfffd8eada40c30ca0879f8875f7f245f6ba0402">EXCEP_CpU</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d2d/exception_8h_source.html#l00038">exception.h:38</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<hr class="footer"/><address class="footer"><small>MAINBOARD MDI 1.3.4 documentation by&#160;
+<a href="http://www.rasoftware.fr"> 
+<img class="footer" src="rasoftware.jpg" alt="www.rasoftware"/></a></small></address> 
+</body> 
+</html> 

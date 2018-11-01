@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+    <includedir>
+        <dir name="/"/>
+    </includedir>
+    <paths>
+        <dir name="D:/Projets/CERES/SW/MainBoard_v_1_2_19.X"/>
+    </paths>
+</project>

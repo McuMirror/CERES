@@ -1,0 +1,45 @@
+~inc:header.inc~
+<title>Centrale MDI</title>
+<meta name="description" content="Page de la t&eacute;l&eacute;-activation d'une machine sur une centrale MDI" />
+</head>
+<body id="page">
+    <script type="text/javascript">
+        <!--
+        ListMachine = "~machineList~";
+        arrayListMachine = ListMachine.split("-");
+-->    
+    </script>
+    <br />
+    <br />
+    <div class="TitrePage">
+        TELE-ACTIVATION
+    </div>
+    <br/>
+    <br/>
+    <form class="left" method ="get" action="selection.htm" name="Num_machine" id="Num_machine">
+        <label><b>Num&eacute;ro machine &agrave; activer: </b></label>
+        <select id="NumMachine" name="NumMachine"></select> 
+        <input type="submit" value="Activer" />
+    </form>
+    <br/>
+    <table cellpadding="10" class="left">
+        <tr>
+            <td class = "backGroundBlue">
+                <a href="index.htm">Page principale</a>
+            </td>
+            <td>
+                Retour &agrave; la page principale.
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        <!--
+        var selection = document.getElementById("NumMachine");
+        for (byIndex = 0; byIndex < arrayListMachine.length; byIndex++)
+        {
+            newOption = new Option(arrayListMachine[byIndex], arrayListMachine[byIndex]);
+            selection.add(newOption);
+        }
+-->
+    </script>
+    ~inc:footer.inc~

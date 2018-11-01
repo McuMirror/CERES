@@ -1,0 +1,33 @@
+﻿Field=#~Integer~#~50|Field=Designator~String~Designator~100|Field=Quantity~Integer~Quantity~100|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Supplier 1~String~Supplier 1~100|Field=Supplier Part Number 1~String~Supplier Part Number 1~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~IO BOARD CERES-V6.PrjPcb|ReportField=ProjectFullPath~D:\Projets\CERES\HW\IO_Board\V6\IO BOARD CERES-V6.PrjPcb|ReportField=Title~Bill of Materials For Project [IO BOARD CERES-V6.PrjPcb] (No PCB Document Selected)|ReportField=ReportTime~13:36:01|ReportField=ReportDate~21/06/2018|ReportField=ReportDateTime~21/06/2018 13:36:01|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=TotalQuantity~59|ReportField=TotalActualPrice~0|ReportField=TotalTargetPrice~0|ReportField=VersionControl_RevNumber~|ReportField=VersionControl_ProjFolderRevNumber~|ReportField=Address1~52 J03 rue de la crèche|ReportField=Address2~77100 MEAUX|ReportField=Address3~FRANCE|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~Rachid AKKOUCHE|ReportField=CheckedBy~|ReportField=CompanyName~MDI|ReportField=ConfigurationParameters~|ReportField=ConfiguratorName~|ReportField=CurrentDate~21/06/2018|ReportField=CurrentTime~13:34:26|ReportField=Date~31 08 2013|ReportField=Dessinepar~-|ReportField=DocumentFullPathAndName~D:\Projets\CERES\HW\IO_Board\V6\TOPSHEET.SchDoc|ReportField=DocumentName~TOPSHEET.SchDoc|ReportField=DocumentNumber~BRA2013090103C1|ReportField=DrawnBy~Rachid AKKOUCHE|ReportField=Email~rachid.akkouche@wanadoo.fr|ReportField=Engineer~Rachid AKKOUCHE|ReportField=ImagePath~|ReportField=IsUserConfigurable~|ReportField=ModifiedDate~07/06/2018|ReportField=Organization~RASoftware|ReportField=ProjectName~IO BOARD CERES-V6.PrjPcb|ReportField=Revision~C|ReportField=Rule~|ReportField=SheetNumber~1|ReportField=SheetTotal~4|ReportField=Telephone~+33651604047|ReportField=Time~13:22|ReportField=Title~TOPSHEET|ReportField=Verifiepar~-|ReportField=VersionControl_RevNumber~|ReportField=PageSetup~Record=PageOptions:CenterHorizontal=True:CenterVertical=True:PrintScale=0.97:XCorrection=1.00:YCorrection=1.00:PrintKind=0:BorderSize=5000000:LeftOffset=0:BottomOffset=0:Orientation=2:PaperLength=1000:PaperWidth=1000:Scale=100:PaperSource=7:PrintQuality=-3:MediaType=1:DitherType=10:PrintScaleMode=1:PaperKind=16K:PaperIndex=409|ReportField=Property~RASoftware|ReportField=Proprietaire~|ReportField=DataSourceFileName~IO BOARD CERES-V6.PrjPcb|ReportField=DataSourceFullPath~D:\Projets\CERES\HW\IO_Board\V6\IO BOARD CERES-V6.PrjPcb|ReportField=PCBConfigurationName~Default Configuration|ReportField=Item~|ReportField=ItemRevision~|ReportField=ItemAndRevision~|ReportField=ItemRevisionBase~|ReportField=ItemRevisionLevel1~|ReportField=ItemRevisionLevel2~|ReportField=ItemRevisionLevel1AndBase~|ReportField=ItemRevisionLevel2AndLevel1~
+1|C1|1|150nF|Capacitor|C1210|Cap|Farnell|{URL}{URL.TEXT}2085200{URL.TIP}Supplier
+2|C2|1|10uF|Capacitor|C0805|Cap 0805 1uF||{URL}{URL.TEXT}CC0805KKX5R5106{URL.TIP}Supplier
+3|C4, C5, C8, C9|4|100nF|Capacitor|C0805|Cap 0805 100nF|Farnell|{URL}{URL.TEXT}1759167{URL.TIP}Supplier
+4|C6|1|10uF|Polarized Capacitor|KEMET_4|Cap Pol 10uF|Farnell|{URL}{URL.TEXT}2069174RL{URL.TIP}Supplier
+5|C7|1|100uF|Polarized Capacitor|Kemet_63|Cap Pol 100uF|Farnell|{URL}{URL.TEXT}1735328{URL.TIP}Supplier
+6|C10|1|1nF|Capacitor|C0805|Cap 0805 1nF|TME|{URL}{URL.TEXT}CL05B102KB5NNNC{URL.TIP}Supplier
+7|D1|1|BZG03C12||sma|DZ|Farnell|{URL}{URL.TEXT}9398090{URL.TIP}Supplier
+8|D2, D6, D11|3|BAT54S|Schottky Barrier Double Diode|SOT23|BAT54S|Farnell|{URL}{URL.TEXT}1621835{URL.TIP}Supplier
+9|D5, D7, D9, D10|4|HSMH-C190|Surface Mount Chip LED, Red|0603-LEDR|HSMH-C190|Farnell|{URL}{URL.TEXT}8554641{URL.TIP}Supplier
+10|D8|1|MAIN|Surface Mount Chip GREEN|0603-LEDV|HSMG-C190|Farnell|{URL}{URL.TEXT}8554609{URL.TIP}Supplier
+11|K1, K2|2|RELAY NAISJS||RELAIG5L|RELAY NAISJS|Farnell|{URL}{URL.TEXT}2213790{URL.TIP}Supplier
+12|P1|1|Header 7|Header, 7-Pin|CO7P508-90|Header 7|RS-Components|{URL}{URL.TEXT}707-5477{URL.TIP}Supplier
+13|P2|1|Header 8|Header, 8-Pin|CO8P508 - 90°|Header 8|Farnell|{URL}{URL.TEXT}3882251{URL.TIP}Supplier
+14|P5|1|CLR|Header, 2-Pin|M20_1X2|Header 2|Farnell|{URL}{URL.TEXT}1895211{URL.TIP}Supplier
+15|P8|1|EIA-485 TERMINAISON|Header, 2-Pin|M20_1X2|Header 2|Farnell|{URL}{URL.TEXT}1895211{URL.TIP}Supplier
+16|P10, P11|2|RJ45|Header, 8-Pin|RJ45_8-5406721-1|Header 8|Farnell|{URL}{URL.TEXT}2452589{URL.TIP}Supplier
+17|Q1, Q2|2|2N7002|N-channel Enhancement Mode Field-effect Transistor|SOT23|2N7002|Farnell|{URL}{URL.TEXT}9845313{URL.TIP}Supplier
+18|R1|1|1.5K 1/2W|Resistor|1206 - 2010|Resistor 0805 470|Farnell|{URL}{URL.TEXT}2669101{URL.TIP}Supplier
+19|R2, R7, R18, R22, R23|5|1K|Resistor|R0805|Res2, Resistor 0805 1K|Farnell|{URL}{URL.TEXT}2129113{URL.TIP}Supplier
+20|R3, R5, R8, R9, R10, R11, R21|7|56K|Resistor|R0805|Resistor 0805 56K|Farnell|{URL}{URL.TEXT}2129258{URL.TIP}Supplier
+21|R12, R13|2|220|Resistor|R0805|Resistor 0805 220|Farnell|{URL}{URL.TEXT}2129060{URL.TIP}Supplier
+22|R14|1|270|Resistor|R0805|Resistor 0805 1K|Farnell|{URL}{URL.TEXT}2129113{URL.TIP}Supplier
+23|R15, R19|2|1M|Resistor|R0805|Resistor 0805 1M||{URL}{URL.TEXT}{URL.TIP}Supplier
+24|R16, R17|2|56|Resistor|R0805|Resistor 0805 56|Farnell|{URL}{URL.TEXT}2129016{URL.TIP}Supplier
+25|R20|1|120|Resistor|R0805|Resistor 0805 120|Farnell|{URL}{URL.TEXT}2129181{URL.TIP}Supplier
+26|R24|1|1M|Resistor|R1206|Resistor 0805 470|Farnell|{URL}{URL.TEXT}1750877RL{URL.TIP}Supplier
+27|U1|1|HCPL-181|4-Pin Phototransistor Optocoupler|OPTO-4PIN|Optoisolator1|Farnell|{URL}{URL.TEXT}1244526RL{URL.TIP}Supplier
+28|U2|1|ACS712|HALL EFFECT CURRENT SENSOR|SOIC8|ACS712|TME|{URL}{URL.TEXT}ACS712ELCTR20AT{URL.TIP}Supplier
+29|U3|1|PIC16F1824|14 Pin Flash Microcontrollers with XLP Technology|so-14|PIC16(L)F1824|Farnell|{URL}{URL.TEXT}1814945{URL.TIP}Supplier
+30|U4|1|LM1117DT-5.0|800mA Low-Dropout Linear Regulator, 3-pin TO-252|SOT223|LM1117DT-5.0|Farnell|{URL}{URL.TEXT}9778209{URL.TIP}Supplier
+31|U5|1|ADM4851ARZ|Low-Power, Slew-Rate-Limited RS-485/RS-422 Transceiver|SOIC8|MAX485ESA|Farnell|{URL}{URL.TEXT}2313594{URL.TIP}Supplier
+32|V1, V2, V3, V4|4|VIS||vis42|VIS||{URL}{URL.TEXT}{URL.TIP}Supplier

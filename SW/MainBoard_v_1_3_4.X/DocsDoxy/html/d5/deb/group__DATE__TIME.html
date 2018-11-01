@@ -1,0 +1,216 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MAINBOARD MDI: Gestion de la date et de l&#39;heure de la carte</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../rasoftware.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MAINBOARD MDI
+   &#160;<span id="projectnumber">1.3.4</span>
+   </div>
+   <div id="projectbrief">Gestion de la centrale d&#39;une laverie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d5/deb/group__DATE__TIME.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#enum-members">Énumérations</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Gestion de la date et de l'heure de la carte</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Énumérations</h2></td></tr>
+<tr class="memitem:gafca082ab46c36830834ad324176e626a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/deb/group__DATE__TIME.html#gafca082ab46c36830834ad324176e626a">SEASONS</a> { <a class="el" href="../../d5/deb/group__DATE__TIME.html#ggafca082ab46c36830834ad324176e626aa6d813ab9ea240f6c6eeff923ccb680ae">SUMMER</a>, 
+<a class="el" href="../../d5/deb/group__DATE__TIME.html#ggafca082ab46c36830834ad324176e626aa1d8c9db74467f6c2fdad36f154ca6873">WINTER</a>
+ }<tr class="memdesc:gafca082ab46c36830834ad324176e626a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saisons du changement d'heure.  <a href="../../d5/deb/group__DATE__TIME.html#gafca082ab46c36830834ad324176e626a">Plus de détails...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:gafca082ab46c36830834ad324176e626a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga83e8b908150740abf98616834cc61d5a"><td class="memItemLeft" align="right" valign="top">rtccDate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/deb/group__DATE__TIME.html#ga83e8b908150740abf98616834cc61d5a">getDSTDate</a> (const WORD wYear, const <a class="el" href="../../d5/deb/group__DATE__TIME.html#gafca082ab46c36830834ad324176e626a">SEASONS</a> season)</td></tr>
+<tr class="memdesc:ga83e8b908150740abf98616834cc61d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcul du jour de passage à l'heure d'été  <a href="#ga83e8b908150740abf98616834cc61d5a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga83e8b908150740abf98616834cc61d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga34c620201f9e42d77d9bd1972b963c2d"><td class="memItemLeft" align="right" valign="top">rtccTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/deb/group__DATE__TIME.html#ga34c620201f9e42d77d9bd1972b963c2d">Now</a></td></tr>
+<tr class="memdesc:ga34c620201f9e42d77d9bd1972b963c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable contenant une heure.  <a href="#ga34c620201f9e42d77d9bd1972b963c2d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga34c620201f9e42d77d9bd1972b963c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation du type de l'énumération</h2>
+<a id="gafca082ab46c36830834ad324176e626a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafca082ab46c36830834ad324176e626a">&#9670;&nbsp;</a></span>SEASONS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d5/deb/group__DATE__TIME.html#gafca082ab46c36830834ad324176e626a">SEASONS</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Saisons du changement d'heure. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Valeurs énumérées</th></tr><tr><td class="fieldname"><a id="ggafca082ab46c36830834ad324176e626aa6d813ab9ea240f6c6eeff923ccb680ae"></a>SUMMER&#160;</td><td class="fielddoc"><p>Heure d'été. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="ggafca082ab46c36830834ad324176e626aa1d8c9db74467f6c2fdad36f154ca6873"></a>WINTER&#160;</td><td class="fielddoc"><p>Heure d'hiver. </p>
+</td></tr>
+</table>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../de/d1b/datetime_8h_source.html#l00023">23</a> du fichier <a class="el" href="../../de/d1b/datetime_8h_source.html">datetime.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../d5/deb/group__DATE__TIME.html#ggafca082ab46c36830834ad324176e626aa6d813ab9ea240f6c6eeff923ccb680ae">SUMMER</a>, </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d5/deb/group__DATE__TIME.html#ggafca082ab46c36830834ad324176e626aa1d8c9db74467f6c2fdad36f154ca6873">WINTER</a>, </div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <a class="code" href="../../d5/deb/group__DATE__TIME.html#gafca082ab46c36830834ad324176e626a">SEASONS</a>;</div><div class="ttc" id="group__DATE__TIME_html_ggafca082ab46c36830834ad324176e626aa1d8c9db74467f6c2fdad36f154ca6873"><div class="ttname"><a href="../../d5/deb/group__DATE__TIME.html#ggafca082ab46c36830834ad324176e626aa1d8c9db74467f6c2fdad36f154ca6873">WINTER</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d1b/datetime_8h_source.html#l00026">datetime.h:26</a></div></div>
+<div class="ttc" id="group__DATE__TIME_html_gafca082ab46c36830834ad324176e626a"><div class="ttname"><a href="../../d5/deb/group__DATE__TIME.html#gafca082ab46c36830834ad324176e626a">SEASONS</a></div><div class="ttdeci">SEASONS</div><div class="ttdoc">Saisons du changement d&amp;#39;heure. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d1b/datetime_8h_source.html#l00023">datetime.h:23</a></div></div>
+<div class="ttc" id="group__DATE__TIME_html_ggafca082ab46c36830834ad324176e626aa6d813ab9ea240f6c6eeff923ccb680ae"><div class="ttname"><a href="../../d5/deb/group__DATE__TIME.html#ggafca082ab46c36830834ad324176e626aa6d813ab9ea240f6c6eeff923ccb680ae">SUMMER</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d1b/datetime_8h_source.html#l00025">datetime.h:25</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga83e8b908150740abf98616834cc61d5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga83e8b908150740abf98616834cc61d5a">&#9670;&nbsp;</a></span>getDSTDate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">rtccDate getDSTDate </td>
+          <td>(</td>
+          <td class="paramtype">const WORD&#160;</td>
+          <td class="paramname"><em>wYear</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/deb/group__DATE__TIME.html#gafca082ab46c36830834ad324176e626a">SEASONS</a>&#160;</td>
+          <td class="paramname"><em>season</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcul du jour de passage à l'heure d'été </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">wYear</td><td>Année pour laquelle on calcul cette date.; </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">season</td><td>Saison pour laquelle la date est recherchée. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>date au format rtcc de la date. </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../de/d6e/datetime_8c_source.html#l00010">10</a> du fichier <a class="el" href="../../de/d6e/datetime_8c_source.html">datetime.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../de/d1b/datetime_8h_source.html#l00025">SUMMER</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l01877">vSetDateTime()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l05647">vTaskCheckDST()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    BYTE byDay;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    rtccDate date;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    date.mday = 0x31;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    date.mon = season == <a class="code" href="../../d5/deb/group__DATE__TIME.html#ggafca082ab46c36830834ad324176e626aa6d813ab9ea240f6c6eeff923ccb680ae">SUMMER</a> ? 0X03 : 0X10;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    date.year = (((wYear - 2000) / 10) &lt;&lt; 4) + (wYear % 10);</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">//byDay = 31 - getDayOfWeek(date);</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    byDay = 31 - RtccWeekDay(wYear, ((date.mon &gt;&gt; 4) * 10) + (date.mon &amp; 0X0F),</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                             ((date.mday &gt;&gt; 4) * 10) + (date.mday &amp; 0X0F));</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    date.mday = ((byDay / 10) &lt;&lt; 4)+(byDay % 10);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">return</span> date;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;}</div><div class="ttc" id="group__DATE__TIME_html_ggafca082ab46c36830834ad324176e626aa6d813ab9ea240f6c6eeff923ccb680ae"><div class="ttname"><a href="../../d5/deb/group__DATE__TIME.html#ggafca082ab46c36830834ad324176e626aa6d813ab9ea240f6c6eeff923ccb680ae">SUMMER</a></div><div class="ttdef"><b>Definition:</b> <a href="../../de/d1b/datetime_8h_source.html#l00025">datetime.h:25</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="ga34c620201f9e42d77d9bd1972b963c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga34c620201f9e42d77d9bd1972b963c2d">&#9670;&nbsp;</a></span>Now</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Now</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable contenant une heure. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../de/d1b/datetime_8h_source.html#l00035">35</a> du fichier <a class="el" href="../../de/d1b/datetime_8h_source.html">datetime.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l02466">byCheckMachine()</a>, <a class="el" href="../../d9/d37/CustomHTTPApp_8c_source.html#l02227">HTTPPrint_timeCentrale()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l02409">lGetAmountToPay()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l00237">vInitialization()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l05904">vLaunchMachine()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l00938">vMaintenanceMenu()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l04967">vSaveAudit()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l04914">vSaveHisto()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l01913">vScreenDateTime()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l05647">vTaskCheckDST()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l05379">vTaskDisplayTime()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<hr class="footer"/><address class="footer"><small>MAINBOARD MDI 1.3.4 documentation by&#160;
+<a href="http://www.rasoftware.fr"> 
+<img class="footer" src="rasoftware.jpg" alt="www.rasoftware"/></a></small></address> 
+</body> 
+</html> 

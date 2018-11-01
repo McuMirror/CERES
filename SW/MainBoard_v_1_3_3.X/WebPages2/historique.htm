@@ -1,0 +1,92 @@
+~inc:header.inc~
+<title>Historique</title>
+<meta name="description" content="Page de l'historique de la centrale MDI" />
+</head>
+<body>
+    <br />
+    <br />
+    <div class="TitrePage">
+        HISTORIQUE
+    </div>
+    <br />
+    <br />
+    <span>~debut~</span>
+    <table id="liste" border ="1"  class ="centrelarge">
+        <tr>
+            <th>Op&eacute;ration</th>
+            <th>Date</th>
+            <th>Heure</th>
+            <th>Machine</th>
+            <th>Montant</th>
+            <th>Info. sup.</th>
+            <th>R&eacute;sultat</th>
+        </tr>       
+    </table>
+    <br/>
+    <table class="centre">
+        <tr>
+            <td>
+                <!-- <form method ="get" action="historique.htm" name="histo" id="histo">-->
+                <!--                <input  type="submit" name="pred" id="pred" value="<< 10 pr&eacute;c&eacute;dents" onclick="getHistorique(0)" />
+                                <input type="submit" name="suiv" id="suiv" value="10 suivants >>" onclick="getHistorique(1)" />-->
+                <button onclick="getHistorique(0)"> &lt;&lt; 20 pr&eacute;c&eacute;dents</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button onclick="getHistorique(1)">20 suivants >></button>
+                <!-- </form>-->
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <br/>
+    <table cellpadding="10" class="left">
+        <tr>
+            <td class = "backGroundBlue">
+                <a href="index.htm">Page principale</a>
+            </td>
+            <td>
+                Retour &agrave; la page principale.
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript"><!--
+        var row;
+        var cell;
+        var table = document.getElementById('liste');
+
+        for (IndexHist = 1; IndexHist <= 20; IndexHist++)
+        {
+            row = table.insertRow(IndexHist);
+
+            cell = row.insertCell();
+            cell.id = 'op' + IndexHist.toString();
+            cell.innerHTML = '&nbsp;';
+
+            cell = row.insertCell();
+            cell.id = 'date' + IndexHist.toString();
+            cell.innerHTML = '&nbsp;';
+
+            cell = row.insertCell();
+            cell.id = 'heure' + IndexHist.toString();
+            cell.innerHTML = '&nbsp;';
+
+            cell = row.insertCell();
+            cell.id = 'mch' + IndexHist.toString();
+            cell.style.textAlign = 'right';
+            cell.innerHTML = '&nbsp;';
+
+            cell = row.insertCell();
+            cell.id = 'sum' + IndexHist.toString();
+            cell.style.textAlign = 'right';
+            cell.innerHTML = '&nbsp;';
+
+            cell = row.insertCell();
+            cell.id = 'K' + IndexHist.toString();
+            cell.innerHTML = '&nbsp;';
+
+            cell = row.insertCell();
+            cell.id = 'state' + IndexHist.toString();
+            cell.innerHTML = '&nbsp;';
+        }
+        setTimeout("getHistorique(0)", 2);
+-->
+    </script>
+    ~inc:footer.inc~

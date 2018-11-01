@@ -1,0 +1,1829 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MAINBOARD MDI: Gestion de la chaîne MDB</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../rasoftware.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MAINBOARD MDI
+   &#160;<span id="projectnumber">1.3.4</span>
+   </div>
+   <div id="projectbrief">Gestion de la centrale d&#39;une laverie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d8/dc4/group__MDB.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#groups">Modules</a> &#124;
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Gestion de la chaîne MDB</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+Modules</h2></td></tr>
+<tr class="memitem:d1/d0e/group__CL"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d0e/group__CL.html">Gestion du cashless</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/d05/group__BV"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d05/group__BV.html">Gestion du lecteur de billets</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:db/d9a/group__CG"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d9a/group__CG.html">Gestion du rendeur</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d2/dc6/group__MDB__ANSWER"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc6/group__MDB__ANSWER.html">Reponses MDB</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/structMDBGenericDeviceConfig.html">MDBGenericDeviceConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5e/structVMCConfig.html">VMCConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga734bbab06e1a9fd2e5522db0221ff6e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga734bbab06e1a9fd2e5522db0221ff6e3">BAUDRATE</a>&#160;&#160;&#160;9600</td></tr>
+<tr class="memdesc:ga734bbab06e1a9fd2e5522db0221ff6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vitesse de transmission sériel.  <a href="#ga734bbab06e1a9fd2e5522db0221ff6e3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga734bbab06e1a9fd2e5522db0221ff6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58a32cbb2ba02815a01abf9bcbb7f0b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga58a32cbb2ba02815a01abf9bcbb7f0b0">CMD_BILL_POLL</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ga58a32cbb2ba02815a01abf9bcbb7f0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b34617a086655f0759fabee659b5151"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga3b34617a086655f0759fabee659b5151">CMD_BILL_TYPE</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga3b34617a086655f0759fabee659b5151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6787bfdd34b61a7b5f104ad89f565350"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga6787bfdd34b61a7b5f104ad89f565350">CMD_CHANGER_POLL</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ga6787bfdd34b61a7b5f104ad89f565350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43a20b07c050b7f9b541dd8c01fe98c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga43a20b07c050b7f9b541dd8c01fe98c5">CMD_COIN_TYPE</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga43a20b07c050b7f9b541dd8c01fe98c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55ce960e81dfc17efd4f2b0fcf861e9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga55ce960e81dfc17efd4f2b0fcf861e9a">CMD_DISPENSE</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:ga55ce960e81dfc17efd4f2b0fcf861e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae19200b59ecf037dbe0df6648bd92333"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gae19200b59ecf037dbe0df6648bd92333">CMD_ESCROW</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:gae19200b59ecf037dbe0df6648bd92333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabccb5bd516f4e2faf120a9ecf4ad369b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gabccb5bd516f4e2faf120a9ecf4ad369b">CMD_EXPANSION</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="separator:gabccb5bd516f4e2faf120a9ecf4ad369b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62e141c4fa7519e87bbdab4ce4c7afda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga62e141c4fa7519e87bbdab4ce4c7afda">CMD_NO_PENDING</a>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="separator:ga62e141c4fa7519e87bbdab4ce4c7afda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga202f77f2589f867159190a589a3e0ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga202f77f2589f867159190a589a3e0ca4">CMD_POLL</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga202f77f2589f867159190a589a3e0ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d3da971e16c99a0b99803629747e151"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga8d3da971e16c99a0b99803629747e151">CMD_READER</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga8d3da971e16c99a0b99803629747e151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe1dd8546b0a8cd30b19a0229205c8df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gafe1dd8546b0a8cd30b19a0229205c8df">CMD_RESET</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:gafe1dd8546b0a8cd30b19a0229205c8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6dd15091a078f2cb29e4577cda0fe73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gad6dd15091a078f2cb29e4577cda0fe73">CMD_REVALUE</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:gad6dd15091a078f2cb29e4577cda0fe73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94075f971f561a9747925e1ab896c3d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga94075f971f561a9747925e1ab896c3d1">CMD_SECURITY</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga94075f971f561a9747925e1ab896c3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21e192bfe1077874a2d97679ea7c3f9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga21e192bfe1077874a2d97679ea7c3f9a">CMD_SETUP</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga21e192bfe1077874a2d97679ea7c3f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2bab35b5c2cd101d08e47b9c16efd9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gab2bab35b5c2cd101d08e47b9c16efd9c">CMD_STACKER</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="separator:gab2bab35b5c2cd101d08e47b9c16efd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25e21625c1e6a3d5fefce646e33344e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga25e21625c1e6a3d5fefce646e33344e8">CMD_STATUS</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga25e21625c1e6a3d5fefce646e33344e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4a5fc3f5dc733ea8ddd39388b0df4c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gad4a5fc3f5dc733ea8ddd39388b0df4c4">CMD_TUBE_STATUS</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:gad4a5fc3f5dc733ea8ddd39388b0df4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77ac7921aaa8702214ef26adf652b530"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga77ac7921aaa8702214ef26adf652b530">CMD_VEND</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ga77ac7921aaa8702214ef26adf652b530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99e031c1b54ae37de16ada3a471226ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga99e031c1b54ae37de16ada3a471226ad">MAXCASHCHANNELS</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:ga99e031c1b54ae37de16ada3a471226ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre maximum de canaux pour le changer et le lecteur de billet.  <a href="#ga99e031c1b54ae37de16ada3a471226ad">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga99e031c1b54ae37de16ada3a471226ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c4e135cc8b5c477af67b4ea226ceabc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga2c4e135cc8b5c477af67b4ea226ceabc">MDB_TO</a>&#160;&#160;&#160;100 * <a class="el" href="../../d5/d36/RAdefine_8h.html#a13c2acf58db9164b3df26351d2ce9e10">MILLISEC</a></td></tr>
+<tr class="memdesc:ga2c4e135cc8b5c477af67b4ea226ceabc"><td class="mdescLeft">&#160;</td><td class="mdescRight">delay mamixmum de réponse du CL  <a href="#ga2c4e135cc8b5c477af67b4ea226ceabc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga2c4e135cc8b5c477af67b4ea226ceabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b4e3616d426d64746047f0fc275e68c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga7b4e3616d426d64746047f0fc275e68c">MDBPOLLINMS</a>&#160;&#160;&#160;(400 * <a class="el" href="../../d5/d36/RAdefine_8h.html#a13c2acf58db9164b3df26351d2ce9e10">MILLISEC</a>)</td></tr>
+<tr class="memdesc:ga7b4e3616d426d64746047f0fc275e68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">temps de polling en ms du lecteur cashless.  <a href="#ga7b4e3616d426d64746047f0fc275e68c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga7b4e3616d426d64746047f0fc275e68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6c321ffb73b63ebe67df76ff858065a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaa6c321ffb73b63ebe67df76ff858065a">MDBRETRY</a>&#160;&#160;&#160;((60 * <a class="el" href="../../d5/d36/RAdefine_8h.html#a0e7ac8fd7194adef4798d0d563502c18">SECONDE</a>) / <a class="el" href="../../d8/dc4/group__MDB.html#ga7b4e3616d426d64746047f0fc275e68c">MDBPOLLINMS</a>)</td></tr>
+<tr class="memdesc:gaa6c321ffb73b63ebe67df76ff858065a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de loop avant de vérifier si un périphérique est disponible.  <a href="#gaa6c321ffb73b63ebe67df76ff858065a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaa6c321ffb73b63ebe67df76ff858065a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb8fc06b6da22fdb9c918ab42c92015c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaeb8fc06b6da22fdb9c918ab42c92015c">SUB_ALT_PAYOUT_STATUS</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:gaeb8fc06b6da22fdb9c918ab42c92015c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90711ba60381fb9e3bbf2b2e47a1703c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga90711ba60381fb9e3bbf2b2e47a1703c">SUB_ALTERNATIVE_PAYOUT</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga90711ba60381fb9e3bbf2b2e47a1703c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab24780b14431c525c62da942f67afb27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gab24780b14431c525c62da942f67afb27">SUB_BILL_FEATURE_ENABLE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:gab24780b14431c525c62da942f67afb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4c44d80e35e6c380fbb8200b489d97d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gae4c44d80e35e6c380fbb8200b489d97d">SUB_CHANGER_FEATURE_ENABLE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:gae4c44d80e35e6c380fbb8200b489d97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c373ef3a992fb05f50d571c6002edbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga6c373ef3a992fb05f50d571c6002edbc">SUB_CHANGER_IDENTIFICATION</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:ga6c373ef3a992fb05f50d571c6002edbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72269bf4856eb5c8282089da4467b47d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga72269bf4856eb5c8282089da4467b47d">SUB_CONFIG_DATA</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:ga72269bf4856eb5c8282089da4467b47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga576bb731fb67d24e4492d4bd1ac96354"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga576bb731fb67d24e4492d4bd1ac96354">SUB_DIAGNOSTIC_STATUS</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:ga576bb731fb67d24e4492d4bd1ac96354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04f3335d4d6f2a8003fd58cf03b3af10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga04f3335d4d6f2a8003fd58cf03b3af10">SUB_DIAGNOSTICS</a>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="separator:ga04f3335d4d6f2a8003fd58cf03b3af10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60e20dc8276e5b10aafdd190520295e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga60e20dc8276e5b10aafdd190520295e8">SUB_FEATURE_ENABLE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga60e20dc8276e5b10aafdd190520295e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8080899e8ed499f4342a2677f3a96bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gac8080899e8ed499f4342a2677f3a96bc">SUB_FTL_OK_TO_SEND</a>&#160;&#160;&#160;0xFD</td></tr>
+<tr class="separator:gac8080899e8ed499f4342a2677f3a96bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ce7c197f87736efc62a4c3bcdad8906"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga8ce7c197f87736efc62a4c3bcdad8906">SUB_FTL_REQ_TO_RCV</a>&#160;&#160;&#160;0xFA</td></tr>
+<tr class="separator:ga8ce7c197f87736efc62a4c3bcdad8906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d1d5d68eaf63e341257bea10cb39257"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga6d1d5d68eaf63e341257bea10cb39257">SUB_FTL_REQ_TO_SEND</a>&#160;&#160;&#160;0xFE</td></tr>
+<tr class="separator:ga6d1d5d68eaf63e341257bea10cb39257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0df2938c85e04f2ff99a5c5ef672a13c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga0df2938c85e04f2ff99a5c5ef672a13c">SUB_FTL_RETRY_DENY</a>&#160;&#160;&#160;0xFB</td></tr>
+<tr class="separator:ga0df2938c85e04f2ff99a5c5ef672a13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3c680e3e7e95205f8498dbd36cc0522"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gae3c680e3e7e95205f8498dbd36cc0522">SUB_FTL_SEND_BLOCK</a>&#160;&#160;&#160;0xFC</td></tr>
+<tr class="separator:gae3c680e3e7e95205f8498dbd36cc0522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8339eff86b48a6ef89c894efab84b4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga8339eff86b48a6ef89c894efab84b4e6">SUB_IDENTIFICATION</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:ga8339eff86b48a6ef89c894efab84b4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb01c6afa5c34f9ee25128f208adb62d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaeb01c6afa5c34f9ee25128f208adb62d">SUB_IDENTIFICATION_2</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:gaeb01c6afa5c34f9ee25128f208adb62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79426f2d93ca7c09e7bfccf427abc647"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga79426f2d93ca7c09e7bfccf427abc647">SUB_MANUAL_FILL_REPORT</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="separator:ga79426f2d93ca7c09e7bfccf427abc647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9416b4ffbf3bd18cd4d633099a9af10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaa9416b4ffbf3bd18cd4d633099a9af10">SUB_MANUAL_PAYOUT_REPORT</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="separator:gaa9416b4ffbf3bd18cd4d633099a9af10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36a9dcd1d5e3ff897fd6be34a04168a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga36a9dcd1d5e3ff897fd6be34a04168a0">SUB_MAX_MIN_PRICE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga36a9dcd1d5e3ff897fd6be34a04168a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1277e875502ea33fd31090c3fb333e9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga1277e875502ea33fd31090c3fb333e9f">SUB_NEGATIVE_VEND_REQUEST</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="separator:ga1277e875502ea33fd31090c3fb333e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac3201b3306ad18717b0fb7f38ac6c40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaac3201b3306ad18717b0fb7f38ac6c40">SUB_PAYOUT_VALUE_POLL</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:gaac3201b3306ad18717b0fb7f38ac6c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b6aa469454a923a1b52bd70c0331c4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga4b6aa469454a923a1b52bd70c0331c4e">SUB_READ_USER_FILE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga4b6aa469454a923a1b52bd70c0331c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bcb0e58080b244a6751a1c3e22083a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga8bcb0e58080b244a6751a1c3e22083a1">SUB_READER_CANCEL</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga8bcb0e58080b244a6751a1c3e22083a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22e0312559003d3d5c9789f60361460d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga22e0312559003d3d5c9789f60361460d">SUB_READER_DISABLE</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:ga22e0312559003d3d5c9789f60361460d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad49259513d3b42a2490da20f7c2c110a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gad49259513d3b42a2490da20f7c2c110a">SUB_READER_ENABLE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:gad49259513d3b42a2490da20f7c2c110a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c1f62ded7279127eb7b88f3c41ea1dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga1c1f62ded7279127eb7b88f3c41ea1dc">SUB_READER_FEATURE_ENABLE</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga1c1f62ded7279127eb7b88f3c41ea1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb1215ad310f1be2849a39b2a7fab79e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gacb1215ad310f1be2849a39b2a7fab79e">SUB_REQUEST_ID</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:gacb1215ad310f1be2849a39b2a7fab79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa04ddbbf9753e152c6c2c7a4807ba0d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaa04ddbbf9753e152c6c2c7a4807ba0d8">SUB_REVALUE_LIMIT_REQUEST</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:gaa04ddbbf9753e152c6c2c7a4807ba0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf68ee27761b9cc5769bcee61f7e4f50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaaf68ee27761b9cc5769bcee61f7e4f50">SUB_REVALUE_REQUEST</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:gaaf68ee27761b9cc5769bcee61f7e4f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0024904196ad1d408c8d85c8def365c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga0024904196ad1d408c8d85c8def365c0">SUB_VEND_CANCEL</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga0024904196ad1d408c8d85c8def365c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f40fb40e7ec200ddf207522e82e8bfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga1f40fb40e7ec200ddf207522e82e8bfb">SUB_VEND_CASH_SALE</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:ga1f40fb40e7ec200ddf207522e82e8bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ee039d9fb076dbee2164c391c016950"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga5ee039d9fb076dbee2164c391c016950">SUB_VEND_FAILURE</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ga5ee039d9fb076dbee2164c391c016950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga283139c5f414e791df37086a804568e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga283139c5f414e791df37086a804568e6">SUB_VEND_REQUEST</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:ga283139c5f414e791df37086a804568e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eabe4054825c479ec49d6c80e58ec83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga7eabe4054825c479ec49d6c80e58ec83">SUB_VEND_SESSION_COMPLETE</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga7eabe4054825c479ec49d6c80e58ec83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae99e42d8b0c3982c56b9117e4b82b475"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gae99e42d8b0c3982c56b9117e4b82b475">SUB_VEND_SUCCESS</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:gae99e42d8b0c3982c56b9117e4b82b475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fb0c1577e00a44c983c676aba23ac90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga8fb0c1577e00a44c983c676aba23ac90">SUB_WRITE_TIME_DATE</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ga8fb0c1577e00a44c983c676aba23ac90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80a09a4f4c21d9fb067b841f25190775"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga80a09a4f4c21d9fb067b841f25190775">SUB_WRITE_USER_FILE</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga80a09a4f4c21d9fb067b841f25190775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:gabb8db427f6005997c264d86438ac4ced"><td class="memItemLeft" align="right" valign="top">BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gabb8db427f6005997c264d86438ac4ced">byMDBPoll</a> (const BYTE byDeviceAddress, BYTE *byResponse)</td></tr>
+<tr class="memdesc:gabb8db427f6005997c264d86438ac4ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction utilisée pour obtenir des informations sur le périphérique.  <a href="#gabb8db427f6005997c264d86438ac4ced">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gabb8db427f6005997c264d86438ac4ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57024a6254a2feaa35799152e1563114"><td class="memItemLeft" align="right" valign="top">BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga57024a6254a2feaa35799152e1563114">byMDBSendCommand</a> (const BYTE byAddress, const BYTE byCommand, BYTE byLenParameters, void *ptrParameters, void *ptrAnswer)</td></tr>
+<tr class="memdesc:ga57024a6254a2feaa35799152e1563114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envoie une instruction MDB au périphérique.  <a href="#ga57024a6254a2feaa35799152e1563114">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga57024a6254a2feaa35799152e1563114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78e7f326720dea6d477a04a689160cd4"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga78e7f326720dea6d477a04a689160cd4">dwGetMaxReturn</a> (void)</td></tr>
+<tr class="separator:ga78e7f326720dea6d477a04a689160cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa32690fbf44accbb31b1d1da5513d1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gafa32690fbf44accbb31b1d1da5513d1f">InitMDB</a> (const UART_MODULE port)</td></tr>
+<tr class="memdesc:gafa32690fbf44accbb31b1d1da5513d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction d'intialisation du port MDB.  <a href="#gafa32690fbf44accbb31b1d1da5513d1f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gafa32690fbf44accbb31b1d1da5513d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b6f7850c6e1b5b8375ea25add92d5b5"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga5b6f7850c6e1b5b8375ea25add92d5b5">isMDBReset</a> (const BYTE byDeviceAddress)</td></tr>
+<tr class="memdesc:ga5b6f7850c6e1b5b8375ea25add92d5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-reset the device.  <a href="#ga5b6f7850c6e1b5b8375ea25add92d5b5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga5b6f7850c6e1b5b8375ea25add92d5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fcadcc79a4c6cc6b9b018ae1ada927a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga9fcadcc79a4c6cc6b9b018ae1ada927a">isMDBSetupConfig</a> (const BYTE byDeviceAddress, void *byStatus, const BYTE byLen)</td></tr>
+<tr class="separator:ga9fcadcc79a4c6cc6b9b018ae1ada927a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab6a2e883822c99999f2e7e80464a164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaab6a2e883822c99999f2e7e80464a164">vVMCAcknowledge</a> (const BYTE byAcknowledge)</td></tr>
+<tr class="memdesc:gaab6a2e883822c99999f2e7e80464a164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envoi un ACK ou un RSP_NAK à partir de la VMC.  <a href="#gaab6a2e883822c99999f2e7e80464a164">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaab6a2e883822c99999f2e7e80464a164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef808b712f5f7609c6a50062b94ac304"><td class="memItemLeft" align="right" valign="top">WORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaef808b712f5f7609c6a50062b94ac304">wDecimalDivider</a> (BYTE byDecimal)</td></tr>
+<tr class="separator:gaef808b712f5f7609c6a50062b94ac304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gacbb3e7813ba037f790468e06b7bed072"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gacbb3e7813ba037f790468e06b7bed072">dwMaxReturn</a></td></tr>
+<tr class="separator:gacbb3e7813ba037f790468e06b7bed072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d45c25e5873fd193731c96ce204075b"><td class="memItemLeft" align="right" valign="top">SemaphoreHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga9d45c25e5873fd193731c96ce204075b">hSemaphoreChange</a></td></tr>
+<tr class="memdesc:ga9d45c25e5873fd193731c96ce204075b"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle du semaphore autoisant le change  <a href="#ga9d45c25e5873fd193731c96ce204075b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga9d45c25e5873fd193731c96ce204075b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3b4c690ff3b92096c3f016d482345bb"><td class="memItemLeft" align="right" valign="top">SemaphoreHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaf3b4c690ff3b92096c3f016d482345bb">hSemaphoreMDB</a></td></tr>
+<tr class="memdesc:gaf3b4c690ff3b92096c3f016d482345bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle du semaphore MDB.  <a href="#gaf3b4c690ff3b92096c3f016d482345bb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf3b4c690ff3b92096c3f016d482345bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12a3ef249ebdbba4e33d2366ee69be16"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a></td></tr>
+<tr class="memdesc:ga12a3ef249ebdbba4e33d2366ee69be16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique le TO pour la réponse du périphérique MDB est atteint.  <a href="#ga12a3ef249ebdbba4e33d2366ee69be16">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga12a3ef249ebdbba4e33d2366ee69be16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e9bb5538a82ae699c11900393e8b78f"><td class="memItemLeft" align="right" valign="top">UART_MODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a></td></tr>
+<tr class="memdesc:ga6e9bb5538a82ae699c11900393e8b78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port MDB.  <a href="#ga6e9bb5538a82ae699c11900393e8b78f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga6e9bb5538a82ae699c11900393e8b78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27e38f7efa5daed9824353678297c6fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d5e/structVMCConfig.html">VMCConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga27e38f7efa5daed9824353678297c6fd">vmcConfig</a></td></tr>
+<tr class="separator:ga27e38f7efa5daed9824353678297c6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab62dee48287bf65faa88f20d21747c4"><td class="memItemLeft" align="right" valign="top">WORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaab62dee48287bf65faa88f20d21747c4">wKeyAmountMax</a></td></tr>
+<tr class="memdesc:gaab62dee48287bf65faa88f20d21747c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Montant maximum pouvant être contenu dans une clé.  <a href="#gaab62dee48287bf65faa88f20d21747c4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaab62dee48287bf65faa88f20d21747c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0185298c0314b8b9a49f1cfc2a606bee"><td class="memItemLeft" align="right" valign="top">TimerHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga0185298c0314b8b9a49f1cfc2a606bee">xTimerMDBNAK</a></td></tr>
+<tr class="memdesc:ga0185298c0314b8b9a49f1cfc2a606bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle du timer utilisé pour le TO de la réponse d'un périphérique MDB.  <a href="#ga0185298c0314b8b9a49f1cfc2a606bee">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga0185298c0314b8b9a49f1cfc2a606bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="ga734bbab06e1a9fd2e5522db0221ff6e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga734bbab06e1a9fd2e5522db0221ff6e3">&#9670;&nbsp;</a></span>BAUDRATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BAUDRATE&#160;&#160;&#160;9600</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vitesse de transmission sériel. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00039">39</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga58a32cbb2ba02815a01abf9bcbb7f0b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga58a32cbb2ba02815a01abf9bcbb7f0b0">&#9670;&nbsp;</a></span>CMD_BILL_POLL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_BILL_POLL&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00084">84</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga3b34617a086655f0759fabee659b5151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b34617a086655f0759fabee659b5151">&#9670;&nbsp;</a></span>CMD_BILL_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_BILL_TYPE&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00087">87</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../da/db3/mdb__bv_8c_source.html#l00013">isSetMDBillType()</a>.</p>
+
+</div>
+</div>
+<a id="ga6787bfdd34b61a7b5f104ad89f565350"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6787bfdd34b61a7b5f104ad89f565350">&#9670;&nbsp;</a></span>CMD_CHANGER_POLL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_CHANGER_POLL&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Demande d'approbation d'une vente. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00083">83</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00121">byMDBPoll()</a>.</p>
+
+</div>
+</div>
+<a id="ga43a20b07c050b7f9b541dd8c01fe98c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43a20b07c050b7f9b541dd8c01fe98c5">&#9670;&nbsp;</a></span>CMD_COIN_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_COIN_TYPE&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00086">86</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00033">isSetMDBCoinType()</a>.</p>
+
+</div>
+</div>
+<a id="ga55ce960e81dfc17efd4f2b0fcf861e9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga55ce960e81dfc17efd4f2b0fcf861e9a">&#9670;&nbsp;</a></span>CMD_DISPENSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_DISPENSE&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00090">90</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="gae19200b59ecf037dbe0df6648bd92333"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae19200b59ecf037dbe0df6648bd92333">&#9670;&nbsp;</a></span>CMD_ESCROW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_ESCROW&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Encaisse le billet </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00089">89</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l04296">isRouteBill()</a>.</p>
+
+</div>
+</div>
+<a id="gabccb5bd516f4e2faf120a9ecf4ad369b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabccb5bd516f4e2faf120a9ecf4ad369b">&#9670;&nbsp;</a></span>CMD_EXPANSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_EXPANSION&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Commandes étendues. Voir la documentation MDB. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00092">92</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00212">isAlternatePayout()</a>, <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00181">isEnableFeature()</a>, <a class="el" href="../../da/db3/mdb__bv_8c_source.html#l00081">isGetExId()</a>, <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00063">isGetMDBChangerID()</a>, et <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00244">isPayoutStatus()</a>.</p>
+
+</div>
+</div>
+<a id="ga62e141c4fa7519e87bbdab4ce4c7afda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62e141c4fa7519e87bbdab4ce4c7afda">&#9670;&nbsp;</a></span>CMD_NO_PENDING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_NO_PENDING&#160;&#160;&#160;0xFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00093">93</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga202f77f2589f867159190a589a3e0ca4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga202f77f2589f867159190a589a3e0ca4">&#9670;&nbsp;</a></span>CMD_POLL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_POLL&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Obtient les informations du périphérique. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00079">79</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00121">byMDBPoll()</a>.</p>
+
+</div>
+</div>
+<a id="ga8d3da971e16c99a0b99803629747e151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8d3da971e16c99a0b99803629747e151">&#9670;&nbsp;</a></span>CMD_READER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_READER&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Active desactive le lecteur. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00085">85</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00035">isMDBCLEnable()</a>.</p>
+
+</div>
+</div>
+<a id="gafe1dd8546b0a8cd30b19a0229205c8df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafe1dd8546b0a8cd30b19a0229205c8df">&#9670;&nbsp;</a></span>CMD_RESET</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_RESET&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Reset le périphérique. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00076">76</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00113">isMDBReset()</a>.</p>
+
+</div>
+</div>
+<a id="gad6dd15091a078f2cb29e4577cda0fe73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad6dd15091a078f2cb29e4577cda0fe73">&#9670;&nbsp;</a></span>CMD_REVALUE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_REVALUE&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Réevaluation de la clé. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00088">88</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00025">isMDBLimitRevalueRequest()</a>, et <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00069">isMDBRevalueRequest()</a>.</p>
+
+</div>
+</div>
+<a id="ga94075f971f561a9747925e1ab896c3d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga94075f971f561a9747925e1ab896c3d1">&#9670;&nbsp;</a></span>CMD_SECURITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_SECURITY&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00081">81</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga21e192bfe1077874a2d97679ea7c3f9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21e192bfe1077874a2d97679ea7c3f9a">&#9670;&nbsp;</a></span>CMD_SETUP</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_SETUP&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lecture des paramètres du périphérique. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00077">77</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00082">isMDBSetupCLConfig()</a>, <a class="el" href="../../dc/d47/MDB_8c_source.html#l00157">isMDBSetupConfig()</a>, et <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00012">isMDBSetupMaxMinPrice()</a>.</p>
+
+</div>
+</div>
+<a id="gab2bab35b5c2cd101d08e47b9c16efd9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2bab35b5c2cd101d08e47b9c16efd9c">&#9670;&nbsp;</a></span>CMD_STACKER</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_STACKER&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00091">91</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../da/db3/mdb__bv_8c_source.html#l00022">isGetMDBStackerStatus()</a>.</p>
+
+</div>
+</div>
+<a id="ga25e21625c1e6a3d5fefce646e33344e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga25e21625c1e6a3d5fefce646e33344e8">&#9670;&nbsp;</a></span>CMD_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_STATUS&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lecture des paramètres du périphérique. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00078">78</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="gad4a5fc3f5dc733ea8ddd39388b0df4c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad4a5fc3f5dc733ea8ddd39388b0df4c4">&#9670;&nbsp;</a></span>CMD_TUBE_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_TUBE_STATUS&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00080">80</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00102">isGetMDBTubeStatus()</a>.</p>
+
+</div>
+</div>
+<a id="ga77ac7921aaa8702214ef26adf652b530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga77ac7921aaa8702214ef26adf652b530">&#9670;&nbsp;</a></span>CMD_VEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CMD_VEND&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Demande d'approbation d'une vente. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00082">82</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00045">isMDBSessionComplete()</a>, <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00055">isMDBVendRequest()</a>, et <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00092">isMDBVendSuccess()</a>.</p>
+
+</div>
+</div>
+<a id="ga99e031c1b54ae37de16ada3a471226ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99e031c1b54ae37de16ada3a471226ad">&#9670;&nbsp;</a></span>MAXCASHCHANNELS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAXCASHCHANNELS&#160;&#160;&#160;16</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nombre maximum de canaux pour le changer et le lecteur de billet. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00027">27</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l02511">isExactChange()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l00938">vMaintenanceMenu()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l01712">vScreenCashDevice()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l03583">vTaskTreatKey()</a>.</p>
+
+</div>
+</div>
+<a id="ga2c4e135cc8b5c477af67b4ea226ceabc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2c4e135cc8b5c477af67b4ea226ceabc">&#9670;&nbsp;</a></span>MDB_TO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MDB_TO&#160;&#160;&#160;100 * <a class="el" href="../../d5/d36/RAdefine_8h.html#a13c2acf58db9164b3df26351d2ce9e10">MILLISEC</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>delay mamixmum de réponse du CL </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00033">33</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00038">InitMDB()</a>.</p>
+
+</div>
+</div>
+<a id="ga7b4e3616d426d64746047f0fc275e68c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7b4e3616d426d64746047f0fc275e68c">&#9670;&nbsp;</a></span>MDBPOLLINMS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MDBPOLLINMS&#160;&#160;&#160;(400 * <a class="el" href="../../d5/d36/RAdefine_8h.html#a13c2acf58db9164b3df26351d2ce9e10">MILLISEC</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>temps de polling en ms du lecteur cashless. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00045">45</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l05480">vTaskDoChange()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>.</p>
+
+</div>
+</div>
+<a id="gaa6c321ffb73b63ebe67df76ff858065a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa6c321ffb73b63ebe67df76ff858065a">&#9670;&nbsp;</a></span>MDBRETRY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MDBRETRY&#160;&#160;&#160;((60 * <a class="el" href="../../d5/d36/RAdefine_8h.html#a0e7ac8fd7194adef4798d0d563502c18">SECONDE</a>) / <a class="el" href="../../d8/dc4/group__MDB.html#ga7b4e3616d426d64746047f0fc275e68c">MDBPOLLINMS</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nombre de loop avant de vérifier si un périphérique est disponible. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00051">51</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>.</p>
+
+</div>
+</div>
+<a id="gaeb8fc06b6da22fdb9c918ab42c92015c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb8fc06b6da22fdb9c918ab42c92015c">&#9670;&nbsp;</a></span>SUB_ALT_PAYOUT_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_ALT_PAYOUT_STATUS&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00117">117</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00244">isPayoutStatus()</a>.</p>
+
+</div>
+</div>
+<a id="ga90711ba60381fb9e3bbf2b2e47a1703c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90711ba60381fb9e3bbf2b2e47a1703c">&#9670;&nbsp;</a></span>SUB_ALTERNATIVE_PAYOUT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_ALTERNATIVE_PAYOUT&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00116">116</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00212">isAlternatePayout()</a>.</p>
+
+</div>
+</div>
+<a id="gab24780b14431c525c62da942f67afb27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab24780b14431c525c62da942f67afb27">&#9670;&nbsp;</a></span>SUB_BILL_FEATURE_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_BILL_FEATURE_ENABLE&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00126">126</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="gae4c44d80e35e6c380fbb8200b489d97d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4c44d80e35e6c380fbb8200b489d97d">&#9670;&nbsp;</a></span>SUB_CHANGER_FEATURE_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_CHANGER_FEATURE_ENABLE&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00125">125</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00181">isEnableFeature()</a>.</p>
+
+</div>
+</div>
+<a id="ga6c373ef3a992fb05f50d571c6002edbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c373ef3a992fb05f50d571c6002edbc">&#9670;&nbsp;</a></span>SUB_CHANGER_IDENTIFICATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_CHANGER_IDENTIFICATION&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00114">114</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga72269bf4856eb5c8282089da4467b47d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga72269bf4856eb5c8282089da4467b47d">&#9670;&nbsp;</a></span>SUB_CONFIG_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_CONFIG_DATA&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00096">96</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../da/db3/mdb__bv_8c_source.html#l00081">isGetExId()</a>, et <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00082">isMDBSetupCLConfig()</a>.</p>
+
+</div>
+</div>
+<a id="ga576bb731fb67d24e4492d4bd1ac96354"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga576bb731fb67d24e4492d4bd1ac96354">&#9670;&nbsp;</a></span>SUB_DIAGNOSTIC_STATUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_DIAGNOSTIC_STATUS&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00119">119</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga04f3335d4d6f2a8003fd58cf03b3af10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga04f3335d4d6f2a8003fd58cf03b3af10">&#9670;&nbsp;</a></span>SUB_DIAGNOSTICS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_DIAGNOSTICS&#160;&#160;&#160;0xFF</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00132">132</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga60e20dc8276e5b10aafdd190520295e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga60e20dc8276e5b10aafdd190520295e8">&#9670;&nbsp;</a></span>SUB_FEATURE_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_FEATURE_ENABLE&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00115">115</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="gac8080899e8ed499f4342a2677f3a96bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac8080899e8ed499f4342a2677f3a96bc">&#9670;&nbsp;</a></span>SUB_FTL_OK_TO_SEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_FTL_OK_TO_SEND&#160;&#160;&#160;0xFD</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00130">130</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga8ce7c197f87736efc62a4c3bcdad8906"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ce7c197f87736efc62a4c3bcdad8906">&#9670;&nbsp;</a></span>SUB_FTL_REQ_TO_RCV</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_FTL_REQ_TO_RCV&#160;&#160;&#160;0xFA</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00127">127</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga6d1d5d68eaf63e341257bea10cb39257"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d1d5d68eaf63e341257bea10cb39257">&#9670;&nbsp;</a></span>SUB_FTL_REQ_TO_SEND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_FTL_REQ_TO_SEND&#160;&#160;&#160;0xFE</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00131">131</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga0df2938c85e04f2ff99a5c5ef672a13c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0df2938c85e04f2ff99a5c5ef672a13c">&#9670;&nbsp;</a></span>SUB_FTL_RETRY_DENY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_FTL_RETRY_DENY&#160;&#160;&#160;0xFB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00128">128</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="gae3c680e3e7e95205f8498dbd36cc0522"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae3c680e3e7e95205f8498dbd36cc0522">&#9670;&nbsp;</a></span>SUB_FTL_SEND_BLOCK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_FTL_SEND_BLOCK&#160;&#160;&#160;0xFC</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00129">129</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga8339eff86b48a6ef89c894efab84b4e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8339eff86b48a6ef89c894efab84b4e6">&#9670;&nbsp;</a></span>SUB_IDENTIFICATION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_IDENTIFICATION&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00122">122</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="gaeb01c6afa5c34f9ee25128f208adb62d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeb01c6afa5c34f9ee25128f208adb62d">&#9670;&nbsp;</a></span>SUB_IDENTIFICATION_2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_IDENTIFICATION_2&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00123">123</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga79426f2d93ca7c09e7bfccf427abc647"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga79426f2d93ca7c09e7bfccf427abc647">&#9670;&nbsp;</a></span>SUB_MANUAL_FILL_REPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_MANUAL_FILL_REPORT&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00120">120</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="gaa9416b4ffbf3bd18cd4d633099a9af10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9416b4ffbf3bd18cd4d633099a9af10">&#9670;&nbsp;</a></span>SUB_MANUAL_PAYOUT_REPORT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_MANUAL_PAYOUT_REPORT&#160;&#160;&#160;0x07</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00121">121</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga36a9dcd1d5e3ff897fd6be34a04168a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga36a9dcd1d5e3ff897fd6be34a04168a0">&#9670;&nbsp;</a></span>SUB_MAX_MIN_PRICE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_MAX_MIN_PRICE&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00097">97</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00012">isMDBSetupMaxMinPrice()</a>.</p>
+
+</div>
+</div>
+<a id="ga1277e875502ea33fd31090c3fb333e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1277e875502ea33fd31090c3fb333e9f">&#9670;&nbsp;</a></span>SUB_NEGATIVE_VEND_REQUEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_NEGATIVE_VEND_REQUEST&#160;&#160;&#160;0x06</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00104">104</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="gaac3201b3306ad18717b0fb7f38ac6c40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac3201b3306ad18717b0fb7f38ac6c40">&#9670;&nbsp;</a></span>SUB_PAYOUT_VALUE_POLL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_PAYOUT_VALUE_POLL&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00118">118</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga4b6aa469454a923a1b52bd70c0331c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b6aa469454a923a1b52bd70c0331c4e">&#9670;&nbsp;</a></span>SUB_READ_USER_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_READ_USER_FILE&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00111">111</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga8bcb0e58080b244a6751a1c3e22083a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8bcb0e58080b244a6751a1c3e22083a1">&#9670;&nbsp;</a></span>SUB_READER_CANCEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_READER_CANCEL&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00107">107</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga22e0312559003d3d5c9789f60361460d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22e0312559003d3d5c9789f60361460d">&#9670;&nbsp;</a></span>SUB_READER_DISABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_READER_DISABLE&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00105">105</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="gad49259513d3b42a2490da20f7c2c110a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad49259513d3b42a2490da20f7c2c110a">&#9670;&nbsp;</a></span>SUB_READER_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_READER_ENABLE&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00106">106</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00035">isMDBCLEnable()</a>.</p>
+
+</div>
+</div>
+<a id="ga1c1f62ded7279127eb7b88f3c41ea1dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c1f62ded7279127eb7b88f3c41ea1dc">&#9670;&nbsp;</a></span>SUB_READER_FEATURE_ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_READER_FEATURE_ENABLE&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00124">124</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="gacb1215ad310f1be2849a39b2a7fab79e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacb1215ad310f1be2849a39b2a7fab79e">&#9670;&nbsp;</a></span>SUB_REQUEST_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_REQUEST_ID&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00110">110</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00063">isGetMDBChangerID()</a>.</p>
+
+</div>
+</div>
+<a id="gaa04ddbbf9753e152c6c2c7a4807ba0d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa04ddbbf9753e152c6c2c7a4807ba0d8">&#9670;&nbsp;</a></span>SUB_REVALUE_LIMIT_REQUEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_REVALUE_LIMIT_REQUEST&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00109">109</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00025">isMDBLimitRevalueRequest()</a>.</p>
+
+</div>
+</div>
+<a id="gaaf68ee27761b9cc5769bcee61f7e4f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaf68ee27761b9cc5769bcee61f7e4f50">&#9670;&nbsp;</a></span>SUB_REVALUE_REQUEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_REVALUE_REQUEST&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00108">108</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00069">isMDBRevalueRequest()</a>.</p>
+
+</div>
+</div>
+<a id="ga0024904196ad1d408c8d85c8def365c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0024904196ad1d408c8d85c8def365c0">&#9670;&nbsp;</a></span>SUB_VEND_CANCEL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_VEND_CANCEL&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00099">99</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga1f40fb40e7ec200ddf207522e82e8bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f40fb40e7ec200ddf207522e82e8bfb">&#9670;&nbsp;</a></span>SUB_VEND_CASH_SALE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_VEND_CASH_SALE&#160;&#160;&#160;0x05</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00103">103</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga5ee039d9fb076dbee2164c391c016950"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5ee039d9fb076dbee2164c391c016950">&#9670;&nbsp;</a></span>SUB_VEND_FAILURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_VEND_FAILURE&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00101">101</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga283139c5f414e791df37086a804568e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga283139c5f414e791df37086a804568e6">&#9670;&nbsp;</a></span>SUB_VEND_REQUEST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_VEND_REQUEST&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00098">98</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00055">isMDBVendRequest()</a>.</p>
+
+</div>
+</div>
+<a id="ga7eabe4054825c479ec49d6c80e58ec83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7eabe4054825c479ec49d6c80e58ec83">&#9670;&nbsp;</a></span>SUB_VEND_SESSION_COMPLETE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_VEND_SESSION_COMPLETE&#160;&#160;&#160;0x04</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00102">102</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00045">isMDBSessionComplete()</a>.</p>
+
+</div>
+</div>
+<a id="gae99e42d8b0c3982c56b9117e4b82b475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae99e42d8b0c3982c56b9117e4b82b475">&#9670;&nbsp;</a></span>SUB_VEND_SUCCESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_VEND_SUCCESS&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00100">100</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00092">isMDBVendSuccess()</a>.</p>
+
+</div>
+</div>
+<a id="ga8fb0c1577e00a44c983c676aba23ac90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8fb0c1577e00a44c983c676aba23ac90">&#9670;&nbsp;</a></span>SUB_WRITE_TIME_DATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_WRITE_TIME_DATE&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00113">113</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<a id="ga80a09a4f4c21d9fb067b841f25190775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga80a09a4f4c21d9fb067b841f25190775">&#9670;&nbsp;</a></span>SUB_WRITE_USER_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SUB_WRITE_USER_FILE&#160;&#160;&#160;0x02</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00112">112</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="gabb8db427f6005997c264d86438ac4ced"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb8db427f6005997c264d86438ac4ced">&#9670;&nbsp;</a></span>byMDBPoll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BYTE byMDBPoll </td>
+          <td>(</td>
+          <td class="paramtype">const BYTE&#160;</td>
+          <td class="paramname"><em>byDeviceAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE *&#160;</td>
+          <td class="paramname"><em>byResponse</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction utilisée pour obtenir des informations sur le périphérique. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">byDeviceAddress</td><td>Adresse du périphérique. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">byResponse</td><td>Pointeur sur le buffer qui contiendra la réponse. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>la longueur de la réponse. </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dc/d47/MDB_8c_source.html#l00121">121</a> du fichier <a class="el" href="../../dc/d47/MDB_8c_source.html">MDB.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../dc/d47/MDB_8c_source.html#l00055">byMDBSendCommand()</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00083">CMD_CHANGER_POLL</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00079">CMD_POLL</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00062">RSP_ACK</a>, et <a class="el" href="../../dc/d47/MDB_8c_source.html#l00144">vVMCAcknowledge()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l04165">vCheckCashAmount()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;{</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    BYTE lResponse;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    BYTE lenAnswer = <a class="code" href="../../d8/dc4/group__MDB.html#ga57024a6254a2feaa35799152e1563114">byMDBSendCommand</a>(byDeviceAddress,</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;                                      byDeviceAddress == 0x08 || byDeviceAddress == 0x30 ? <a class="code" href="../../d8/dc4/group__MDB.html#ga6787bfdd34b61a7b5f104ad89f565350">CMD_CHANGER_POLL</a> : <a class="code" href="../../d8/dc4/group__MDB.html#ga202f77f2589f867159190a589a3e0ca4">CMD_POLL</a>,</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                      0, NULL, byResponse != NULL ? byResponse : &amp;lResponse);</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    DelayMs(100); <span class="comment">//Laisse le temps de  compléter la réponse.</span></div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">if</span>(lenAnswer &gt; 1)</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="../../d8/dc4/group__MDB.html#gaab6a2e883822c99999f2e7e80464a164">vVMCAcknowledge</a>(<a class="code" href="../../d2/dc6/group__MDB__ANSWER.html#gaba78564e39c25931ae4337732436b430">RSP_ACK</a>);</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//TODO à supprimer</span></div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span>(lenAnswer == 0)</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        Nop();</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">//-----------</span></div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">return</span> lenAnswer;</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div><div class="ttc" id="group__MDB_html_ga6787bfdd34b61a7b5f104ad89f565350"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga6787bfdd34b61a7b5f104ad89f565350">CMD_CHANGER_POLL</a></div><div class="ttdeci">#define CMD_CHANGER_POLL</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00083">MDB.h:83</a></div></div>
+<div class="ttc" id="group__MDB_html_gaab6a2e883822c99999f2e7e80464a164"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#gaab6a2e883822c99999f2e7e80464a164">vVMCAcknowledge</a></div><div class="ttdeci">void vVMCAcknowledge(const BYTE byAcknowledge)</div><div class="ttdoc">Envoi un ACK ou un RSP_NAK à partir de la VMC. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d47/MDB_8c_source.html#l00144">MDB.c:144</a></div></div>
+<div class="ttc" id="group__MDB_html_ga57024a6254a2feaa35799152e1563114"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga57024a6254a2feaa35799152e1563114">byMDBSendCommand</a></div><div class="ttdeci">BYTE byMDBSendCommand(const BYTE byAddress, const BYTE byCommand, BYTE byLenParameters, void *ptrParameters, void *ptrAnswer)</div><div class="ttdoc">Envoie une instruction MDB au périphérique. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d47/MDB_8c_source.html#l00055">MDB.c:55</a></div></div>
+<div class="ttc" id="group__MDB_html_ga202f77f2589f867159190a589a3e0ca4"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga202f77f2589f867159190a589a3e0ca4">CMD_POLL</a></div><div class="ttdeci">#define CMD_POLL</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00079">MDB.h:79</a></div></div>
+<div class="ttc" id="group__MDB__ANSWER_html_gaba78564e39c25931ae4337732436b430"><div class="ttname"><a href="../../d2/dc6/group__MDB__ANSWER.html#gaba78564e39c25931ae4337732436b430">RSP_ACK</a></div><div class="ttdeci">#define RSP_ACK</div><div class="ttdoc">acknowledgment/checksum correct </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00062">MDB.h:62</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga57024a6254a2feaa35799152e1563114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga57024a6254a2feaa35799152e1563114">&#9670;&nbsp;</a></span>byMDBSendCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BYTE byMDBSendCommand </td>
+          <td>(</td>
+          <td class="paramtype">const BYTE&#160;</td>
+          <td class="paramname"><em>byAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BYTE&#160;</td>
+          <td class="paramname"><em>byCommand</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE&#160;</td>
+          <td class="paramname"><em>byLenParameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptrParameters</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>ptrAnswer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envoie une instruction MDB au périphérique. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">byAddress</td><td>Adresse du périphérique. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">byCommand</td><td>Commande. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">byLenParameters</td><td>Longueur des paramètres. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ptrParameters</td><td>Pointeur sur le buffer des paramètres. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ptrAnswer</td><td>Pointeur sur le buffer qui contiendra la réponse le cas échéant. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>La longeur de la réponse. </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dc/d47/MDB_8c_source.html#l00055">55</a> du fichier <a class="el" href="../../dc/d47/MDB_8c_source.html">MDB.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../dc/d47/MDB_8c_source.html#l00026">byCheckSum()</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00190">hSemaphoreMDB</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00161">isNAKMDB</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00171">MDBUART</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00067">RSP_NAK</a>, et <a class="el" href="../../db/dd1/MDB_8h_source.html#l00166">xTimerMDBNAK</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00121">byMDBPoll()</a>, <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00212">isAlternatePayout()</a>, <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00181">isEnableFeature()</a>, <a class="el" href="../../da/db3/mdb__bv_8c_source.html#l00081">isGetExId()</a>, <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00063">isGetMDBChangerID()</a>, <a class="el" href="../../da/db3/mdb__bv_8c_source.html#l00022">isGetMDBStackerStatus()</a>, <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00102">isGetMDBTubeStatus()</a>, <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00035">isMDBCLEnable()</a>, <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00025">isMDBLimitRevalueRequest()</a>, <a class="el" href="../../dc/d47/MDB_8c_source.html#l00113">isMDBReset()</a>, <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00069">isMDBRevalueRequest()</a>, <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00045">isMDBSessionComplete()</a>, <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00082">isMDBSetupCLConfig()</a>, <a class="el" href="../../dc/d47/MDB_8c_source.html#l00157">isMDBSetupConfig()</a>, <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00012">isMDBSetupMaxMinPrice()</a>, <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00055">isMDBVendRequest()</a>, <a class="el" href="../../dc/d97/mdb__cl_8c_source.html#l00092">isMDBVendSuccess()</a>, <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00244">isPayoutStatus()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l04296">isRouteBill()</a>, <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00033">isSetMDBCoinType()</a>, et <a class="el" href="../../da/db3/mdb__bv_8c_source.html#l00013">isSetMDBillType()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    BYTE byIndex;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    xSemaphoreTake(<a class="code" href="../../d8/dc4/group__MDB.html#gaf3b4c690ff3b92096c3f016d482345bb">hSemaphoreMDB</a>, 15000);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    UART_DATA wBuffer[32] = {0};</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    BYTE *byPtrParameters, *byPtrAnswer;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    byPtrParameters = ptrParameters;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    byPtrAnswer = ptrAnswer;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//DelayMs(10);</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//    memset(wBuffer, 0XFF, sizeof (wBuffer));</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    wBuffer[0].data9bit = 0x0100 + byAddress + byCommand;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span>(byIndex = 1; byIndex &lt;= byLenParameters; byIndex++)</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        wBuffer[byIndex].__data = (BYTE)byPtrParameters[byIndex - 1];</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    wBuffer[byLenParameters + 1].__data = <a class="code" href="../../dc/d47/MDB_8c.html#a008b09a0a075897d0160ddf40b973c51">byCheckSum</a>(byLenParameters + 1, wBuffer);</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">for</span>(byIndex = 0; byIndex &lt; (byLenParameters + 2); byIndex++)</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a> = FALSE;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        xTimerStart(<a class="code" href="../../d8/dc4/group__MDB.html#ga0185298c0314b8b9a49f1cfc2a606bee">xTimerMDBNAK</a>, 1000);</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">while</span>(!UARTTransmitterIsReady(<a class="code" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a>) &amp;&amp; !<a class="code" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a>)</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            UARTSendData(<a class="code" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a>, wBuffer[byIndex]);</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            byPtrAnswer[0] = <a class="code" href="../../d2/dc6/group__MDB__ANSWER.html#gaa3f9a3c5dbbb15727218b1865d4b9e75">RSP_NAK</a>;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            xSemaphoreGive(<a class="code" href="../../d8/dc4/group__MDB.html#gaf3b4c690ff3b92096c3f016d482345bb">hSemaphoreMDB</a>);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    byIndex = 0;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    memset(wBuffer, 0X00, <span class="keyword">sizeof</span> (wBuffer));</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">do</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <a class="code" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a> = FALSE;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        xTimerStart(<a class="code" href="../../d8/dc4/group__MDB.html#ga0185298c0314b8b9a49f1cfc2a606bee">xTimerMDBNAK</a>, 1000);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">while</span>(!UARTReceivedDataIsAvailable(<a class="code" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a>) &amp;&amp; !<a class="code" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a>);</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span>(!<a class="code" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a>)</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            wBuffer[byIndex] = UARTGetData(<a class="code" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a>);</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            byPtrAnswer[byIndex] = (BYTE)wBuffer[byIndex].__data;</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">else</span></div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            byPtrAnswer[0] = <a class="code" href="../../d2/dc6/group__MDB__ANSWER.html#gaa3f9a3c5dbbb15727218b1865d4b9e75">RSP_NAK</a>;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            byIndex = 0;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        }</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }<span class="keywordflow">while</span>(!<a class="code" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a> &amp;&amp; !(wBuffer[byIndex++].__data &amp; 0x0100));</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    xSemaphoreGive(<a class="code" href="../../d8/dc4/group__MDB.html#gaf3b4c690ff3b92096c3f016d482345bb">hSemaphoreMDB</a>);</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> byIndex;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div><div class="ttc" id="group__MDB_html_gaf3b4c690ff3b92096c3f016d482345bb"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#gaf3b4c690ff3b92096c3f016d482345bb">hSemaphoreMDB</a></div><div class="ttdeci">SemaphoreHandle_t hSemaphoreMDB</div><div class="ttdoc">handle du semaphore MDB. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00190">MDB.h:190</a></div></div>
+<div class="ttc" id="group__MDB_html_ga12a3ef249ebdbba4e33d2366ee69be16"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a></div><div class="ttdeci">BOOL isNAKMDB</div><div class="ttdoc">Indique le TO pour la réponse du périphérique MDB est atteint. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00161">MDB.h:161</a></div></div>
+<div class="ttc" id="group__MDB__ANSWER_html_gaa3f9a3c5dbbb15727218b1865d4b9e75"><div class="ttname"><a href="../../d2/dc6/group__MDB__ANSWER.html#gaa3f9a3c5dbbb15727218b1865d4b9e75">RSP_NAK</a></div><div class="ttdeci">#define RSP_NAK</div><div class="ttdoc">Negative acknowledge. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00067">MDB.h:67</a></div></div>
+<div class="ttc" id="MDB_8c_html_a008b09a0a075897d0160ddf40b973c51"><div class="ttname"><a href="../../dc/d47/MDB_8c.html#a008b09a0a075897d0160ddf40b973c51">byCheckSum</a></div><div class="ttdeci">static BYTE byCheckSum(BYTE byLen, const UART_DATA *ptrBuffer)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d47/MDB_8c_source.html#l00026">MDB.c:26</a></div></div>
+<div class="ttc" id="group__MDB_html_ga6e9bb5538a82ae699c11900393e8b78f"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a></div><div class="ttdeci">UART_MODULE MDBUART</div><div class="ttdoc">Port MDB. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00171">MDB.h:171</a></div></div>
+<div class="ttc" id="group__MDB_html_ga0185298c0314b8b9a49f1cfc2a606bee"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga0185298c0314b8b9a49f1cfc2a606bee">xTimerMDBNAK</a></div><div class="ttdeci">TimerHandle_t xTimerMDBNAK</div><div class="ttdoc">Handle du timer utilisé pour le TO de la réponse d&amp;#39;un périphérique MDB. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00166">MDB.h:166</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga78e7f326720dea6d477a04a689160cd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga78e7f326720dea6d477a04a689160cd4">&#9670;&nbsp;</a></span>dwGetMaxReturn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD dwGetMaxReturn </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dc/d47/MDB_8c_source.html#l00180">180</a> du fichier <a class="el" href="../../dc/d47/MDB_8c_source.html">MDB.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../d6/db2/parametres_8h_source.html#l00367">CENTRAL_PARAMETERS::billType</a>, <a class="el" href="../../d9/d1f/mdb__bv_8h_source.html#l00178">billValidatorSetup</a>, <a class="el" href="../../d9/d1f/mdb__bv_8h_source.html#l00148">BILLTYPE::byBillEnable</a>, <a class="el" href="../../d9/d1f/mdb__bv_8h_source.html#l00120">BILLVALIDATORSETUP::byBillValue</a>, <a class="el" href="../../d6/db2/parametres_8h_source.html#l00481">centralParameters</a>, <a class="el" href="../../d9/d1f/mdb__bv_8h_source.html#l00185">isBillValidatorReseted</a>, et <a class="el" href="../../d9/d1f/mdb__bv_8h_source.html#l00115">BILLVALIDATORSETUP::wScaleFactor</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;{</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    BYTE byIndex;</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    DWORD result = 200;</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d0/d05/group__BV.html#ga63af9d590b18914c99e2feb19e04deb2">isBillValidatorReseted</a>)</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    {</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">for</span>(byIndex = 0; byIndex &lt; 16; byIndex++)</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        {</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">if</span>(((<a class="code" href="../../de/da5/group__PARAMETERS.html#ga97b079e29d46c78ca8f7f32dd27c9c7c">centralParameters</a>.<a class="code" href="../../dc/d58/structCENTRAL__PARAMETERS.html#af28cf3d377ec3970f3bd2b6ee1247468">billType</a>.<a class="code" href="../../df/d64/structBILLTYPE.html#a616f6e14e803f43f8c94f90d7791b0b3">byBillEnable</a>[1] &gt;&gt; byIndex) &amp; 0x01) &amp;&amp; <a class="code" href="../../d0/d05/group__BV.html#ga74a8091bb2cafcf10f6cb74812ffd6bd">billValidatorSetup</a>.<a class="code" href="../../d4/d6f/structBILLVALIDATORSETUP.html#a3a1e4e2c82c743e5dd8f64d09634f23e">byBillValue</a>[byIndex])</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            {</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;                result = <a class="code" href="../../d0/d05/group__BV.html#ga74a8091bb2cafcf10f6cb74812ffd6bd">billValidatorSetup</a>.<a class="code" href="../../d4/d6f/structBILLVALIDATORSETUP.html#a3a1e4e2c82c743e5dd8f64d09634f23e">byBillValue</a>[byIndex] * <a class="code" href="../../d0/d05/group__BV.html#ga74a8091bb2cafcf10f6cb74812ffd6bd">billValidatorSetup</a>.<a class="code" href="../../d4/d6f/structBILLVALIDATORSETUP.html#ab228b0cdded055b6472a6f1f7cf9c294">wScaleFactor</a>;</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            }</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">return</span> result;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div><div class="ttc" id="structBILLVALIDATORSETUP_html_ab228b0cdded055b6472a6f1f7cf9c294"><div class="ttname"><a href="../../d4/d6f/structBILLVALIDATORSETUP.html#ab228b0cdded055b6472a6f1f7cf9c294">BILLVALIDATORSETUP::wScaleFactor</a></div><div class="ttdeci">WORD wScaleFactor</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1f/mdb__bv_8h_source.html#l00115">mdb_bv.h:115</a></div></div>
+<div class="ttc" id="structCENTRAL__PARAMETERS_html_af28cf3d377ec3970f3bd2b6ee1247468"><div class="ttname"><a href="../../dc/d58/structCENTRAL__PARAMETERS.html#af28cf3d377ec3970f3bd2b6ee1247468">CENTRAL_PARAMETERS::billType</a></div><div class="ttdeci">BILLTYPE billType</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db2/parametres_8h_source.html#l00367">parametres.h:367</a></div></div>
+<div class="ttc" id="group__BV_html_ga74a8091bb2cafcf10f6cb74812ffd6bd"><div class="ttname"><a href="../../d0/d05/group__BV.html#ga74a8091bb2cafcf10f6cb74812ffd6bd">billValidatorSetup</a></div><div class="ttdeci">BILLVALIDATORSETUP billValidatorSetup</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1f/mdb__bv_8h_source.html#l00178">mdb_bv.h:178</a></div></div>
+<div class="ttc" id="group__PARAMETERS_html_ga97b079e29d46c78ca8f7f32dd27c9c7c"><div class="ttname"><a href="../../de/da5/group__PARAMETERS.html#ga97b079e29d46c78ca8f7f32dd27c9c7c">centralParameters</a></div><div class="ttdeci">CENTRAL_PARAMETERS centralParameters</div><div class="ttdoc">Paramètres de la centrale. </div><div class="ttdef"><b>Definition:</b> <a href="../../d6/db2/parametres_8h_source.html#l00481">parametres.h:481</a></div></div>
+<div class="ttc" id="group__BV_html_ga63af9d590b18914c99e2feb19e04deb2"><div class="ttname"><a href="../../d0/d05/group__BV.html#ga63af9d590b18914c99e2feb19e04deb2">isBillValidatorReseted</a></div><div class="ttdeci">BOOL isBillValidatorReseted</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1f/mdb__bv_8h_source.html#l00185">mdb_bv.h:185</a></div></div>
+<div class="ttc" id="structBILLTYPE_html_a616f6e14e803f43f8c94f90d7791b0b3"><div class="ttname"><a href="../../df/d64/structBILLTYPE.html#a616f6e14e803f43f8c94f90d7791b0b3">BILLTYPE::byBillEnable</a></div><div class="ttdeci">BYTE byBillEnable[2]</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1f/mdb__bv_8h_source.html#l00148">mdb_bv.h:148</a></div></div>
+<div class="ttc" id="structBILLVALIDATORSETUP_html_a3a1e4e2c82c743e5dd8f64d09634f23e"><div class="ttname"><a href="../../d4/d6f/structBILLVALIDATORSETUP.html#a3a1e4e2c82c743e5dd8f64d09634f23e">BILLVALIDATORSETUP::byBillValue</a></div><div class="ttdeci">BYTE byBillValue[MAXNUMBERCHANNELSBV]</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1f/mdb__bv_8h_source.html#l00120">mdb_bv.h:120</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="gafa32690fbf44accbb31b1d1da5513d1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gafa32690fbf44accbb31b1d1da5513d1f">&#9670;&nbsp;</a></span>InitMDB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitMDB </td>
+          <td>(</td>
+          <td class="paramtype">const UART_MODULE&#160;</td>
+          <td class="paramname"><em>port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction d'intialisation du port MDB. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>Numéro du port à initialiser. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dc/d47/MDB_8c_source.html#l00038">38</a> du fichier <a class="el" href="../../dc/d47/MDB_8c_source.html">MDB.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../db/dc7/FreeRTOSConfig_8h_source.html#l00091">configPERIPHERAL_CLOCK_HZ</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00192">dwMaxReturn</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00190">hSemaphoreMDB</a>, <a class="el" href="../../d9/d1f/mdb__bv_8h_source.html#l00197">isBVPolled</a>, <a class="el" href="../../d5/d0a/mdb__cg_8h_source.html#l00207">isCGPolled</a>, <a class="el" href="../../d5/d06/mdb__cl_8h_source.html#l00240">isCLPolled</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00033">MDB_TO</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00171">MDBUART</a>, <a class="el" href="../../d4/dc1/UARTLib_8C_source.html#l00042">OpenUART()</a>, <a class="el" href="../../dc/d47/MDB_8c_source.html#l00019">vNAKTO_MDB()</a>, et <a class="el" href="../../db/dd1/MDB_8h_source.html#l00166">xTimerMDBNAK</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l00237">vInitialization()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../db/d9a/group__CG.html#gab47f95df3db3d1da2eef04705e1bd2f4">isCGPolled</a> = <a class="code" href="../../d0/d05/group__BV.html#gab3f91ffa3c41feab9d567555aa52b12d">isBVPolled</a> = <a class="code" href="../../d1/d0e/group__CL.html#gaafdaceaa333b26d2d28e6f003fba9869">isCLPolled</a> = FALSE;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../d8/dc4/group__MDB.html#gacbb3e7813ba037f790468e06b7bed072">dwMaxReturn</a> = 0;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a> = port;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../d4/de9/group__URAT.html#gae8dfc9357e9511454e17808efa1a242f">OpenUART</a>(<a class="code" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a>, <a class="code" href="../../db/dc7/FreeRTOSConfig_8h.html#ae0728ada9639b55fedbb6b42378aaeda">configPERIPHERAL_CLOCK_HZ</a>, 9600,</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;             UART_DATA_SIZE_9_BITS, UART_PARITY_NONE, UART_STOP_BITS_1);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../d8/dc4/group__MDB.html#ga0185298c0314b8b9a49f1cfc2a606bee">xTimerMDBNAK</a> = xTimerCreate((<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span>)<span class="stringliteral">&quot;TIMER_MDB&quot;</span>, <a class="code" href="../../d8/dc4/group__MDB.html#ga2c4e135cc8b5c477af67b4ea226ceabc">MDB_TO</a>, pdFALSE,</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                NULL, <a class="code" href="../../dc/d47/MDB_8c.html#ab26c76c5a80e8a9d575869ad98e0df65">vNAKTO_MDB</a>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="../../d8/dc4/group__MDB.html#gaf3b4c690ff3b92096c3f016d482345bb">hSemaphoreMDB</a> = xSemaphoreCreateMutex();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    vQueueAddToRegistry(<a class="code" href="../../d8/dc4/group__MDB.html#gaf3b4c690ff3b92096c3f016d482345bb">hSemaphoreMDB</a>, <span class="stringliteral">&quot;SEMDB&quot;</span>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div><div class="ttc" id="MDB_8c_html_ab26c76c5a80e8a9d575869ad98e0df65"><div class="ttname"><a href="../../dc/d47/MDB_8c.html#ab26c76c5a80e8a9d575869ad98e0df65">vNAKTO_MDB</a></div><div class="ttdeci">static void vNAKTO_MDB(const TimerHandle_t HandleTimer)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d47/MDB_8c_source.html#l00019">MDB.c:19</a></div></div>
+<div class="ttc" id="group__MDB_html_ga2c4e135cc8b5c477af67b4ea226ceabc"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga2c4e135cc8b5c477af67b4ea226ceabc">MDB_TO</a></div><div class="ttdeci">#define MDB_TO</div><div class="ttdoc">delay mamixmum de réponse du CL </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00033">MDB.h:33</a></div></div>
+<div class="ttc" id="group__CG_html_gab47f95df3db3d1da2eef04705e1bd2f4"><div class="ttname"><a href="../../db/d9a/group__CG.html#gab47f95df3db3d1da2eef04705e1bd2f4">isCGPolled</a></div><div class="ttdeci">BOOL isCGPolled</div><div class="ttdoc">Indique si le rendeur a été pollé. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d0a/mdb__cg_8h_source.html#l00207">mdb_cg.h:207</a></div></div>
+<div class="ttc" id="group__MDB_html_gaf3b4c690ff3b92096c3f016d482345bb"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#gaf3b4c690ff3b92096c3f016d482345bb">hSemaphoreMDB</a></div><div class="ttdeci">SemaphoreHandle_t hSemaphoreMDB</div><div class="ttdoc">handle du semaphore MDB. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00190">MDB.h:190</a></div></div>
+<div class="ttc" id="group__CL_html_gaafdaceaa333b26d2d28e6f003fba9869"><div class="ttname"><a href="../../d1/d0e/group__CL.html#gaafdaceaa333b26d2d28e6f003fba9869">isCLPolled</a></div><div class="ttdeci">BOOL isCLPolled</div><div class="ttdoc">Indique si le cashless a été pollé. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d06/mdb__cl_8h_source.html#l00240">mdb_cl.h:240</a></div></div>
+<div class="ttc" id="group__URAT_html_gae8dfc9357e9511454e17808efa1a242f"><div class="ttname"><a href="../../d4/de9/group__URAT.html#gae8dfc9357e9511454e17808efa1a242f">OpenUART</a></div><div class="ttdeci">void OpenUART(const UART_MODULE UART, const DWORD dwSYS_FREQ, const DWORD dwBAUDRATE, const UART_LINE_CONTROL_MODE dataSize, const UART_LINE_CONTROL_MODE parity, const UART_LINE_CONTROL_MODE stop_bits)</div><div class="ttdoc">Initialisation du port série. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc1/UARTLib_8C_source.html#l00042">UARTLib.C:42</a></div></div>
+<div class="ttc" id="group__MDB_html_ga6e9bb5538a82ae699c11900393e8b78f"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a></div><div class="ttdeci">UART_MODULE MDBUART</div><div class="ttdoc">Port MDB. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00171">MDB.h:171</a></div></div>
+<div class="ttc" id="FreeRTOSConfig_8h_html_ae0728ada9639b55fedbb6b42378aaeda"><div class="ttname"><a href="../../db/dc7/FreeRTOSConfig_8h.html#ae0728ada9639b55fedbb6b42378aaeda">configPERIPHERAL_CLOCK_HZ</a></div><div class="ttdeci">#define configPERIPHERAL_CLOCK_HZ</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dc7/FreeRTOSConfig_8h_source.html#l00091">FreeRTOSConfig.h:91</a></div></div>
+<div class="ttc" id="group__MDB_html_ga0185298c0314b8b9a49f1cfc2a606bee"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga0185298c0314b8b9a49f1cfc2a606bee">xTimerMDBNAK</a></div><div class="ttdeci">TimerHandle_t xTimerMDBNAK</div><div class="ttdoc">Handle du timer utilisé pour le TO de la réponse d&amp;#39;un périphérique MDB. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00166">MDB.h:166</a></div></div>
+<div class="ttc" id="group__MDB_html_gacbb3e7813ba037f790468e06b7bed072"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#gacbb3e7813ba037f790468e06b7bed072">dwMaxReturn</a></div><div class="ttdeci">DWORD dwMaxReturn</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00192">MDB.h:192</a></div></div>
+<div class="ttc" id="group__BV_html_gab3f91ffa3c41feab9d567555aa52b12d"><div class="ttname"><a href="../../d0/d05/group__BV.html#gab3f91ffa3c41feab9d567555aa52b12d">isBVPolled</a></div><div class="ttdeci">BOOL isBVPolled</div><div class="ttdoc">Flag indiquant si le lecteur de billet a été pollé. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1f/mdb__bv_8h_source.html#l00197">mdb_bv.h:197</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga5b6f7850c6e1b5b8375ea25add92d5b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5b6f7850c6e1b5b8375ea25add92d5b5">&#9670;&nbsp;</a></span>isMDBReset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL isMDBReset </td>
+          <td>(</td>
+          <td class="paramtype">const BYTE&#160;</td>
+          <td class="paramname"><em>byDeviceAddress</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Self-reset the device. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">byDeviceAddress</td><td>Adresse du périphérique à reseter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dc/d47/MDB_8c_source.html#l00113">113</a> du fichier <a class="el" href="../../dc/d47/MDB_8c_source.html">MDB.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../dc/d47/MDB_8c_source.html#l00055">byMDBSendCommand()</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00076">CMD_RESET</a>, et <a class="el" href="../../db/dd1/MDB_8h_source.html#l00062">RSP_ACK</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    BYTE byAcknowledge;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> ((<a class="code" href="../../d8/dc4/group__MDB.html#ga57024a6254a2feaa35799152e1563114">byMDBSendCommand</a>(byDeviceAddress, <a class="code" href="../../d8/dc4/group__MDB.html#gafe1dd8546b0a8cd30b19a0229205c8df">CMD_RESET</a>, 0, NULL, &amp;byAcknowledge) == 1) &amp;&amp; (byAcknowledge == <a class="code" href="../../d2/dc6/group__MDB__ANSWER.html#gaba78564e39c25931ae4337732436b430">RSP_ACK</a>));</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div><div class="ttc" id="group__MDB_html_ga57024a6254a2feaa35799152e1563114"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga57024a6254a2feaa35799152e1563114">byMDBSendCommand</a></div><div class="ttdeci">BYTE byMDBSendCommand(const BYTE byAddress, const BYTE byCommand, BYTE byLenParameters, void *ptrParameters, void *ptrAnswer)</div><div class="ttdoc">Envoie une instruction MDB au périphérique. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d47/MDB_8c_source.html#l00055">MDB.c:55</a></div></div>
+<div class="ttc" id="group__MDB__ANSWER_html_gaba78564e39c25931ae4337732436b430"><div class="ttname"><a href="../../d2/dc6/group__MDB__ANSWER.html#gaba78564e39c25931ae4337732436b430">RSP_ACK</a></div><div class="ttdeci">#define RSP_ACK</div><div class="ttdoc">acknowledgment/checksum correct </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00062">MDB.h:62</a></div></div>
+<div class="ttc" id="group__MDB_html_gafe1dd8546b0a8cd30b19a0229205c8df"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#gafe1dd8546b0a8cd30b19a0229205c8df">CMD_RESET</a></div><div class="ttdeci">#define CMD_RESET</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00076">MDB.h:76</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga9fcadcc79a4c6cc6b9b018ae1ada927a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fcadcc79a4c6cc6b9b018ae1ada927a">&#9670;&nbsp;</a></span>isMDBSetupConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL isMDBSetupConfig </td>
+          <td>(</td>
+          <td class="paramtype">const BYTE&#160;</td>
+          <td class="paramname"><em>byDeviceAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>byStatus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BYTE&#160;</td>
+          <td class="paramname"><em>byLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dc/d47/MDB_8c_source.html#l00157">157</a> du fichier <a class="el" href="../../dc/d47/MDB_8c_source.html">MDB.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../dc/d47/MDB_8c_source.html#l00055">byMDBSendCommand()</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00077">CMD_SETUP</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00062">RSP_ACK</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00067">RSP_NAK</a>, et <a class="el" href="../../dc/d47/MDB_8c_source.html#l00144">vVMCAcknowledge()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l05480">vTaskDoChange()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d8/dc4/group__MDB.html#ga57024a6254a2feaa35799152e1563114">byMDBSendCommand</a>(byDeviceAddress, <a class="code" href="../../d8/dc4/group__MDB.html#ga21e192bfe1077874a2d97679ea7c3f9a">CMD_SETUP</a>, 0, NULL, byStatus) &gt; 1)</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="../../d8/dc4/group__MDB.html#gaab6a2e883822c99999f2e7e80464a164">vVMCAcknowledge</a>(<a class="code" href="../../d2/dc6/group__MDB__ANSWER.html#gaba78564e39c25931ae4337732436b430">RSP_ACK</a>);</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="keywordflow">return</span> TRUE;</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    }</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    {</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="../../d8/dc4/group__MDB.html#gaab6a2e883822c99999f2e7e80464a164">vVMCAcknowledge</a>(<a class="code" href="../../d2/dc6/group__MDB__ANSWER.html#gaa3f9a3c5dbbb15727218b1865d4b9e75">RSP_NAK</a>);</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div><div class="ttc" id="group__MDB_html_ga21e192bfe1077874a2d97679ea7c3f9a"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga21e192bfe1077874a2d97679ea7c3f9a">CMD_SETUP</a></div><div class="ttdeci">#define CMD_SETUP</div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00077">MDB.h:77</a></div></div>
+<div class="ttc" id="group__MDB_html_gaab6a2e883822c99999f2e7e80464a164"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#gaab6a2e883822c99999f2e7e80464a164">vVMCAcknowledge</a></div><div class="ttdeci">void vVMCAcknowledge(const BYTE byAcknowledge)</div><div class="ttdoc">Envoi un ACK ou un RSP_NAK à partir de la VMC. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d47/MDB_8c_source.html#l00144">MDB.c:144</a></div></div>
+<div class="ttc" id="group__MDB_html_ga57024a6254a2feaa35799152e1563114"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga57024a6254a2feaa35799152e1563114">byMDBSendCommand</a></div><div class="ttdeci">BYTE byMDBSendCommand(const BYTE byAddress, const BYTE byCommand, BYTE byLenParameters, void *ptrParameters, void *ptrAnswer)</div><div class="ttdoc">Envoie une instruction MDB au périphérique. </div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d47/MDB_8c_source.html#l00055">MDB.c:55</a></div></div>
+<div class="ttc" id="group__MDB__ANSWER_html_gaa3f9a3c5dbbb15727218b1865d4b9e75"><div class="ttname"><a href="../../d2/dc6/group__MDB__ANSWER.html#gaa3f9a3c5dbbb15727218b1865d4b9e75">RSP_NAK</a></div><div class="ttdeci">#define RSP_NAK</div><div class="ttdoc">Negative acknowledge. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00067">MDB.h:67</a></div></div>
+<div class="ttc" id="group__MDB__ANSWER_html_gaba78564e39c25931ae4337732436b430"><div class="ttname"><a href="../../d2/dc6/group__MDB__ANSWER.html#gaba78564e39c25931ae4337732436b430">RSP_ACK</a></div><div class="ttdeci">#define RSP_ACK</div><div class="ttdoc">acknowledgment/checksum correct </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00062">MDB.h:62</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="gaab6a2e883822c99999f2e7e80464a164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab6a2e883822c99999f2e7e80464a164">&#9670;&nbsp;</a></span>vVMCAcknowledge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void vVMCAcknowledge </td>
+          <td>(</td>
+          <td class="paramtype">const BYTE&#160;</td>
+          <td class="paramname"><em>byAcknowledge</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envoi un ACK ou un RSP_NAK à partir de la VMC. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">byAcknowledge</td><td>ACK ou RSP_NAK </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dc/d47/MDB_8c_source.html#l00144">144</a> du fichier <a class="el" href="../../dc/d47/MDB_8c_source.html">MDB.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../db/dd1/MDB_8h_source.html#l00161">isNAKMDB</a>, <a class="el" href="../../db/dd1/MDB_8h_source.html#l00171">MDBUART</a>, et <a class="el" href="../../db/dd1/MDB_8h_source.html#l00166">xTimerMDBNAK</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00121">byMDBPoll()</a>, <a class="el" href="../../da/db3/mdb__bv_8c_source.html#l00081">isGetExId()</a>, <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00063">isGetMDBChangerID()</a>, <a class="el" href="../../da/db3/mdb__bv_8c_source.html#l00022">isGetMDBStackerStatus()</a>, <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00102">isGetMDBTubeStatus()</a>, <a class="el" href="../../dc/d47/MDB_8c_source.html#l00157">isMDBSetupConfig()</a>, et <a class="el" href="../../d1/dbe/mdb__cg_8c_source.html#l00244">isPayoutStatus()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;{</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    UART_DATA uaAcknowledge;</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    uaAcknowledge.__data = byAcknowledge;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a> = FALSE;</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    xTimerStart(<a class="code" href="../../d8/dc4/group__MDB.html#ga0185298c0314b8b9a49f1cfc2a606bee">xTimerMDBNAK</a>, 1000);</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">while</span>(!UARTTransmitterIsReady(<a class="code" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a>) &amp;&amp; !<a class="code" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a>);</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    UARTSendData(<a class="code" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a>, uaAcknowledge);</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">while</span>(!(UARTGetLineStatus(<a class="code" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a>) &amp; UART_TRANSMITTER_EMPTY));</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div><div class="ttc" id="group__MDB_html_ga12a3ef249ebdbba4e33d2366ee69be16"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a></div><div class="ttdeci">BOOL isNAKMDB</div><div class="ttdoc">Indique le TO pour la réponse du périphérique MDB est atteint. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00161">MDB.h:161</a></div></div>
+<div class="ttc" id="group__MDB_html_ga6e9bb5538a82ae699c11900393e8b78f"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a></div><div class="ttdeci">UART_MODULE MDBUART</div><div class="ttdoc">Port MDB. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00171">MDB.h:171</a></div></div>
+<div class="ttc" id="group__MDB_html_ga0185298c0314b8b9a49f1cfc2a606bee"><div class="ttname"><a href="../../d8/dc4/group__MDB.html#ga0185298c0314b8b9a49f1cfc2a606bee">xTimerMDBNAK</a></div><div class="ttdeci">TimerHandle_t xTimerMDBNAK</div><div class="ttdoc">Handle du timer utilisé pour le TO de la réponse d&amp;#39;un périphérique MDB. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/dd1/MDB_8h_source.html#l00166">MDB.h:166</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="gaef808b712f5f7609c6a50062b94ac304"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaef808b712f5f7609c6a50062b94ac304">&#9670;&nbsp;</a></span>wDecimalDivider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WORD wDecimalDivider </td>
+          <td>(</td>
+          <td class="paramtype">BYTE&#160;</td>
+          <td class="paramname"><em>byDecimal</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dc/d47/MDB_8c_source.html#l00173">173</a> du fichier <a class="el" href="../../dc/d47/MDB_8c_source.html">MDB.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../dc/d47/MDB_8c_source.html#l00015">wDecimalFactor</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l04862">vTaskBeatingHearth()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;{</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../dc/d47/MDB_8c.html#ada7cc05c1992b64bbd007f456fe4b98a">wDecimalFactor</a>[byDecimal];</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;}</div><div class="ttc" id="MDB_8c_html_ada7cc05c1992b64bbd007f456fe4b98a"><div class="ttname"><a href="../../dc/d47/MDB_8c.html#ada7cc05c1992b64bbd007f456fe4b98a">wDecimalFactor</a></div><div class="ttdeci">WORD wDecimalFactor[5]</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d47/MDB_8c_source.html#l00015">MDB.c:15</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="gacbb3e7813ba037f790468e06b7bed072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacbb3e7813ba037f790468e06b7bed072">&#9670;&nbsp;</a></span>dwMaxReturn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">DWORD dwMaxReturn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00192">192</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00038">InitMDB()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l05480">vTaskDoChange()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>.</p>
+
+</div>
+</div>
+<a id="ga9d45c25e5873fd193731c96ce204075b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d45c25e5873fd193731c96ce204075b">&#9670;&nbsp;</a></span>hSemaphoreChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hSemaphoreChange</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>handle du semaphore autoisant le change </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00184">184</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/d37/CustomHTTPApp_8c_source.html#l00245">HTTPExecuteGet()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l06231">main()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l04330">vEscrowRequested()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l05904">vLaunchMachine()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l05480">vTaskDoChange()</a>.</p>
+
+</div>
+</div>
+<a id="gaf3b4c690ff3b92096c3f016d482345bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf3b4c690ff3b92096c3f016d482345bb">&#9670;&nbsp;</a></span>hSemaphoreMDB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">hSemaphoreMDB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>handle du semaphore MDB. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00190">190</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00055">byMDBSendCommand()</a>, et <a class="el" href="../../dc/d47/MDB_8c_source.html#l00038">InitMDB()</a>.</p>
+
+</div>
+</div>
+<a id="ga12a3ef249ebdbba4e33d2366ee69be16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga12a3ef249ebdbba4e33d2366ee69be16">&#9670;&nbsp;</a></span>isNAKMDB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL isNAKMDB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indique le TO pour la réponse du périphérique MDB est atteint. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00161">161</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00055">byMDBSendCommand()</a>, <a class="el" href="../../dc/d47/MDB_8c_source.html#l00019">vNAKTO_MDB()</a>, et <a class="el" href="../../dc/d47/MDB_8c_source.html#l00144">vVMCAcknowledge()</a>.</p>
+
+</div>
+</div>
+<a id="ga6e9bb5538a82ae699c11900393e8b78f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6e9bb5538a82ae699c11900393e8b78f">&#9670;&nbsp;</a></span>MDBUART</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UART_MODULE MDBUART</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Port MDB. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00171">171</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00055">byMDBSendCommand()</a>, <a class="el" href="../../dc/d47/MDB_8c_source.html#l00038">InitMDB()</a>, et <a class="el" href="../../dc/d47/MDB_8c_source.html#l00144">vVMCAcknowledge()</a>.</p>
+
+</div>
+</div>
+<a id="ga27e38f7efa5daed9824353678297c6fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga27e38f7efa5daed9824353678297c6fd">&#9670;&nbsp;</a></span>vmcConfig</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d4/d5e/structVMCConfig.html">VMCConfig</a> vmcConfig</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00178">178</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>.</p>
+
+</div>
+</div>
+<a id="gaab62dee48287bf65faa88f20d21747c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaab62dee48287bf65faa88f20d21747c4">&#9670;&nbsp;</a></span>wKeyAmountMax</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WORD wKeyAmountMax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Montant maximum pouvant être contenu dans une clé. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00176">176</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l04286">isMediaFull()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l04165">vCheckCashAmount()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>.</p>
+
+</div>
+</div>
+<a id="ga0185298c0314b8b9a49f1cfc2a606bee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0185298c0314b8b9a49f1cfc2a606bee">&#9670;&nbsp;</a></span>xTimerMDBNAK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TimerHandle_t xTimerMDBNAK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle du timer utilisé pour le TO de la réponse d'un périphérique MDB. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../db/dd1/MDB_8h_source.html#l00166">166</a> du fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00055">byMDBSendCommand()</a>, <a class="el" href="../../dc/d47/MDB_8c_source.html#l00038">InitMDB()</a>, et <a class="el" href="../../dc/d47/MDB_8c_source.html#l00144">vVMCAcknowledge()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<hr class="footer"/><address class="footer"><small>MAINBOARD MDI 1.3.4 documentation by&#160;
+<a href="http://www.rasoftware.fr"> 
+<img class="footer" src="rasoftware.jpg" alt="www.rasoftware"/></a></small></address> 
+</body> 
+</html> 

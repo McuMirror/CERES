@@ -1,0 +1,35 @@
+Added Component: Designator=U6(TO263-5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/1520137.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/1520137.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Courant, sortie"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TEXAS INSTRUMENTS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "LM2576HVS-12/NOPB"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MSL"; Value = "MSL 3 - 168 heures"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Nombre de broches"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Nombre de canaux de sortie"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=4,23, 10=3,19, 100=2,48, 250=2,41, 500=2,35 (EUR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Racine de la référence"; Value = "2576"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "YES"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "2115115"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SVHC"; Value = "No SVHC (20-Jun-2013)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Température de fonctionnement"; Value = "-40°C à +125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Température de fonctionnement max.."; Value = "125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Température d'utilisation min"; Value = "-40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tension, sortie"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tension d'entrée primaire"; Value = "60"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type de boîtier CI régulateur de tension"; Value = "TO-263"; VariantName = "[No Variations]"
+Added Component: Designator=V3(VIS42)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=+36 Pin=U6-1
+Added Pin To Net: NetName=NetD7_2 Pin=U6-2
+Added Pin To Net: NetName=GND Pin=U6-3
+Added Pin To Net: NetName=+12 Pin=U6-4
+Added Pin To Net: NetName=GND Pin=U6-5
+Added Pin To Net: NetName=NetV3_1 Pin=V3-1
+Added Member To Class: ClassName=U_PSU_D Member=Component C8 100uF
+Added Member To Class: ClassName=U_PSU_D Member=Component U6 LM2576S-12
+Added Member To Class: ClassName=U_PSU_D Member=Component V3 VIS
+Added Member To Class: ClassName=D18_Nets Member=Wire NetC7_1
+Added Member To Class: ClassName=C21_Nets Member=Wire NetC21_2

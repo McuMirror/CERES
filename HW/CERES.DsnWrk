@@ -1,0 +1,6 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=IO_Board\V6\IO BOARD CERES-V6.PrjPcb
+[Project2]
+ProjectPath=Main Board\MAIN BOARD CERES.PrjPcb

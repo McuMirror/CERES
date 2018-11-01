@@ -1,0 +1,10 @@
+Output: Generates pick and place files
+Type  : Pick Place
+From  : PCB Document [IO BOARD CERES V6.PcbDoc]
+   Generated File[Pick Place for IO BOARD CERES V6.txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 19:45:20 On 20/06/2018

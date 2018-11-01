@@ -1,0 +1,243 @@
+~inc:header.inc~
+<title>Param&egrave;tres</title>
+<meta name="description" content="Page de paramètrages des machines" />
+</head>
+<body>
+    <script type="text/javascript">
+        <!--
+        ListMachine = "~machineList~";
+        arrayListMachine = ListMachine.split("-");
+-->
+    </script>
+    <br />
+    <br />
+    <div class="TitrePage">
+        PARAMETRES MACHINES
+    </div>
+    <br />
+    <br />
+    <form method ="get" action="macParam.htm" name="formNumMachine" id="formNumMachine">
+
+        <div name="NumCentraleParam" id="NumCentraleParam">
+            <span class="left"><b>Machine &agrave; param&eacute;trer:</b>&nbsp;</span>
+            <select onchange="getMachineParameters()" id="NumMachine" name="NumMachine" style="position: relative;left: 25%"></select>
+        </div>
+    </form>
+    <form method ="get" action="macParam.htm" name="macParam" id="macParam">
+        <br/>
+        <br/>
+        <table class="centre">
+            <tr>
+                <td>
+                    <b> Prix de base en esp&egrave;ces: </b>
+                </td>
+                <td>
+                    <input  class="textAlignRight" type="text" size="5" maxlength="5" name="BasePrice" id="BasePrice" value ="4.00">&nbsp;&euro;
+                </td>
+                <td>
+                    Montant &agrave; payer pour obtenir le service en esp&egrave;ces hors heures creuses.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b> Prix avec clef: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" size="5" maxlength="5" name="KeyPrice" id="KeyPrice" value="4.00" />&nbsp;&euro;
+                </td>
+                <td>
+                    Montant &agrave; payer pour obtenir le service pour un paiement avec cl&eacute; hors heures creuses.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b> Prix en heures creuses: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" size="5" maxlength="5" name="HHPrice" id="HHPrice" value="4.00"/>&nbsp;&euro;
+                </td>
+                <td>
+                    Montant &agrave; payer pour obtenir le service en esp&egrave;ces en heures creuses.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b> Prix avec clef en heures creuses: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" size="5" maxlength="5" name="HHKeyPrice" id="HHKeyPrice" value="4.00"/>&nbsp;&euro;
+                </td>
+                <td>
+                    Montant &agrave; payer pour obtenir le service pour un paiement avec cl&eacute; en heures creuses.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Impulsion de commande: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="number" id="Pulse" name="Pulse" value="2000"/>&nbsp;ms&nbsp;&nbsp;
+                </td>
+                <td>
+                    Dur&eacute;e de l'impulsion de commande en millisecondes.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Affiche le temps restant</b>
+                </td>
+                <td>
+                    <input type="checkbox" name="EnableTimeDisplay" id="EnableTimeDisplay" />
+                </td>
+                <td>
+                    Autorise ou non l'affichage du temps restant.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Temps &agrave; afficher: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="number" name="Displaytime" id="Displaytime" value="0"/>&nbsp;s
+                </td>
+                <td>
+                    Temps &agrave; afficher le cas &eacute;ch&eacute;ant.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>D&eacute;lai suroccupation:</b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="number" name="OverBusy"  id="OverBusy" value="0"/>&nbsp;ms
+                </td>
+                <td>
+                    Temps pendant lequel une machine sera consid&eacute;r&eacute;e comme occup&eacute;e apr&egrave;s la fin d'occupation.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Heure de mise en route: </b>
+                </td>
+                <td>
+                    <input  value="00:00" type="text" name="StartTime"  id="StartTime"/>
+                </td>
+                <td>
+                    Heure &agrave; laquelle la machine sera disponible.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Heure de fin: </b>
+                </td>
+                <td>
+                    <input  value="23:59" type="text" name="EndTime"  id="EndTime"/>
+                </td>
+                <td>
+                    Heure &agrave; laquelle la machine ne sera plus disponible.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Heure de d&eacute;but heures creuses: </b>
+                </td>
+                <td>
+                    <input value="00:00" type="text" name="HHStartTime" id="HHStartTime" />
+                </td>
+                <td>
+                    Heure de d&eacute;but du tarif heures creuses.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Heure de fin heures creuses: </b>
+                </td>
+                <td>
+                    <input value="00:00"  type="text" name="HHEndTime" id="HHEndTime"/>
+                </td>
+                <td>
+                    Heure de fin du tarif heures creuses.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Cumul autoris&eacute;: </b>
+                </td>
+                <td>
+                    <input type="checkbox" name="EnableCumul" id="EnableCumul" />
+                </td>
+                <td>
+                    Autorise ou non le cumul des activations machines.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Sensibilit&eacute;e consommation : </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="number" name="Sensibility" id="Sensibility" value="32767"/>&nbsp;
+                </td>
+                <td>
+                    Niveau de sensibilit&eacute; de la d&eacute;tection de consommation(de 0 &agrave; 65535).
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    <b>Billets accept&eacute;s : </b>
+                </td>
+                <td>
+                    <input type="checkbox" name="BillAccepted" id="BillAccepted" />
+                </td>
+                <td>
+                    Autorise ou non l'usage des billets pour le paiement du service.
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    <b>Alimentation secteur : </b>
+                </td>
+                <td>
+                    <input type="checkbox" name="PowerSupply" id="PowerSupply" />
+                </td>
+                <td>
+                    Active ou non l'alimentation principale de la machine.
+                </td>
+            </tr>            
+        </table>
+        <br/>
+        <br/>
+        <table class="centre">
+            <tr>
+                <td>
+                    <input type="submit" name="Send" value="Envoyer"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br/>
+    <table cellpadding="10" class="left">
+        <tr>
+            <td class = "backGroundBlue">
+                <a href="config.htm">Configuration</a>
+            </td>
+            <td>
+                Retour &agrave; la page configuration.
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        <!--
+        selection = document.getElementById("NumMachine");
+        for (byIndex = 0; byIndex < arrayListMachine.length; byIndex++)
+        {
+            newOption = new Option(arrayListMachine[byIndex], arrayListMachine[byIndex]);
+            newOption.value = arrayListMachine[byIndex];
+            selection.add(newOption);
+        }
+-->
+    </script>
+    <script type="text/javascript"><!--
+        getMachineParameters();
+-->
+    </script>
+    ~inc:footer.inc~

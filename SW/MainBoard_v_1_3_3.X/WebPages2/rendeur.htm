@@ -1,0 +1,74 @@
+~inc:header.inc~
+<meta name="description" content="Page d'activation des canaux du rendeur" />
+<title>Rendeur</title>
+</head>
+<body>
+  <br />
+  <br />
+  <div class="TitrePage">
+    ACTIVATION CANAUX RENDEUR
+  </div>
+  <br />
+  <br />
+  <span>~cg~</span>
+  <form  method ="get" action="rendeur.htm" name="rendeur" id="rendeur">
+    ~inc:canal.inc~
+    <tr class="textAlignRight">
+      <td>~Val(0)~&euro;</td>
+      <td>~Val(1)~&euro;</td>
+      <td>~Val(2)~&euro;</td>
+      <td>~Val(3)~&euro;</td>
+      <td>~Val(4)~&euro;</td>
+      <td>~Val(5)~&euro;</td>
+      <td>~Val(6)~&euro;</td>
+      <td>~Val(7)~&euro;</td>
+      <td>~Val(8)~&euro;</td>
+      <td>~Val(9)~&euro;</td>
+      <td>~Val(10)~&euro;</td>
+      <td>~Val(11)~&euro;</td>
+      <td>~Val(12)~&euro;</td>
+      <td>~Val(13)~&euro;</td>
+      <td>~Val(14)~&euro;</td>
+      <td>~Val(15)~&euro;</td>
+    </tr>
+    <tr>
+      <td class="bar-in-~state(0)~">Actif<input type="checkbox" name="0" ~cenable(0)~ /></td>
+      <td class="bar-in-~state(1)~">Actif<input type="checkbox" name="1" ~cenable(1)~ /></td>
+      <td class="bar-in-~state(2)~">Actif<input type="checkbox" name="2" ~cenable(2)~ /></td>
+      <td class="bar-in-~state(3)~">Actif<input type="checkbox" name="3" ~cenable(3)~ /></td>
+      <td class="bar-in-~state(4)~">Actif<input type="checkbox" name="4" ~cenable(4)~ /></td>
+      <td class="bar-in-~state(5)~">Actif<input type="checkbox" name="5" ~cenable(5)~ /></td>
+      <td class="bar-in-~state(6)~">Actif<input type="checkbox" name="6" ~cenable(6)~ /></td>
+      <td class="bar-in-~state(7)~">Actif<input type="checkbox" name="7" ~cenable(7)~ /></td>
+      <td class="bar-in-~state(8)~">Actif<input type="checkbox" name="8" ~cenable(8)~ /></td>
+      <td class="bar-in-~state(9)~">Actif<input type="checkbox" name="9" ~cenable(9)~ /></td>
+      <td class="bar-in-~state(10)~">Actif<input type="checkbox" name="10" ~cenable(10)~ /></td>
+      <td class="bar-in-~state(11)~">Actif<input type="checkbox" name="11" ~cenable(11)~ /></td>
+      <td class="bar-in-~state(12)~">Actif<input type="checkbox" name="12" ~cenable(12)~ /></td>
+      <td class="bar-in-~state(13)~">Actif<input type="checkbox" name="13" ~cenable(13)~ /></td>
+      <td class="bar-in-~state(14)~">Actif<input type="checkbox" name="14" ~cenable(14)~ /></td>
+      <td class="bar-in-~state(15)~">Actif<input type="checkbox" name="15" ~cenable(15)~ /></td>
+    </tr>
+  </table>
+  <br/>
+  <br/>
+  <table class="centre">
+    <tr>
+      <td>
+        <input type="submit" name="Send" value="Envoyer"/>
+      </td>
+    </tr>
+  </table>
+</form>
+<br/>
+<table cellpadding="10" class="left">
+  <tr>
+    <td class = "backGroundBlue">
+      <a href="peripheriques.htm">P&eacute;riph&eacute;riques</a>
+    </td>
+    <td>
+      Retour &agrave; la page p&eacute;riph&eacute;riques.
+    </td>
+  </tr>
+</table>
+~inc:footer.inc~

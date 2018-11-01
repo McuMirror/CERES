@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1">
+        <file>
+            <url>parametres.h</url>
+            <line>223</line>
+            <line>353</line>
+        </file>
+        <file>
+            <url>mdb_cg.c</url>
+            <line>36</line>
+        </file>
+        <file>
+            <url>main.c</url>
+<<<<<<< local
+            <line>524</line>
+            <line>1337</line>
+=======
+            <line>522</line>
+            <line>1335</line>
+>>>>>>> other
+        </file>
+        <file>
+            <url>lcd4u.c</url>
+            <line>151</line>
+        </file>
+        <file>
+            <url>file:/D:/Projets/Pic32%20library/LibraryPic32.X/lcd4u.c</url>
+            <line>39</line>
+        </file>
+        <file>
+            <url>satellites.c</url>
+            <line>47</line>
+            <line>93</line>
+        </file>
+        <file>
+            <url>main.h</url>
+            <line>859</line>
+        </file>
+        <file>
+            <url>I2CE2PROML.c</url>
+            <line>16</line>
+            <line>123</line>
+        </file>
+        <file>
+            <url>satellites.h</url>
+            <line>63</line>
+        </file>
+    </editor-bookmarks>
+</project-private>

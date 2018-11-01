@@ -1,0 +1,100 @@
+.TitrePage
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+    font-size: 400%;
+    color: red;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    width: 80%;
+}
+.lightblue
+{
+    background-color:lightblue;
+}
+a:link
+{
+    color:white; background-color: transparent
+}
+a:visited
+{
+    color:orange; background-color:transparent
+}
+a:hover
+{
+    color:red; background-color:transparent
+}
+a:active
+{
+    color:lightgreen; background-color:transparent
+}
+.refbleu
+{
+    color:blue
+}
+.backGroundBlue
+{
+    background-color: blue;
+}
+.bar-in-ok
+{
+    background: #0c0;
+}
+.bar-in-low
+{
+    background: red;
+}
+.bar-in-advise
+{
+    background: #FE9A2E;
+}
+.left
+{
+    font-size: 125%;
+    position: relative;
+    left: 25%;
+}
+.centrelarge
+{
+    font-size: 125%; 
+    margin: auto;
+}
+.centre
+{
+    margin: auto;
+}
+.textAlignRight
+{
+    text-align:right
+}
+.fieldset 
+{
+    position: relative; 
+    left: 25%; 
+    border-style: solid; 
+    max-width: 50%;
+    border-width: 1px;	
+    background-color: #CCFFFF;
+}
+.hidden
+{
+    visibility: hidden;
+}
+
+.fieldRight
+{
+    border-style: solid;
+    border-width: 1px;
+    text-align: right; 
+    width: 100% 
+}
+
+.auditItemField
+{
+    border-width: 1px;
+    width: 40%; 
+    background-color: #ff6600; 
+    text-align: left;
+}

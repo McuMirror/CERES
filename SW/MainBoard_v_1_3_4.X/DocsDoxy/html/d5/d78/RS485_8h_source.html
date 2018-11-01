@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MAINBOARD MDI:  Fichier source de D:/Projets/CERES/SW/MainBoard_v_1_3_4.X/RS485.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../rasoftware.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MAINBOARD MDI
+   &#160;<span id="projectnumber">1.3.4</span>
+   </div>
+   <div id="projectbrief">Gestion de la centrale d&#39;une laverie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d5/d78/RS485_8h_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/Projets/CERES/SW/MainBoard_v_1_3_4.X/RS485.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/d78/RS485_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef RS485_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define RS485_H</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;UARTLib.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;FreeRTOS.h&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="../../d5/d36/RAdefine_8h.html">RAdefine.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//*Macros***********************************************************************</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d1/dad/group__RS485.html#ga7cbb485a62fcc6863031cd46e0dcec9f">   27</a></span>&#160;<span class="preprocessor">#define SETREAD() PORTClearBits(RS485port, RS485Io)</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d1/dad/group__RS485.html#gae6f36461789ba8168e8fff65d43cb1bf">   33</a></span>&#160;<span class="preprocessor">#define SETWRITE() PORTSetBits(RS485port, RS485Io)</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/*End of macros****************************************************************/</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//**Variables*******************************************************************</span></div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">   41</a></span>&#160;<span class="comment"></span>IoPortId <a class="code" href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">RS485port</a>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">   47</a></span>&#160;DWORD <a class="code" href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">RS485Io</a>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">   53</a></span>&#160;UART_MODULE <a class="code" href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a>;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">/*End of variables*************************************************************/</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">/*Prototypes*******************************************************************/</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/dad/group__RS485.html#ga1becdb17930d87530691b2f0f3f14127">InitRS485</a>(<span class="keyword">const</span> UART_MODULE UART, <span class="keyword">const</span> DWORD dwSYS_FREQ,</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;               <span class="keyword">const</span> DWORD dwBAUDRATE, <span class="keyword">const</span> UART_LINE_CONTROL_MODE dataSize,</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;               <span class="keyword">const</span> UART_LINE_CONTROL_MODE parity,</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;               <span class="keyword">const</span> UART_LINE_CONTROL_MODE stop_bits, <span class="keyword">const</span> IoPortId EnablePort,</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;               DWORD dwEnableBit);</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;BOOL <a class="code" href="../../d1/dad/group__RS485.html#ga50f134fcd317a8c5149b2165d73215de">RS485GetBuffer</a>(<span class="keywordtype">void</span> *pBuffer, WORD wLen);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/dad/group__RS485.html#gae9279185f6d61b151d4e17f84aec7a9a">RS485WriteBuffer</a>(<span class="keyword">const</span> <span class="keywordtype">void</span> *pBuffer, <span class="keyword">const</span> BYTE byLen);</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">/*End of prototypes************************************************************/</span></div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* RS485_H */</span><span class="preprocessor"></span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="ttc" id="group__RS485_html_ga1becdb17930d87530691b2f0f3f14127"><div class="ttname"><a href="../../d1/dad/group__RS485.html#ga1becdb17930d87530691b2f0f3f14127">InitRS485</a></div><div class="ttdeci">void InitRS485(const UART_MODULE UART, const DWORD dwSYS_FREQ, const DWORD dwBAUDRATE, const UART_LINE_CONTROL_MODE dataSize, const UART_LINE_CONTROL_MODE parity, const UART_LINE_CONTROL_MODE stop_bits, const IoPortId EnablePort, DWORD dwEnableBit)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d46/RS485_8c_source.html#l00013">RS485.c:13</a></div></div>
+<div class="ttc" id="group__RS485_html_gaeabfdbf75dac5024e28f3fe0f4d3a42f"><div class="ttname"><a href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a></div><div class="ttdeci">UART_MODULE UART485</div><div class="ttdoc">Variable contenant le nom du module utilisé. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d78/RS485_8h_source.html#l00053">RS485.h:53</a></div></div>
+<div class="ttc" id="group__RS485_html_ga37f03b3ebe29147df413cd9b30ab5904"><div class="ttname"><a href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">RS485Io</a></div><div class="ttdeci">DWORD RS485Io</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d78/RS485_8h_source.html#l00047">RS485.h:47</a></div></div>
+<div class="ttc" id="RAdefine_8h_html"><div class="ttname"><a href="../../d5/d36/RAdefine_8h.html">RAdefine.h</a></div><div class="ttdoc">Header des definitions specifique. </div></div>
+<div class="ttc" id="group__RS485_html_ga50f134fcd317a8c5149b2165d73215de"><div class="ttname"><a href="../../d1/dad/group__RS485.html#ga50f134fcd317a8c5149b2165d73215de">RS485GetBuffer</a></div><div class="ttdeci">BOOL RS485GetBuffer(void *pBuffer, WORD wLen)</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d46/RS485_8c_source.html#l00029">RS485.c:29</a></div></div>
+<div class="ttc" id="group__RS485_html_gae9279185f6d61b151d4e17f84aec7a9a"><div class="ttname"><a href="../../d1/dad/group__RS485.html#gae9279185f6d61b151d4e17f84aec7a9a">RS485WriteBuffer</a></div><div class="ttdeci">void RS485WriteBuffer(const void *pBuffer, const BYTE byLen)</div><div class="ttdoc">Transmet un nombre défini d&amp;#39;octet sur la ligne 485. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d46/RS485_8c_source.html#l00048">RS485.c:48</a></div></div>
+<div class="ttc" id="group__RS485_html_ga06c9312956ce6c6f6cfd96955fb7ea41"><div class="ttname"><a href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">RS485port</a></div><div class="ttdeci">IoPortId RS485port</div><div class="ttdoc">Port utilisé par l&amp;#39;io de direction du RS485. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d78/RS485_8h_source.html#l00041">RS485.h:41</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<hr class="footer"/><address class="footer"><small>MAINBOARD MDI 1.3.4 documentation by&#160;
+<a href="http://www.rasoftware.fr"> 
+<img class="footer" src="rasoftware.jpg" alt="www.rasoftware"/></a></small></address> 
+</body> 
+</html> 

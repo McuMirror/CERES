@@ -1,0 +1,263 @@
+/*******************************************************************************
+ System Interrupt Source File
+
+  File Name:
+    sys_interrupt_a.S
+
+  Summary:
+    Raw ISR definitions.
+
+  Description:
+    This file contains a definitions of the raw ISRs required to support the 
+    interrupt sub-system.
+*******************************************************************************/
+
+// DOM-IGNORE-BEGIN
+/*******************************************************************************
+Copyright (c) 2011-2014 released Microchip Technology Inc.  All rights reserved.
+
+Microchip licenses to you the right to use, modify, copy and distribute
+Software only when embedded on a Microchip microcontroller or digital signal
+controller that is integrated into your product or third party product
+(pursuant to the sublicense terms in the accompanying license agreement).
+
+You should refer to the license agreement accompanying this Software for
+additional information regarding your rights and obligations.
+
+SOFTWARE AND DOCUMENTATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY KIND,
+EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF
+MERCHANTABILITY, TITLE, NON-INFRINGEMENT AND FITNESS FOR A PARTICULAR PURPOSE.
+IN NO EVENT SHALL MICROCHIP OR ITS LICENSORS BE LIABLE OR OBLIGATED UNDER
+CONTRACT, NEGLIGENCE, STRICT LIABILITY, CONTRIBUTION, BREACH OF WARRANTY, OR
+OTHER LEGAL EQUITABLE THEORY ANY DIRECT OR INDIRECT DAMAGES OR EXPENSES
+INCLUDING BUT NOT LIMITED TO ANY INCIDENTAL, SPECIAL, INDIRECT, PUNITIVE OR
+CONSEQUENTIAL DAMAGES, LOST PROFITS OR LOST DATA, COST OF PROCUREMENT OF
+SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
+(INCLUDING BUT NOT LIMITED TO ANY DEFENSE THEREOF), OR OTHER SIMILAR COSTS.
+ *******************************************************************************/
+// DOM-IGNORE-END
+/*
+*********************************************************************************************************
+*                                           INCLUDES
+*********************************************************************************************************
+*/
+#include <xc.h>
+
+#include "ISR_Support.h"
+
+
+/* USART Instance 0 Interrupt */
+
+   .extern  IntHandlerDrvUsartInstance0
+
+   .section	.vector_24,code, keep
+   .equ     __vector_dispatch_24, IntVectorDrvUsartInstance0
+   .global  __vector_dispatch_24
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  IntVectorDrvUsartInstance0
+
+IntVectorDrvUsartInstance0:
+    la    $26,  _IntHandlerDrvUsartInstance0         
+    jr    $26
+    nop
+	.end	IntVectorDrvUsartInstance0
+
+   .section	.DrvUsartInstance0_vector_text, code, keep
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  _IntHandlerDrvUsartInstance0
+
+_IntHandlerDrvUsartInstance0:
+    portSAVE_CONTEXT
+    la    s6,  IntHandlerDrvUsartInstance0
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end	_IntHandlerDrvUsartInstance0
+
+
+/* USART Instance 1 Interrupt */
+
+   .extern  IntHandlerDrvUsartInstance1
+
+   .section	.vector_31,code, keep
+   .equ     __vector_dispatch_31, IntVectorDrvUsartInstance1
+   .global  __vector_dispatch_31
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  IntVectorDrvUsartInstance1
+
+IntVectorDrvUsartInstance1:
+    la    $26,  _IntHandlerDrvUsartInstance1         
+    jr    $26
+    nop
+	.end	IntVectorDrvUsartInstance1
+
+   .section	.DrvUsartInstance1_vector_text, code, keep
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  _IntHandlerDrvUsartInstance1
+
+_IntHandlerDrvUsartInstance1:
+    portSAVE_CONTEXT
+    la    s6,  IntHandlerDrvUsartInstance1
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end	_IntHandlerDrvUsartInstance1
+
+
+/* USART Instance 2 Interrupt */
+
+   .extern  IntHandlerDrvUsartInstance2
+
+   .section	.vector_24,code, keep
+   .equ     __vector_dispatch_24, IntVectorDrvUsartInstance2
+   .global  __vector_dispatch_24
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  IntVectorDrvUsartInstance2
+
+IntVectorDrvUsartInstance2:
+    la    $26,  _IntHandlerDrvUsartInstance2         
+    jr    $26
+    nop
+	.end	IntVectorDrvUsartInstance2
+
+   .section	.DrvUsartInstance2_vector_text, code, keep
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  _IntHandlerDrvUsartInstance2
+
+_IntHandlerDrvUsartInstance2:
+    portSAVE_CONTEXT
+    la    s6,  IntHandlerDrvUsartInstance2
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end	_IntHandlerDrvUsartInstance2
+
+/* RTCC Interrupt */
+
+   .extern  IntHandlerRTCC
+
+   .section	.vector_35,code, keep
+   .equ     __vector_dispatch_35, IntVectorRTCC
+   .global  __vector_dispatch_35
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  IntVectorRTCC
+
+IntVectorRTCC:
+    la    $26,  _IntHandlerRTCC         
+    jr    $26
+    nop
+	.end	IntVectorRTCC
+
+   .section	.RTCC_vector_text, code, keep
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  _IntHandlerRTCC
+
+_IntHandlerRTCC:
+    portSAVE_CONTEXT
+    la    s6,  IntHandlerRTCC
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end	_IntHandlerRTCC
+
+
+
+
+/* USB Device Interrupt */
+
+   .extern  IntHandler_USB_stub
+
+   .section	.vector_45,code, keep
+   .equ     __vector_dispatch_45, IntVector_USB_stub
+   .global  __vector_dispatch_45
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  IntVector_USB_stub
+
+IntVector_USB_stub:
+    la    $26,  _IntHandler_USB_stub         
+    jr    $26
+    nop
+	.end	IntVector_USB_stub
+
+   .section	._USB_stub_vector_text, code, keep
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  _IntHandler_USB_stub
+
+_IntHandler_USB_stub:
+    portSAVE_CONTEXT
+    la    s6,  IntHandler_USB_stub
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end	_IntHandler_USB_stub
+
+
+/* ETHMAC Interrupt */
+
+   .extern  IntHandler_ETHMAC
+
+   .section	.vector_48,code, keep
+   .equ     __vector_dispatch_48, IntVector_ETHMAC
+   .global  __vector_dispatch_48
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  IntVector_ETHMAC
+
+IntVector_ETHMAC:
+    la    $26,  _IntHandler_ETHMAC         
+    jr    $26
+    nop
+	.end	IntVector_ETHMAC
+
+   .section	._ETHMAC_vector_text, code, keep
+   .set     nomicromips
+   .set     noreorder
+   .set     nomips16
+   .set     noat
+   .ent  _IntHandler_ETHMAC
+
+_IntHandler_ETHMAC:
+    portSAVE_CONTEXT
+    la    s6,  IntHandler_ETHMAC
+    jalr  s6
+    nop
+    portRESTORE_CONTEXT
+    .end	_IntHandler_ETHMAC
+
+
+/*******************************************************************************
+ End of File
+ */
+

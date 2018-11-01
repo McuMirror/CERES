@@ -1,0 +1,47 @@
+~inc:header.inc~
+<meta name="description" content="Gestion de l'adresse MDB du cashless." />
+<title>Adresse cashless</title>
+</head>
+<body>
+  <br />
+  <br />
+  <div class="TitrePage">
+    ADRESSE CASHLESS
+  </div>
+  <br />
+  <br />
+  <form method ="get" action="cashless.htm" name="cashless" id="cashless">
+    <table class="left">
+      <tr>
+        <th>Adresse cashless</th>
+      </tr>
+      <tr>
+        <td><b>0X10</b></td>
+        <td><input type="radio" name="address" value="X10" ~x10~ /></td>
+      </tr>
+      <tr>
+        <td><b>0X60</b></td>
+        <td><input type="radio" name="address" value="X60" ~x60~ /></td>
+      </tr>
+    </table>
+    <br/>
+    <table class="centre">
+      <tr>
+        <td>
+          <input type="submit" name="Send" value="Envoyer"/>
+        </td>
+      </tr>
+    </table>
+  </form>
+  <br/>
+  <table cellpadding="10" class="left">
+    <tr>
+      <td class = "backGroundBlue">
+        <a href="peripheriques.htm">P&eacute;riph&eacute;riques</a>
+      </td>
+      <td>
+        Retour &agrave; la page p&eacute;riph&eacute;riques.
+      </td>
+    </tr>
+  </table>
+  ~inc:footer.inc~

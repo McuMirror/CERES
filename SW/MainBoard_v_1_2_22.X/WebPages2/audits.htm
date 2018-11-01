@@ -1,0 +1,518 @@
+~inc:header.inc~
+<title>Audits</title>
+<meta name="description" content="Page d'audits des centrales MDI" /> 
+</head>
+<body>
+    <script type="text/javascript">
+        <!--
+        ListMachine = "~machineList~";
+        arrayListMachine = ListMachine.split("-");
+-->    
+    </script>
+    <br />
+    <br />
+    <div class="TitrePage">
+        AUDITS
+    </div>
+    <br />
+    <table id="audit" border ="1"  class ="centre" style="width: 25%">
+        <tr>
+            <td class = "auditItemField">Ventes cash</td>
+            <td class="textAlignRight">~cash~&nbsp;&euro;</td>
+        </tr>
+        <tr>
+            <td class = "auditItemField">Ventes cashless</td>
+            <td class="textAlignRight">~cashless~&nbsp;&euro;</td>
+        </tr>
+        <tr>
+            <td class = "auditItemField">Recharges cashless</td>
+            <td class="textAlignRight">~reload~&nbsp;&euro;</td>
+        </tr>
+        <tr>
+            <td class = "auditItemField">Trop per&ccedil;u</td>
+            <td class="textAlignRight">~troppercu~&nbsp;&euro;</td>
+        </tr>
+        <tr>
+            <td class = "auditItemField">Remplissage</td>
+            <td class="textAlignRight">~refilling~&nbsp;&euro;</td>
+        </tr>
+        <tr>
+            <td class = "auditItemField">Ventes USB</td>
+            <td class="textAlignRight">~sellUSB~&nbsp;&euro;</td>
+        </tr>
+        <span>~cg~</span>
+        <tr>
+            <td class = "auditItemField">Pi&egrave;ces introduites</td>  
+            <td>
+                <table border="1" style="text-align: right; width: 100%">
+                    <tr>
+                        <th>
+                            Val.
+                        </th>
+                        <th>   
+                            Nombres
+                        </th>
+                    </tr>
+                    <tr style="display: ~coinUsed(0)~">
+                        <td>
+                            ~Val(0)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(0)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(1)~">
+                        <td>
+                            ~Val(1)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(1)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(2)~">
+                        <td>
+                            ~Val(2)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(2)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(3)~">
+                        <td>
+                            ~Val(3)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(3)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(4)~">
+                        <td>
+                            ~Val(4)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(4)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(5)~">
+                        <td>
+                            ~Val(5)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(5)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(6)~">
+                        <td>
+                            ~Val(6)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(6)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(7)~">
+                        <td>
+                            ~Val(7)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(7)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(8)~">
+                        <td>
+                            ~Val(8)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(8)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(9)~">
+                        <td>
+                            ~Val(9)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(9)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(10)~">
+                        <td>
+                            ~Val(10)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(10)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(11)~">
+                        <td>
+                            ~Val(11)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(11)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(12)~">
+                        <td>
+                            ~Val(12)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(12)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(13)~">
+                        <td>
+                            ~Val(13)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(13)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(14)~">
+                        <td>
+                            ~Val(14)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(14)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(15)~">
+                        <td>
+                            ~Val(15)~&euro; 
+                        </td>
+                        <td>
+                            ~coinIn(15)~
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class = "auditItemField">Pi&egrave;ces rendus</td>  
+            <td>
+                <table border="1" style="text-align: right; width: 100%">
+                    <tr>
+                        <th>
+                            Val.
+                        </th>
+                        <th>   
+                            Nombres
+                        </th>
+                    </tr>
+                    <tr style="display: ~coinUsed(0)~">
+                        <td>
+                            ~Val(0)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(0)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(1)~">
+                        <td>
+                            ~Val(1)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(1)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(2)~">
+                        <td>
+                            ~Val(2)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(2)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(3)~">
+                        <td>
+                            ~Val(3)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(3)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(4)~">
+                        <td>
+                            ~Val(4)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(4)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(5)~">
+                        <td>
+                            ~Val(5)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(5)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(6)~">
+                        <td>
+                            ~Val(6)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(6)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(7)~">
+                        <td>
+                            ~Val(7)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(7)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(8)~">
+                        <td>
+                            ~Val(8)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(8)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(9)~">
+                        <td>
+                            ~Val(9)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(9)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(10)~">
+                        <td>
+                            ~Val(10)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(10)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(11)~">
+                        <td>
+                            ~Val(11)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(11)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(12)~">
+                        <td>
+                            ~Val(12)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(12)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(13)~">
+                        <td>
+                            ~Val(13)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(13)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(14)~">
+                        <td>
+                            ~Val(14)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(14)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~coinUsed(15)~">
+                        <td>
+                            ~Val(15)~&euro; 
+                        </td>
+                        <td>
+                            ~coinOut(15)~
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <span>~bv~</span>
+        <tr>
+            <td class = "auditItemField">Billets introduits</td>  
+            <td>
+                <table border="1" style="text-align: right; width: 100%">
+                    <tr>
+                        <th>
+                            Val.
+                        </th>
+                        <th>   
+                            Nombres
+                        </th>
+                    </tr>
+                    <tr style="display: ~billUsed(0)~">
+                        <td>
+                            ~Val(0)~&euro; 
+                        </td>                        
+                        <td>
+                            ~BillIn(0)~
+                        </td>                        
+                    </tr>
+                    <tr style="display: ~billUsed(1)~">
+                        <td>
+                            ~Val(1)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(1)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(2)~">
+                        <td>
+                            ~Val(2)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(2)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(3)~">
+                        <td>
+                            ~Val(3)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(3)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(4)~">
+                        <td>
+                            ~Val(4)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(4)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(5)~">
+                        <td>
+                            ~Val(5)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(5)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(6)~">
+                        <td>
+                            ~Val(6)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(6)~
+                        </td>
+                    </tr>
+                    <tr  style="display: ~billUsed(7)~">
+                        <td>
+                            ~Val(7)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(7)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(8)~">
+                        <td>
+                            ~Val(8)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(8)~
+                        </td>
+                    </tr>
+                    <tr  style="display: ~billUsed(9)~">
+                        <td>
+                            ~Val(9)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(9)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(10)~">
+                        <td>
+                            ~Val(10)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(10)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(11)~">
+                        <td>
+                            ~Val(11)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(11)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(12)~">
+                        <td>
+                            ~Val(12)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(12)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(13)~">
+                        <td>
+                            ~Val(13)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(13)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(14)~">
+                        <td>
+                            ~Val(14)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(14)~
+                        </td>
+                    </tr>
+                    <tr style="display: ~billUsed(15)~">
+                        <td>
+                            ~Val(15)~&euro; 
+                        </td>
+                        <td>
+                            ~BillIn(15)~
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class = "auditItemField">Machines</td>           
+            <td>
+                <table id="NumMachine" border="1" style="text-align: right; width: 100%">
+                    <tr>
+                        <th>
+                            Num.
+                        </th>
+                        <th>   
+                            Activations
+                        </th>
+                    </tr>
+                </table>
+            </td>
+        </tr>         
+        <script type="text/javascript">
+<!--               
+        var row;
+        var cell;
+        var table = document.getElementById("NumMachine");
+        for (byIndex = 0; byIndex < arrayListMachine.length; byIndex++)
+        {
+            row = table.insertRow(-1);
+            cell = row.insertCell(0);
+            cell.id = "Act" + byIndex.toString();
+            cell.innerHTML = arrayListMachine[byIndex];
+            cell = row.insertCell(1);
+            cell.id = "Act" + arrayListMachine[byIndex];
+            setTimeout(getNumAct(arrayListMachine[byIndex]), 10);
+        }
+-->            
+        </script>
+    </table>
+    <br/>
+    <table cellpadding="10" class="left">
+        <tr>
+            <td class = "backGroundBlue">
+                <a href="index.htm">Page principale</a>
+            </td>
+            <td>
+                Retour &agrave; la page principale.
+            </td>
+        </tr>
+    </table>
+    ~inc:footer.inc~

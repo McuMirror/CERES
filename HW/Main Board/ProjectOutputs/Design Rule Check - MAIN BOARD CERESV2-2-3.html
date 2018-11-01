@@ -1,0 +1,415 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://d:\Users\Public\Documents\Altium\AD18\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">24/10/2018</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">20:29:29</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC" class="file"><acronym title="D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC">D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">4</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">5</td></tr>
+</table>
+</td>
+</table><a name="IDGIFVEFFWOTSMM5ZPKVAGZO2OIHPDHLPFC0GOW2B5X1HF2UR4XGYB"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1MEJ0PQXQHWOLM5ZXT0WVKV0WOQILMIJETNNU3ELBLH1DIG2JF3G">Zero hole size multi-layer pad(s) detected</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPSCL3B5BESNUDBTN2R3CXCVS0M342BVRI41GXEENN0H2XYZY2JHJ">Multilayer Pads with 0 size Hole found</a></td>
+<td class="column2">2</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">4</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDU0H1EX0DKPI2NQTN5B0IBJQ33JITBRKPTHD53MF4HM1S0GFTULUK">Clearance Constraint (Gap=0.35mm) (All),(InPolygon)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDWWNFYK4YY4JFYVYP0ZVUKZRCOMG4SO2K2TTVFHO4FW4E0Y4EKBG">Clearance Constraint (Gap=0.15mm) ((ObjectKind = 'Pad') and HasFootprint('TQFP100PT')),((ObjectKind = 'Pad') and HasFootprint('TQFP100PT') or (ObjectKind = 'Track'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBDRQ3ATIPTGKNHXBDP2GS4LINEHCHUSWOHW2GAIULF1ANVM0GHZD">Clearance Constraint (Gap=0.15mm) ((ObjectKind = 'Pad') and HasFootprint('LQFP48')),((ObjectKind = 'Pad') and HasFootprint('LQFP48') or (ObjectKind = 'Track'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAOGBF1UUEGIANS3U5YW5PKFBTFQA5NTPWEPZBBGRFW4HB1MP3JJJ">Clearance Constraint (Gap=0.2mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKHSZQAL5HAP4BDCELUOLRQXLRCE1VG14JVX4OFSMFLJVUBIH3LN">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHJGXQMRZFA2XM0YFWRKTFCKYHHNKNMRJWPAZI5IGR1USK0CSL21C">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDGB14EYA23JDYDB02GMZ0NZRBTPU4HBYCTH0PPOIOWYX0BWS0NLWD">Width Constraint (Min=0.12mm) (Max=5mm) (Preferred=0.2mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWLOQ0OV2WQIWN4VDUVEK1V2EBBYNJST1GW2QU4C1EMLMQEI5V5PN">Width Constraint (Min=0.2mm) (Max=5mm) (Preferred=0.55mm) (InNet('+5'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID01CCUENAACCCDEWNFCOI1IPKGPGGZPOXKD2UFNEX3RZRDGXLVYWJ">Width Constraint (Min=0.254mm) (Max=2mm) (Preferred=0.55mm) (InNet('+12'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEQIQQV15R4VJDWXHQQZTKAGQFHTOA2IOYWNHWQEGWHVAR4WS0YIC">Width Constraint (Min=0.2mm) (Max=5mm) (Preferred=1mm) (InNet('GND'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID2AMT2ZM43CS342L2J00AP4R3O3T4OMA1GAGWUC5ZLBMIGRABE1N">Width Constraint (Min=0.2mm) (Max=5mm) (Preferred=0.55mm) (InNet('+3.3'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXMV3IQDBKYQ0DTUKL40IJBWXTBXGYLPYYATJQYOCBJ0WC2HNB1UE">Routing Layers(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJ4CIUX5FBLJ3H4TT5P00XRVGREAWO2G2EPVAT5JXAGHQSLVVAJ4O">Routing Via (MinHoleWidth=0.3mm) (MaxHoleWidth=2mm) (PreferredHoleWidth=0.4mm) (MinWidth=0.6mm) (MaxWidth=1.27mm) (PreferedWidth=0.8mm) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNPVXUSKTK3O3NWCBRWWANMFYYMLFDF2BGYXABHRNWGMKLEY0XFD">Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.254mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.15mm) (Max=0.5mm) (Prefered=0.2mm) (All)</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDV44MOTEFOCFCGI0QYZB20IVTDP1PX5510DZOMSF543VBHFFSCYEI">SMD Neck-Down Constraint (Percent=400%) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDSPYFCITM4KOQK5MDLD5U3F1TAFS1ZQLICVSC2DMAPMCDYF43YHMK">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPJ23LQOONWVMCKIJWXXFHHH0KL3WEC1OTU4202E1C3UZX1S4MHZF">Hole Size Constraint (Min=0.025mm) (Max=6mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDLEY505E5I1INOQN4EQULM3TLDB5LOCMVSSRKWMOTCFRZ4VH5QNHF">Hole To Hole Clearance (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDYDDM4W0G1MQHNJV30SYSZZEHWOCTJE3YAJDAI0FH0D2AYK3Q2XEG">Minimum Solder Mask Sliver (Gap=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRFK5VZVGCUU4CJ5BTOOQY2ARLK14WM0A455LHLBYQF4TD23ENQNC">Silk to Silk (Clearance=0.05mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDDDOTLZQ0HNNXKU2ZDT0KTZ4JBK0MP1MMDYVWYXI0UVHOMWWKRO0M">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDERLCWXD2BOWXBTUFG2E03PVMHNHO42JFDKUWMMKJFPQ5AFURPGTD">Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) </a></td>
+<td class="column2">1</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">5</td>
+</tr>
+</table><br><a name="IDQ3VZENWZHFOAIOK4SM4TPQFPGMP3PPTJ1LTCP1GKUWONG3E43IMB"><h2>Warnings</h2></a><a name="ID1MEJ0PQXQHWOLM5ZXT0WVKV0WOQILMIJETNNU3ELBLH1DIG2JF3G"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Zero hole size multi-layer pad(s) detected</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8339.9mil|Location2.X=8439.9mil|Location1.Y=4520mil|Location2.Y=4620mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8339.9mil|Location2.X=8439.9mil|Location1.Y=4520mil|Location2.Y=4620mil|Absolute=True">Pad P17-13(118.107mm,17.526mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3841.575mil|Location2.X=9254.606mil|Location1.Y=3959.449mil|Location2.Y=9149.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3841.575mil|Location2.X=9254.606mil|Location1.Y=3959.449mil|Location2.Y=9149.685mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7730.1mil|Location2.X=7830.1mil|Location1.Y=4520mil|Location2.Y=4620mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7730.1mil|Location2.X=7830.1mil|Location1.Y=4520mil|Location2.Y=4620mil|Absolute=True">Pad P17-16(102.619mm,17.526mm) on Multi-Layer</acronym></a> on <a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3841.575mil|Location2.X=9254.606mil|Location1.Y=3959.449mil|Location2.Y=9149.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3841.575mil|Location2.X=9254.606mil|Location1.Y=3959.449mil|Location2.Y=9149.685mil|Absolute=True">Net GND</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDPSCL3B5BESNUDBTN2R3CXCVS0M342BVRI41GXEENN0H2XYZY2JHJ"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning">Multilayer Pads with 0 size Hole found</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8339.9mil|Location2.X=8439.9mil|Location1.Y=4520mil|Location2.Y=4620mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8339.9mil|Location2.X=8439.9mil|Location1.Y=4520mil|Location2.Y=4620mil|Absolute=True">Pad P17-13(118.107mm,17.526mm) on Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7730.1mil|Location2.X=7830.1mil|Location1.Y=4520mil|Location2.Y=4620mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7730.1mil|Location2.X=7830.1mil|Location1.Y=4520mil|Location2.Y=4620mil|Absolute=True">Pad P17-16(102.619mm,17.526mm) on Multi-Layer</acronym></a></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJ4CIUX5FBLJ3H4TT5P00XRVGREAWO2G2EPVAT5JXAGHQSLVVAJ4O"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Routing Via (MinHoleWidth=0.3mm) (MaxHoleWidth=2mm) (PreferredHoleWidth=0.4mm) (MinWidth=0.6mm) (MaxWidth=1.27mm) (PreferedWidth=0.8mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5036.445mil|Location2.X=5163.555mil|Location1.Y=8226.445mil|Location2.Y=8353.555mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5036.445mil|Location2.X=5163.555mil|Location1.Y=8226.445mil|Location2.Y=8353.555mil|Absolute=True">Routing Via Style: Via (34.544mm,112.014mm) from Top Layer to Bottom Layer Actual Size : 3mm Actual Hole Size : 1.5mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDNPVXUSKTK3O3NWCBRWWANMFYYMLFDF2BGYXABHRNWGMKLEY0XFD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.254mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.15mm) (Max=0.5mm) (Prefered=0.2mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4155.351mil|Location2.X=6579.097mil|Location1.Y=4148.422mil|Location2.Y=6810.869mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4155.351mil|Location2.X=6579.097mil|Location1.Y=4148.422mil|Location2.Y=6810.869mil|Absolute=True">Differential Pairs Routing: Between Net D_P And Net D_N [Uncoupled Length = 18.361mm], [Maximum Uncoupled Length = 12.7mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8266.06mil|Location2.X=8708.94mil|Location1.Y=7881.06mil|Location2.Y=8778.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8266.06mil|Location2.X=8708.94mil|Location1.Y=7881.06mil|Location2.Y=8778.94mil|Absolute=True">Differential Pairs Routing: Between Net S1_4_P And Net S1_4_N [Uncoupled Length = 41.994mm], [Maximum Uncoupled Length = 12.7mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7551.06mil|Location2.X=8013.94mil|Location1.Y=4646.06mil|Location2.Y=5378.94mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7551.06mil|Location2.X=8013.94mil|Location1.Y=4646.06mil|Location2.Y=5378.94mil|Absolute=True">Differential Pairs Routing: Between Net TD_11_P And Net TD_11_N [Uncoupled Length = 21.062mm], [Maximum Uncoupled Length = 12.7mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDERLCWXD2BOWXBTUFG2E03PVMHNHO42JFDKUWMMKJFPQ5AFURPGTD"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) </th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4538.612mil|Location2.X=4549.862mil|Location1.Y=3889.208mil|Location2.Y=3900.458mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Projets\CERES\HW\Main Board\MAIN BOARD CERESV2-2-3.PCBDOC;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4538.612mil|Location2.X=4549.862mil|Location1.Y=3889.208mil|Location2.Y=3900.458mil|Absolute=True">Component Clearance Constraint: (Collision &lt; 0.254mm) Between Component P7-MICRO USB A/B (29.873mm,6.918mm) on Top Layer And SIP Component P6-USB A (11.65mm,28.726mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

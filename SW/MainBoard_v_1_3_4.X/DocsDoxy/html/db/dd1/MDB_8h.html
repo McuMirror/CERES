@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MAINBOARD MDI: Référence du fichier D:/Projets/CERES/SW/MainBoard_v_1_3_4.X/MDB.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../rasoftware.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MAINBOARD MDI
+   &#160;<span id="projectnumber">1.3.4</span>
+   </div>
+   <div id="projectbrief">Gestion de la centrale d&#39;une laverie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('db/dd1/MDB_8h.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Structures de données</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier D:/Projets/CERES/SW/MainBoard_v_1_3_4.X/MDB.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Header de la gestion de la chaine MDB.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;FreeRTOS.h&quot;</code><br />
+<code>#include &quot;timers.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d36/RAdefine_8h_source.html">RAdefine.h</a>&quot;</code><br />
+<code>#include &quot;TCPIP Stack/Delay.h&quot;</code><br />
+<code>#include &quot;UARTLib.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d49/global_8h_source.html">global.h</a>&quot;</code><br />
+</div>
+<p><a href="../../db/dd1/MDB_8h_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Structures de données</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/structMDBGenericDeviceConfig.html">MDBGenericDeviceConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5e/structVMCConfig.html">VMCConfig</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga734bbab06e1a9fd2e5522db0221ff6e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga734bbab06e1a9fd2e5522db0221ff6e3">BAUDRATE</a>&#160;&#160;&#160;9600</td></tr>
+<tr class="memdesc:ga734bbab06e1a9fd2e5522db0221ff6e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vitesse de transmission sériel.  <a href="../../d8/dc4/group__MDB.html#ga734bbab06e1a9fd2e5522db0221ff6e3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga734bbab06e1a9fd2e5522db0221ff6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga58a32cbb2ba02815a01abf9bcbb7f0b0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga58a32cbb2ba02815a01abf9bcbb7f0b0">CMD_BILL_POLL</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ga58a32cbb2ba02815a01abf9bcbb7f0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b34617a086655f0759fabee659b5151"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga3b34617a086655f0759fabee659b5151">CMD_BILL_TYPE</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga3b34617a086655f0759fabee659b5151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6787bfdd34b61a7b5f104ad89f565350"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga6787bfdd34b61a7b5f104ad89f565350">CMD_CHANGER_POLL</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ga6787bfdd34b61a7b5f104ad89f565350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43a20b07c050b7f9b541dd8c01fe98c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga43a20b07c050b7f9b541dd8c01fe98c5">CMD_COIN_TYPE</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga43a20b07c050b7f9b541dd8c01fe98c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga55ce960e81dfc17efd4f2b0fcf861e9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga55ce960e81dfc17efd4f2b0fcf861e9a">CMD_DISPENSE</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:ga55ce960e81dfc17efd4f2b0fcf861e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae19200b59ecf037dbe0df6648bd92333"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gae19200b59ecf037dbe0df6648bd92333">CMD_ESCROW</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:gae19200b59ecf037dbe0df6648bd92333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabccb5bd516f4e2faf120a9ecf4ad369b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gabccb5bd516f4e2faf120a9ecf4ad369b">CMD_EXPANSION</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="separator:gabccb5bd516f4e2faf120a9ecf4ad369b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga62e141c4fa7519e87bbdab4ce4c7afda"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga62e141c4fa7519e87bbdab4ce4c7afda">CMD_NO_PENDING</a>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="separator:ga62e141c4fa7519e87bbdab4ce4c7afda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga202f77f2589f867159190a589a3e0ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga202f77f2589f867159190a589a3e0ca4">CMD_POLL</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga202f77f2589f867159190a589a3e0ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8d3da971e16c99a0b99803629747e151"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga8d3da971e16c99a0b99803629747e151">CMD_READER</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga8d3da971e16c99a0b99803629747e151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafe1dd8546b0a8cd30b19a0229205c8df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gafe1dd8546b0a8cd30b19a0229205c8df">CMD_RESET</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:gafe1dd8546b0a8cd30b19a0229205c8df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad6dd15091a078f2cb29e4577cda0fe73"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gad6dd15091a078f2cb29e4577cda0fe73">CMD_REVALUE</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:gad6dd15091a078f2cb29e4577cda0fe73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga94075f971f561a9747925e1ab896c3d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga94075f971f561a9747925e1ab896c3d1">CMD_SECURITY</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga94075f971f561a9747925e1ab896c3d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21e192bfe1077874a2d97679ea7c3f9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga21e192bfe1077874a2d97679ea7c3f9a">CMD_SETUP</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga21e192bfe1077874a2d97679ea7c3f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2bab35b5c2cd101d08e47b9c16efd9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gab2bab35b5c2cd101d08e47b9c16efd9c">CMD_STACKER</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="separator:gab2bab35b5c2cd101d08e47b9c16efd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25e21625c1e6a3d5fefce646e33344e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga25e21625c1e6a3d5fefce646e33344e8">CMD_STATUS</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga25e21625c1e6a3d5fefce646e33344e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4a5fc3f5dc733ea8ddd39388b0df4c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gad4a5fc3f5dc733ea8ddd39388b0df4c4">CMD_TUBE_STATUS</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:gad4a5fc3f5dc733ea8ddd39388b0df4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77ac7921aaa8702214ef26adf652b530"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga77ac7921aaa8702214ef26adf652b530">CMD_VEND</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ga77ac7921aaa8702214ef26adf652b530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99e031c1b54ae37de16ada3a471226ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga99e031c1b54ae37de16ada3a471226ad">MAXCASHCHANNELS</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:ga99e031c1b54ae37de16ada3a471226ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre maximum de canaux pour le changer et le lecteur de billet.  <a href="../../d8/dc4/group__MDB.html#ga99e031c1b54ae37de16ada3a471226ad">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga99e031c1b54ae37de16ada3a471226ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2c4e135cc8b5c477af67b4ea226ceabc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga2c4e135cc8b5c477af67b4ea226ceabc">MDB_TO</a>&#160;&#160;&#160;100 * <a class="el" href="../../d5/d36/RAdefine_8h.html#a13c2acf58db9164b3df26351d2ce9e10">MILLISEC</a></td></tr>
+<tr class="memdesc:ga2c4e135cc8b5c477af67b4ea226ceabc"><td class="mdescLeft">&#160;</td><td class="mdescRight">delay mamixmum de réponse du CL  <a href="../../d8/dc4/group__MDB.html#ga2c4e135cc8b5c477af67b4ea226ceabc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga2c4e135cc8b5c477af67b4ea226ceabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7b4e3616d426d64746047f0fc275e68c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga7b4e3616d426d64746047f0fc275e68c">MDBPOLLINMS</a>&#160;&#160;&#160;(400 * <a class="el" href="../../d5/d36/RAdefine_8h.html#a13c2acf58db9164b3df26351d2ce9e10">MILLISEC</a>)</td></tr>
+<tr class="memdesc:ga7b4e3616d426d64746047f0fc275e68c"><td class="mdescLeft">&#160;</td><td class="mdescRight">temps de polling en ms du lecteur cashless.  <a href="../../d8/dc4/group__MDB.html#ga7b4e3616d426d64746047f0fc275e68c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga7b4e3616d426d64746047f0fc275e68c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa6c321ffb73b63ebe67df76ff858065a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaa6c321ffb73b63ebe67df76ff858065a">MDBRETRY</a>&#160;&#160;&#160;((60 * <a class="el" href="../../d5/d36/RAdefine_8h.html#a0e7ac8fd7194adef4798d0d563502c18">SECONDE</a>) / <a class="el" href="../../d8/dc4/group__MDB.html#ga7b4e3616d426d64746047f0fc275e68c">MDBPOLLINMS</a>)</td></tr>
+<tr class="memdesc:gaa6c321ffb73b63ebe67df76ff858065a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nombre de loop avant de vérifier si un périphérique est disponible.  <a href="../../d8/dc4/group__MDB.html#gaa6c321ffb73b63ebe67df76ff858065a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaa6c321ffb73b63ebe67df76ff858065a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba78564e39c25931ae4337732436b430"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc6/group__MDB__ANSWER.html#gaba78564e39c25931ae4337732436b430">RSP_ACK</a>&#160;&#160;&#160;0X00</td></tr>
+<tr class="memdesc:gaba78564e39c25931ae4337732436b430"><td class="mdescLeft">&#160;</td><td class="mdescRight">acknowledgment/checksum correct  <a href="../../d2/dc6/group__MDB__ANSWER.html#gaba78564e39c25931ae4337732436b430">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaba78564e39c25931ae4337732436b430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3f9a3c5dbbb15727218b1865d4b9e75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc6/group__MDB__ANSWER.html#gaa3f9a3c5dbbb15727218b1865d4b9e75">RSP_NAK</a>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="memdesc:gaa3f9a3c5dbbb15727218b1865d4b9e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Negative acknowledge.  <a href="../../d2/dc6/group__MDB__ANSWER.html#gaa3f9a3c5dbbb15727218b1865d4b9e75">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaa3f9a3c5dbbb15727218b1865d4b9e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf9df7eeedb4d0e53392ea7db7fd44a3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc6/group__MDB__ANSWER.html#gaf9df7eeedb4d0e53392ea7db7fd44a3d">RSP_RET</a>&#160;&#160;&#160;0xAA</td></tr>
+<tr class="memdesc:gaf9df7eeedb4d0e53392ea7db7fd44a3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retransmit the previously sent data. Only the VMC can transmit this byte.  <a href="../../d2/dc6/group__MDB__ANSWER.html#gaf9df7eeedb4d0e53392ea7db7fd44a3d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf9df7eeedb4d0e53392ea7db7fd44a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb8fc06b6da22fdb9c918ab42c92015c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaeb8fc06b6da22fdb9c918ab42c92015c">SUB_ALT_PAYOUT_STATUS</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:gaeb8fc06b6da22fdb9c918ab42c92015c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga90711ba60381fb9e3bbf2b2e47a1703c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga90711ba60381fb9e3bbf2b2e47a1703c">SUB_ALTERNATIVE_PAYOUT</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga90711ba60381fb9e3bbf2b2e47a1703c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab24780b14431c525c62da942f67afb27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gab24780b14431c525c62da942f67afb27">SUB_BILL_FEATURE_ENABLE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:gab24780b14431c525c62da942f67afb27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4c44d80e35e6c380fbb8200b489d97d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gae4c44d80e35e6c380fbb8200b489d97d">SUB_CHANGER_FEATURE_ENABLE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:gae4c44d80e35e6c380fbb8200b489d97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c373ef3a992fb05f50d571c6002edbc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga6c373ef3a992fb05f50d571c6002edbc">SUB_CHANGER_IDENTIFICATION</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:ga6c373ef3a992fb05f50d571c6002edbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga72269bf4856eb5c8282089da4467b47d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga72269bf4856eb5c8282089da4467b47d">SUB_CONFIG_DATA</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:ga72269bf4856eb5c8282089da4467b47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga576bb731fb67d24e4492d4bd1ac96354"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga576bb731fb67d24e4492d4bd1ac96354">SUB_DIAGNOSTIC_STATUS</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:ga576bb731fb67d24e4492d4bd1ac96354"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04f3335d4d6f2a8003fd58cf03b3af10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga04f3335d4d6f2a8003fd58cf03b3af10">SUB_DIAGNOSTICS</a>&#160;&#160;&#160;0xFF</td></tr>
+<tr class="separator:ga04f3335d4d6f2a8003fd58cf03b3af10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga60e20dc8276e5b10aafdd190520295e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga60e20dc8276e5b10aafdd190520295e8">SUB_FEATURE_ENABLE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga60e20dc8276e5b10aafdd190520295e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac8080899e8ed499f4342a2677f3a96bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gac8080899e8ed499f4342a2677f3a96bc">SUB_FTL_OK_TO_SEND</a>&#160;&#160;&#160;0xFD</td></tr>
+<tr class="separator:gac8080899e8ed499f4342a2677f3a96bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ce7c197f87736efc62a4c3bcdad8906"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga8ce7c197f87736efc62a4c3bcdad8906">SUB_FTL_REQ_TO_RCV</a>&#160;&#160;&#160;0xFA</td></tr>
+<tr class="separator:ga8ce7c197f87736efc62a4c3bcdad8906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d1d5d68eaf63e341257bea10cb39257"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga6d1d5d68eaf63e341257bea10cb39257">SUB_FTL_REQ_TO_SEND</a>&#160;&#160;&#160;0xFE</td></tr>
+<tr class="separator:ga6d1d5d68eaf63e341257bea10cb39257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0df2938c85e04f2ff99a5c5ef672a13c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga0df2938c85e04f2ff99a5c5ef672a13c">SUB_FTL_RETRY_DENY</a>&#160;&#160;&#160;0xFB</td></tr>
+<tr class="separator:ga0df2938c85e04f2ff99a5c5ef672a13c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae3c680e3e7e95205f8498dbd36cc0522"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gae3c680e3e7e95205f8498dbd36cc0522">SUB_FTL_SEND_BLOCK</a>&#160;&#160;&#160;0xFC</td></tr>
+<tr class="separator:gae3c680e3e7e95205f8498dbd36cc0522"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8339eff86b48a6ef89c894efab84b4e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga8339eff86b48a6ef89c894efab84b4e6">SUB_IDENTIFICATION</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:ga8339eff86b48a6ef89c894efab84b4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeb01c6afa5c34f9ee25128f208adb62d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaeb01c6afa5c34f9ee25128f208adb62d">SUB_IDENTIFICATION_2</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:gaeb01c6afa5c34f9ee25128f208adb62d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79426f2d93ca7c09e7bfccf427abc647"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga79426f2d93ca7c09e7bfccf427abc647">SUB_MANUAL_FILL_REPORT</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="separator:ga79426f2d93ca7c09e7bfccf427abc647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9416b4ffbf3bd18cd4d633099a9af10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaa9416b4ffbf3bd18cd4d633099a9af10">SUB_MANUAL_PAYOUT_REPORT</a>&#160;&#160;&#160;0x07</td></tr>
+<tr class="separator:gaa9416b4ffbf3bd18cd4d633099a9af10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36a9dcd1d5e3ff897fd6be34a04168a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga36a9dcd1d5e3ff897fd6be34a04168a0">SUB_MAX_MIN_PRICE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga36a9dcd1d5e3ff897fd6be34a04168a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1277e875502ea33fd31090c3fb333e9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga1277e875502ea33fd31090c3fb333e9f">SUB_NEGATIVE_VEND_REQUEST</a>&#160;&#160;&#160;0x06</td></tr>
+<tr class="separator:ga1277e875502ea33fd31090c3fb333e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac3201b3306ad18717b0fb7f38ac6c40"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaac3201b3306ad18717b0fb7f38ac6c40">SUB_PAYOUT_VALUE_POLL</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:gaac3201b3306ad18717b0fb7f38ac6c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b6aa469454a923a1b52bd70c0331c4e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga4b6aa469454a923a1b52bd70c0331c4e">SUB_READ_USER_FILE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga4b6aa469454a923a1b52bd70c0331c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bcb0e58080b244a6751a1c3e22083a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga8bcb0e58080b244a6751a1c3e22083a1">SUB_READER_CANCEL</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga8bcb0e58080b244a6751a1c3e22083a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22e0312559003d3d5c9789f60361460d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga22e0312559003d3d5c9789f60361460d">SUB_READER_DISABLE</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:ga22e0312559003d3d5c9789f60361460d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad49259513d3b42a2490da20f7c2c110a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gad49259513d3b42a2490da20f7c2c110a">SUB_READER_ENABLE</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:gad49259513d3b42a2490da20f7c2c110a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c1f62ded7279127eb7b88f3c41ea1dc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga1c1f62ded7279127eb7b88f3c41ea1dc">SUB_READER_FEATURE_ENABLE</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga1c1f62ded7279127eb7b88f3c41ea1dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb1215ad310f1be2849a39b2a7fab79e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gacb1215ad310f1be2849a39b2a7fab79e">SUB_REQUEST_ID</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:gacb1215ad310f1be2849a39b2a7fab79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa04ddbbf9753e152c6c2c7a4807ba0d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaa04ddbbf9753e152c6c2c7a4807ba0d8">SUB_REVALUE_LIMIT_REQUEST</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:gaa04ddbbf9753e152c6c2c7a4807ba0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaaf68ee27761b9cc5769bcee61f7e4f50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaaf68ee27761b9cc5769bcee61f7e4f50">SUB_REVALUE_REQUEST</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:gaaf68ee27761b9cc5769bcee61f7e4f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0024904196ad1d408c8d85c8def365c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga0024904196ad1d408c8d85c8def365c0">SUB_VEND_CANCEL</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="separator:ga0024904196ad1d408c8d85c8def365c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f40fb40e7ec200ddf207522e82e8bfb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga1f40fb40e7ec200ddf207522e82e8bfb">SUB_VEND_CASH_SALE</a>&#160;&#160;&#160;0x05</td></tr>
+<tr class="separator:ga1f40fb40e7ec200ddf207522e82e8bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ee039d9fb076dbee2164c391c016950"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga5ee039d9fb076dbee2164c391c016950">SUB_VEND_FAILURE</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ga5ee039d9fb076dbee2164c391c016950"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga283139c5f414e791df37086a804568e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga283139c5f414e791df37086a804568e6">SUB_VEND_REQUEST</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="separator:ga283139c5f414e791df37086a804568e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7eabe4054825c479ec49d6c80e58ec83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga7eabe4054825c479ec49d6c80e58ec83">SUB_VEND_SESSION_COMPLETE</a>&#160;&#160;&#160;0x04</td></tr>
+<tr class="separator:ga7eabe4054825c479ec49d6c80e58ec83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae99e42d8b0c3982c56b9117e4b82b475"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gae99e42d8b0c3982c56b9117e4b82b475">SUB_VEND_SUCCESS</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:gae99e42d8b0c3982c56b9117e4b82b475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8fb0c1577e00a44c983c676aba23ac90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga8fb0c1577e00a44c983c676aba23ac90">SUB_WRITE_TIME_DATE</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="separator:ga8fb0c1577e00a44c983c676aba23ac90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga80a09a4f4c21d9fb067b841f25190775"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga80a09a4f4c21d9fb067b841f25190775">SUB_WRITE_USER_FILE</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="separator:ga80a09a4f4c21d9fb067b841f25190775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:gabb8db427f6005997c264d86438ac4ced"><td class="memItemLeft" align="right" valign="top">BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gabb8db427f6005997c264d86438ac4ced">byMDBPoll</a> (const BYTE byDeviceAddress, BYTE *byResponse)</td></tr>
+<tr class="memdesc:gabb8db427f6005997c264d86438ac4ced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction utilisée pour obtenir des informations sur le périphérique.  <a href="../../d8/dc4/group__MDB.html#gabb8db427f6005997c264d86438ac4ced">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gabb8db427f6005997c264d86438ac4ced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga57024a6254a2feaa35799152e1563114"><td class="memItemLeft" align="right" valign="top">BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga57024a6254a2feaa35799152e1563114">byMDBSendCommand</a> (const BYTE byAddress, const BYTE byCommand, BYTE byLenParameters, void *ptrParameters, void *ptrAnswer)</td></tr>
+<tr class="memdesc:ga57024a6254a2feaa35799152e1563114"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envoie une instruction MDB au périphérique.  <a href="../../d8/dc4/group__MDB.html#ga57024a6254a2feaa35799152e1563114">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga57024a6254a2feaa35799152e1563114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga78e7f326720dea6d477a04a689160cd4"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga78e7f326720dea6d477a04a689160cd4">dwGetMaxReturn</a> (void)</td></tr>
+<tr class="separator:ga78e7f326720dea6d477a04a689160cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafa32690fbf44accbb31b1d1da5513d1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gafa32690fbf44accbb31b1d1da5513d1f">InitMDB</a> (const UART_MODULE port)</td></tr>
+<tr class="memdesc:gafa32690fbf44accbb31b1d1da5513d1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction d'intialisation du port MDB.  <a href="../../d8/dc4/group__MDB.html#gafa32690fbf44accbb31b1d1da5513d1f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gafa32690fbf44accbb31b1d1da5513d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5b6f7850c6e1b5b8375ea25add92d5b5"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga5b6f7850c6e1b5b8375ea25add92d5b5">isMDBReset</a> (const BYTE byDeviceAddress)</td></tr>
+<tr class="memdesc:ga5b6f7850c6e1b5b8375ea25add92d5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-reset the device.  <a href="../../d8/dc4/group__MDB.html#ga5b6f7850c6e1b5b8375ea25add92d5b5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga5b6f7850c6e1b5b8375ea25add92d5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fcadcc79a4c6cc6b9b018ae1ada927a"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga9fcadcc79a4c6cc6b9b018ae1ada927a">isMDBSetupConfig</a> (const BYTE byDeviceAddress, void *byStatus, const BYTE byLen)</td></tr>
+<tr class="separator:ga9fcadcc79a4c6cc6b9b018ae1ada927a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab6a2e883822c99999f2e7e80464a164"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaab6a2e883822c99999f2e7e80464a164">vVMCAcknowledge</a> (const BYTE byAcknowledge)</td></tr>
+<tr class="memdesc:gaab6a2e883822c99999f2e7e80464a164"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envoi un ACK ou un RSP_NAK à partir de la VMC.  <a href="../../d8/dc4/group__MDB.html#gaab6a2e883822c99999f2e7e80464a164">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaab6a2e883822c99999f2e7e80464a164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef808b712f5f7609c6a50062b94ac304"><td class="memItemLeft" align="right" valign="top">WORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaef808b712f5f7609c6a50062b94ac304">wDecimalDivider</a> (BYTE byDecimal)</td></tr>
+<tr class="separator:gaef808b712f5f7609c6a50062b94ac304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gacbb3e7813ba037f790468e06b7bed072"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gacbb3e7813ba037f790468e06b7bed072">dwMaxReturn</a></td></tr>
+<tr class="separator:gacbb3e7813ba037f790468e06b7bed072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d45c25e5873fd193731c96ce204075b"><td class="memItemLeft" align="right" valign="top">SemaphoreHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga9d45c25e5873fd193731c96ce204075b">hSemaphoreChange</a></td></tr>
+<tr class="memdesc:ga9d45c25e5873fd193731c96ce204075b"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle du semaphore autoisant le change  <a href="../../d8/dc4/group__MDB.html#ga9d45c25e5873fd193731c96ce204075b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga9d45c25e5873fd193731c96ce204075b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf3b4c690ff3b92096c3f016d482345bb"><td class="memItemLeft" align="right" valign="top">SemaphoreHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaf3b4c690ff3b92096c3f016d482345bb">hSemaphoreMDB</a></td></tr>
+<tr class="memdesc:gaf3b4c690ff3b92096c3f016d482345bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle du semaphore MDB.  <a href="../../d8/dc4/group__MDB.html#gaf3b4c690ff3b92096c3f016d482345bb">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf3b4c690ff3b92096c3f016d482345bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12a3ef249ebdbba4e33d2366ee69be16"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">isNAKMDB</a></td></tr>
+<tr class="memdesc:ga12a3ef249ebdbba4e33d2366ee69be16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique le TO pour la réponse du périphérique MDB est atteint.  <a href="../../d8/dc4/group__MDB.html#ga12a3ef249ebdbba4e33d2366ee69be16">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga12a3ef249ebdbba4e33d2366ee69be16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e9bb5538a82ae699c11900393e8b78f"><td class="memItemLeft" align="right" valign="top">UART_MODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">MDBUART</a></td></tr>
+<tr class="memdesc:ga6e9bb5538a82ae699c11900393e8b78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port MDB.  <a href="../../d8/dc4/group__MDB.html#ga6e9bb5538a82ae699c11900393e8b78f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga6e9bb5538a82ae699c11900393e8b78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga27e38f7efa5daed9824353678297c6fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d5e/structVMCConfig.html">VMCConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga27e38f7efa5daed9824353678297c6fd">vmcConfig</a></td></tr>
+<tr class="separator:ga27e38f7efa5daed9824353678297c6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab62dee48287bf65faa88f20d21747c4"><td class="memItemLeft" align="right" valign="top">WORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#gaab62dee48287bf65faa88f20d21747c4">wKeyAmountMax</a></td></tr>
+<tr class="memdesc:gaab62dee48287bf65faa88f20d21747c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Montant maximum pouvant être contenu dans une clé.  <a href="../../d8/dc4/group__MDB.html#gaab62dee48287bf65faa88f20d21747c4">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaab62dee48287bf65faa88f20d21747c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0185298c0314b8b9a49f1cfc2a606bee"><td class="memItemLeft" align="right" valign="top">TimerHandle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc4/group__MDB.html#ga0185298c0314b8b9a49f1cfc2a606bee">xTimerMDBNAK</a></td></tr>
+<tr class="memdesc:ga0185298c0314b8b9a49f1cfc2a606bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle du timer utilisé pour le TO de la réponse d'un périphérique MDB.  <a href="../../d8/dc4/group__MDB.html#ga0185298c0314b8b9a49f1cfc2a606bee">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga0185298c0314b8b9a49f1cfc2a606bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Header de la gestion de la chaine MDB. </p>
+<hr/>
+<dl class="section date"><dt>Date</dt><dd>2013.11.30 </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Rachid AKKOUCHE </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="../../db/dd1/MDB_8h_source.html">MDB.h</a>.</p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<hr class="footer"/><address class="footer"><small>MAINBOARD MDI 1.3.4 documentation by&#160;
+<a href="http://www.rasoftware.fr"> 
+<img class="footer" src="rasoftware.jpg" alt="www.rasoftware"/></a></small></address> 
+</body> 
+</html> 

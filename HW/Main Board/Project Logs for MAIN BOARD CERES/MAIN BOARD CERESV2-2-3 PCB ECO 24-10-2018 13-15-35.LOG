@@ -1,0 +1,15 @@
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C21-1
+Added Pin To Net: NetName=GND Pin=D18-1
+Added Pin To Net: NetName=GND Pin=R82-2
+Added Pin To Net: NetName=GND Pin=U4-6
+Added Pin To Net: NetName=NetV3_1 Pin=V3-1
+Added Member To Class: ClassName=C8_Nets Member=Wire GND
+Added Member To Class: ClassName=C9_Nets Member=Wire GND
+Added Member To Class: ClassName=C10_Nets Member=Wire GND
+Added Member To Class: ClassName=C21_Nets Member=Wire GND
+Added Member To Class: ClassName=D18_Nets Member=Wire GND
+Added Member To Class: ClassName=R82_Nets Member=Wire GND
+Added Member To Class: ClassName=U4_Nets Member=Wire GND

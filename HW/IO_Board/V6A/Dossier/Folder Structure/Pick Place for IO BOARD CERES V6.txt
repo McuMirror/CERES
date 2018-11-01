@@ -1,0 +1,72 @@
+Altium Designer Pick and Place Locations
+D:\Projets\CERES\HW\IO_Board\V6\Dossier\Folder Structure\Pick Place for IO BOARD CERES V6.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       20/06/18
+Time:       19:45
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+Designator Comment               Layer    Footprint        Center-X(mm) Center-Y(mm) Rotation Description                                              
+D8         MAIN                  TopLayer 0603-LEDV        56.7690      50.4190      0        "Surface Mount Chip GREEN"                               
+C2         10uF                  TopLayer C0805            54.6100      85.5980      270      Capacitor                                                
+C10        1nF                   TopLayer C0805            33.4010      65.1510      360      Capacitor                                                
+C9         100nF                 TopLayer C0805            33.4010      67.6910      180      Capacitor                                                
+R1         "1.5K 1/2W"           TopLayer 1206_-_2010      30.3530      84.2010      180      Resistor                                                 
+V4         VIS                   TopLayer VIS42            56.2610      93.8530      0        ""                                                       
+V3         VIS                   TopLayer VIS42            77.2160      35.3060      0        ""                                                       
+V2         VIS                   TopLayer VIS42            5.8420       51.0540      0        ""                                                       
+V1         VIS                   TopLayer VIS42            77.0890      4.8260       0        ""                                                       
+P11        RJ45                  TopLayer RJ45_8-5406721-1 72.1539      61.5142      180      "Header, 8-Pin"                                          
+P10        RJ45                  TopLayer RJ45_8-5406721-1 72.1569      84.8472      180      "Header, 8-Pin"                                          
+P1         "Header 7"            TopLayer CO7P508-90       16.6160      75.9591      270      "Header, 7-Pin"                                          
+U5         ADM4851ARZ            TopLayer SOIC8            50.5298      60.9546      0        "Low-Power, Slew-Rate-Limited RS-485/RS-422 Transceiver" 
+R20        120                   TopLayer R0805            64.3890      80.7720      90       Resistor                                                 
+R19        1M                    TopLayer R0805            56.2238      64.5236      270      Resistor                                                 
+R18        1K                    TopLayer R0805            45.0478      60.9676      90       Resistor                                                 
+R3         56K                   TopLayer R0805            53.4460      23.3810      270      Resistor                                                 
+Q1         2N7002                TopLayer SOT23            56.6210      23.3810      360      "N-channel Enhancement Mode Field-effect Transistor"     
+D9         HSMH-C190             TopLayer 0603-LEDR        59.4150      11.1891      270      "Surface Mount Chip LED, Red"                            
+D7         HSMH-C190             TopLayer 0603-LEDR        56.7480      48.1461      360      "Surface Mount Chip LED, Red"                            
+D6         BAT54S                TopLayer SOT23            50.5250      23.3810      360      "Schottky Barrier Double Diode"                          
+C8         100nF                 TopLayer C0805            50.5088      65.1586      180      Capacitor                                                
+C7         100uF                 TopLayer KEMET_63         62.9920      26.1620      180      "Polarized Capacitor"                                    
+R14        270                   TopLayer R0805            61.4470      11.1891      270      Resistor                                                 
+R13        220                   TopLayer R0805            66.4000      51.4481      270      Resistor                                                 
+C1         150nF                 TopLayer C1210            23.7490      87.7570      360      Capacitor                                                
+C4         100nF                 TopLayer C0805            63.2460      35.5600      180      Capacitor                                                
+C5         100nF                 TopLayer C0805            43.9210      54.2421      360      Capacitor                                                
+D1         BZG03C12              TopLayer SMA              37.4650      85.4710      90       ""                                                       
+D2         BAT54S                TopLayer SOT23            43.0530      83.1850      360      "Schottky Barrier Double Diode"                          
+D5         HSMH-C190             TopLayer 0603-LEDR        50.5250      27.6991      90       "Surface Mount Chip LED, Red"                            
+K1         "RELAY NAISJS"        TopLayer RELAIG5L         35.6782      36.0811      180      ""                                                       
+P2         "Header 8"            TopLayer CO8P508_-_90°    16.6000      23.3500      270      "Header, 8-Pin"                                          
+R2         1K                    TopLayer R0805            41.1480      87.5030      360      Resistor                                                 
+R5         56K                   TopLayer R0805            56.6210      26.1751      360      Resistor                                                 
+R7         1K                    TopLayer R0805            52.6840      27.6991      90       Resistor                                                 
+R8         56K                   TopLayer R0805            43.9210      52.3371      180      Resistor                                                 
+R9         56K                   TopLayer R0805            43.9210      50.3051      180      Resistor                                                 
+R10        56K                   TopLayer R0805            53.4460      10.8081      270      Resistor                                                 
+R11        56K                   TopLayer R0805            43.9420      46.8761      180      Resistor                                                 
+R12        220                   TopLayer R0805            66.4000      48.1461      270      Resistor                                                 
+U3         PIC16F1824            TopLayer SO-14            50.5250      50.6861      360      "14 Pin Flash Microcontrollers with XLP Technology"      
+U4         LM1117DT-5.0          TopLayer SOT223           62.5900      18.5420      90       "800mA Low-Dropout Linear Regulator, 3-pin TO-252"       
+C6         10uF                  TopLayer KEMET_4          65.7650      11.1891      360      "Polarized Capacitor"                                    
+R15        1M                    TopLayer R0805            56.2400      57.4171      270      Resistor                                                 
+R16        56                    TopLayer R0805            57.2398      59.9516      360      Resistor                                                 
+R17        56                    TopLayer R0805            57.2398      61.9836      360      Resistor                                                 
+U1         HCPL-181              TopLayer OPTO-4PIN        49.1490      85.5980      360      "4-Pin Phototransistor Optocoupler"                      
+D10        HSMH-C190             TopLayer 0603-LEDR        50.5250      14.4911      90       "Surface Mount Chip LED, Red"                            
+D11        BAT54S                TopLayer SOT23            50.5250      10.8081      0        "Schottky Barrier Double Diode"                          
+K2         "RELAY NAISJS"        TopLayer RELAIG5L         35.6782      11.6971      180      ""                                                       
+Q2         2N7002                TopLayer SOT23            56.6210      10.8081      0        "N-channel Enhancement Mode Field-effect Transistor"     
+R21        56K                   TopLayer R0805            56.6210      13.6021      360      Resistor                                                 
+R22        1K                    TopLayer R0805            34.0150      23.6351      180      Resistor                                                 
+R23        1K                    TopLayer R0805            52.6840      14.4911      90       Resistor                                                 
+P5         CLR                   TopLayer M20_1X2          50.5298      38.8620      180      "Header, 2-Pin"                                          
+P8         "EIA-485 TERMINAISON" TopLayer M20_1X2          60.7060      82.9310      180      "Header, 2-Pin"                                          
+R24        1M                    TopLayer R1206            23.7490      84.2010      180      Resistor                                                 
+U2         ACS712                TopLayer SOIC8            27.9400      65.7991      0        "HALL EFFECT CURRENT SENSOR"                             

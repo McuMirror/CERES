@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="dist/Debug/production/MainBoard_v_1_2_18.X.production.elf">                 
+    <memory name="program">                 
+      <units>bytes</units>                 
+      <length>531968</length>                 
+      <used>441292</used>                     
+      <free>90676</free>                     
+    </memory>                              
+    <memory name="data">              
+      <units>bytes</units>                 
+      <length>131072</length>                 
+      <used>115182</used>                     
+      <free>15890</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 

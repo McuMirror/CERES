@@ -1,0 +1,12 @@
+//  Microchip MPLAB C32 C, -si4 -sp4, 
+//  Standard lint options
+
+
+co-pic32.lnt
+
+options.lnt  -si4 -sp4
+-e322
+-i"C:\Program Files (x86)\Microchip\xc32\v1.31\pic32mx\include"
++libdir("C:\Program Files (x86)\Microchip\xc32\v1.31\pic32mx\include")
+-iG:\FreeRTOS\Source\include
+

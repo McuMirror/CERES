@@ -1,0 +1,914 @@
+\hypertarget{main_8h}{}\section{D\+:/\+Projets/\+C\+E\+R\+E\+S/\+S\+W/\+Main\+Board.X/main.h File Reference}
+\label{main_8h}\index{D\+:/\+Projets/\+C\+E\+R\+E\+S/\+S\+W/\+Main\+Board.\+X/main.\+h@{D\+:/\+Projets/\+C\+E\+R\+E\+S/\+S\+W/\+Main\+Board.\+X/main.\+h}}
+{\ttfamily \#include $<$plib.\+h$>$}\\*
+{\ttfamily \#include $<$Generic\+Type\+Defs.\+h$>$}\\*
+{\ttfamily \#include $<$limits.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Free\+R\+T\+O\+S\+Config.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$Free\+Rtos.\+h$>$}\\*
+{\ttfamily \#include $<$task.\+h$>$}\\*
+{\ttfamily \#include $<$queue.\+h$>$}\\*
+{\ttfamily \#include $<$semphr.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}R\+Adefine.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}M\+D\+B.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mdb\+\_\+bv.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mdb\+\_\+cg.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}commun.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mdb\+\_\+cl.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}textes.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}parametres.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lcd4u.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I2\+C\+E2\+P\+R\+O\+M\+L.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\+A\+R\+T\+Lib.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Hex\+Keyboard.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}satellites.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}datetime.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}code.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\+S\+B/usb.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\+S\+B/usb\+\_\+host\+\_\+msd.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}U\+S\+B/usb\+\_\+host\+\_\+msd\+\_\+scsi.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}M\+D\+D File System/\+F\+S\+I\+O.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\+C\+P\+I\+P Stack/\+T\+C\+P\+I\+P.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\+C\+P\+I\+P Stack/\+Delay.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8h_a7911d78f12628bb492bbc4753c79106c}{}\#define \hyperlink{main_8h_a7911d78f12628bb492bbc4753c79106c}{D\+E\+L\+A\+Y\+R\+E\+S\+E\+T}~500\label{main_8h_a7911d78f12628bb492bbc4753c79106c}
+
+\begin{DoxyCompactList}\small\item\em delai pour la prise en compte du clavier et M\+D\+B \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a574e12d7c418726eba9576b7dfdb8ebe}{}\#define \hyperlink{main_8h_a574e12d7c418726eba9576b7dfdb8ebe}{P\+O\+L\+L\+R\+S485}~(150 $\ast$ M\+I\+L\+L\+I\+S\+E\+C)\label{main_8h_a574e12d7c418726eba9576b7dfdb8ebe}
+
+\begin{DoxyCompactList}\small\item\em Intervalle entre le début de chaque vérification d\textquotesingle{}un satellite. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a0d8bf9d7635ca07934bca3ab1359a6c1}{}\#define \hyperlink{main_8h_a0d8bf9d7635ca07934bca3ab1359a6c1}{P\+U\+L\+S\+E\+\_\+\+R\+T\+O\+S}~(250 $\ast$ M\+I\+L\+L\+I\+S\+E\+C)\label{main_8h_a0d8bf9d7635ca07934bca3ab1359a6c1}
+
+\begin{DoxyCompactList}\small\item\em Intervalle entre chaque inversion de la led. Ce battement indique le fonctionnement du R\+T\+O\+S en mode utilisateur. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aeb1a843c38e559d606607f41c55dc72a}{}\#define \hyperlink{main_8h_aeb1a843c38e559d606607f41c55dc72a}{D\+E\+L\+A\+Y\+\_\+\+C\+H\+K\+\_\+\+K\+B\+D}~(10 $\ast$ M\+I\+L\+L\+I\+S\+E\+C)\label{main_8h_aeb1a843c38e559d606607f41c55dc72a}
+
+\begin{DoxyCompactList}\small\item\em délai entre chaque vérification du clavier \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a7f71e224f109361103b5ef19aaab39f6}{}\#define \hyperlink{main_8h_a7f71e224f109361103b5ef19aaab39f6}{D\+I\+S\+P\+L\+A\+Y\+T\+I\+M\+E\+D\+E\+L\+A\+Y}~(500 $\ast$ M\+I\+L\+L\+I\+S\+E\+C)\label{main_8h_a7f71e224f109361103b5ef19aaab39f6}
+
+\begin{DoxyCompactList}\small\item\em Delai entre chaque rafraichissement de l\textquotesingle{}heure affichée. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a965dd619507afd42109c162f82544b3c}{}\#define \hyperlink{main_8h_a965dd619507afd42109c162f82544b3c}{P\+R\+E\+D\+E\+L\+A\+Y\+F\+L\+I\+P}~(1000 $\ast$ M\+I\+L\+L\+I\+S\+E\+C)\label{main_8h_a965dd619507afd42109c162f82544b3c}
+
+\begin{DoxyCompactList}\small\item\em Délai avant que le flip ne soit opérationnel. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_af7b5bf429d5de7cd41414b8f7ee8c8dc}{}\#define \hyperlink{main_8h_af7b5bf429d5de7cd41414b8f7ee8c8dc}{T\+O\+B\+U\+Z\+Z\+E\+R}~(250 $\ast$ M\+I\+L\+L\+I\+S\+E\+C)\label{main_8h_af7b5bf429d5de7cd41414b8f7ee8c8dc}
+
+\begin{DoxyCompactList}\small\item\em Délai de buzzer. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a82162ec0e51ffa5868ed45f7cb417013}{}\#define \hyperlink{main_8h_a82162ec0e51ffa5868ed45f7cb417013}{C\+H\+E\+C\+K\+U\+S\+B}~(100 $\ast$ M\+I\+L\+L\+I\+S\+E\+C)\label{main_8h_a82162ec0e51ffa5868ed45f7cb417013}
+
+\begin{DoxyCompactList}\small\item\em Delai entre chaque vérification d\textquotesingle{}une présence de clé U\+S\+B. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a145103118f6d9d1129aa4509cf214a13}{}\#define \hyperlink{main_8h_a145103118f6d9d1129aa4509cf214a13}{B\+U\+Z\+Z\+E\+R}~I\+O\+P\+O\+R\+T\+\_\+\+D, B\+I\+T\+\_\+0\label{main_8h_a145103118f6d9d1129aa4509cf214a13}
+
+\begin{DoxyCompactList}\small\item\em Port du buzzer. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ab979879a25a64d50a99d8d9f26e4798f}{}\#define \hyperlink{main_8h_ab979879a25a64d50a99d8d9f26e4798f}{O\+N\+B\+O\+A\+R\+D\+B\+U\+T\+T\+O\+N}~I\+O\+P\+O\+R\+T\+\_\+\+B, B\+I\+T\+\_\+4\label{main_8h_ab979879a25a64d50a99d8d9f26e4798f}
+
+\begin{DoxyCompactList}\small\item\em port du bouton sur la carte mère. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a2fcd02b07ec24532e668986556e997ae}{}\#define \hyperlink{main_8h_a2fcd02b07ec24532e668986556e997ae}{V\+P}~I\+O\+P\+O\+R\+T\+\_\+\+B, B\+I\+T\+\_\+3\label{main_8h_a2fcd02b07ec24532e668986556e997ae}
+
+\begin{DoxyCompactList}\small\item\em I\+O utilisé pour la vérification de la présence de tension. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a5607e9a001441d15e22c88a3e92d092b}{}\#define \hyperlink{main_8h_a5607e9a001441d15e22c88a3e92d092b}{Reset\+E\+Eprom}~I\+O\+P\+O\+R\+T\+\_\+\+B, B\+I\+T\+\_\+6\label{main_8h_a5607e9a001441d15e22c88a3e92d092b}
+
+\begin{DoxyCompactList}\small\item\em I\+O utilisé pour la remise à zéro des données dans l\textquotesingle{}eeprom. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ab81b2eb602e38a0261e345affe285d6d}{}\#define \hyperlink{main_8h_ab81b2eb602e38a0261e345affe285d6d}{W1}~I\+O\+P\+O\+R\+T\+\_\+\+B, B\+I\+T\+\_\+2\label{main_8h_ab81b2eb602e38a0261e345affe285d6d}
+
+\begin{DoxyCompactList}\small\item\em I\+O general purpose. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a8d23feea868a983c8c2b661e1e16972f}{}\#define \hyperlink{main_8h_a8d23feea868a983c8c2b661e1e16972f}{R\+E\+D}~I\+O\+P\+O\+R\+T\+\_\+\+C, B\+I\+T\+\_\+1\label{main_8h_a8d23feea868a983c8c2b661e1e16972f}
+
+\begin{DoxyCompactList}\small\item\em port de la led rouge. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_acb46c9f2ccd631ba48ae4f8b42287727}{}\#define \hyperlink{main_8h_acb46c9f2ccd631ba48ae4f8b42287727}{D\+E\+F\+A\+U\+L\+T\+D\+E\+L\+A\+Y\+B\+U\+S\+Y}~6000ul\label{main_8h_acb46c9f2ccd631ba48ae4f8b42287727}
+
+\begin{DoxyCompactList}\small\item\em Delay d\textquotesingle{}occupation par défaut. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a36a379a823b6b96b8d3ae51abfd3891d}{}\#define \hyperlink{main_8h_a36a379a823b6b96b8d3ae51abfd3891d}{D\+E\+L\+A\+Y\+O\+V\+E\+R\+B\+U\+S\+Y\+D\+E\+F\+A\+U\+L\+T}~90000\label{main_8h_a36a379a823b6b96b8d3ae51abfd3891d}
+
+\begin{DoxyCompactList}\small\item\em Temps par défaut de la suroccupation d\textquotesingle{}un satellite. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_afbe18edd64628d37e47fece86cf91d98}{}\#define \hyperlink{main_8h_afbe18edd64628d37e47fece86cf91d98}{M\+D\+B\+L\+I\+N\+E}~I\+O\+P\+O\+R\+T\+\_\+\+F, B\+I\+T\+\_\+8 $\vert$ B\+I\+T\+\_\+2\label{main_8h_afbe18edd64628d37e47fece86cf91d98}
+
+\begin{DoxyCompactList}\small\item\em Port utilisé par la transmission M\+D\+B. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_acb7f355448e761b90974c2b8b2da5680}{}\#define \hyperlink{main_8h_acb7f355448e761b90974c2b8b2da5680}{R\+S232\+\_\+2}~U\+A\+R\+T5\label{main_8h_acb7f355448e761b90974c2b8b2da5680}
+
+\begin{DoxyCompactList}\small\item\em port série 2 \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aa0687f5117e952b90f42e481e15141e5}{}\#define \hyperlink{main_8h_aa0687f5117e952b90f42e481e15141e5}{R\+S485}~U\+A\+R\+T2\label{main_8h_aa0687f5117e952b90f42e481e15141e5}
+
+\begin{DoxyCompactList}\small\item\em port 485 \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a3ee0d8f033390f8f8f6d4876ec4eb61c}{}\#define \hyperlink{main_8h_a3ee0d8f033390f8f8f6d4876ec4eb61c}{M\+D\+B\+P\+O\+R\+T}~U\+A\+R\+T1\label{main_8h_a3ee0d8f033390f8f8f6d4876ec4eb61c}
+
+\begin{DoxyCompactList}\small\item\em port série M\+D\+B \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a69c3a6f52425a960d1aab837e366650f}{}\#define \hyperlink{main_8h_a69c3a6f52425a960d1aab837e366650f}{L\+E\+D\+O\+N}(C\+O\+L\+O\+R)~P\+O\+R\+T\+Set\+Bits(C\+O\+L\+O\+R)\label{main_8h_a69c3a6f52425a960d1aab837e366650f}
+
+\begin{DoxyCompactList}\small\item\em Allume la led dont la couleur est définie en paramètre. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a0b7acf32ac2fc462a7535a6b89f8908b}{}\#define \hyperlink{main_8h_a0b7acf32ac2fc462a7535a6b89f8908b}{L\+E\+D\+O\+F\+F}(C\+O\+L\+O\+R)~P\+O\+R\+T\+Clear\+Bits(C\+O\+L\+O\+R)\label{main_8h_a0b7acf32ac2fc462a7535a6b89f8908b}
+
+\begin{DoxyCompactList}\small\item\em Eteint la led dont la couleur est définie en paramètre. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aedad98fa28b09ab747bb69afd2b6615d}{}\#define \hyperlink{main_8h_aedad98fa28b09ab747bb69afd2b6615d}{L\+E\+D\+T\+O\+G\+G\+L\+E}(C\+O\+L\+O\+R)~P\+O\+R\+T\+Toggle\+Bits(C\+O\+L\+O\+R)\label{main_8h_aedad98fa28b09ab747bb69afd2b6615d}
+
+\begin{DoxyCompactList}\small\item\em Inverse l\textquotesingle{}état de la led dont la couleur est définie en paramètre. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a7085be3fe836b609e8da58bebd72d2ee}{}\#define \hyperlink{main_8h_a7085be3fe836b609e8da58bebd72d2ee}{B\+U\+Z\+Z\+E\+R\+\_\+\+O\+N}()~P\+O\+R\+T\+Set\+Bits(\hyperlink{main_8h_a145103118f6d9d1129aa4509cf214a13}{B\+U\+Z\+Z\+E\+R})\label{main_8h_a7085be3fe836b609e8da58bebd72d2ee}
+
+\begin{DoxyCompactList}\small\item\em Active le buzzer. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ac0d47a81f4f9b105b3004d493bef3d1c}{}\#define \hyperlink{main_8h_ac0d47a81f4f9b105b3004d493bef3d1c}{B\+U\+Z\+Z\+E\+R\+\_\+\+O\+F\+F}()~P\+O\+R\+T\+Clear\+Bits(\hyperlink{main_8h_a145103118f6d9d1129aa4509cf214a13}{B\+U\+Z\+Z\+E\+R})\label{main_8h_ac0d47a81f4f9b105b3004d493bef3d1c}
+
+\begin{DoxyCompactList}\small\item\em Desactive le buzzer. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aabd1426260432c2855ff6ceb5d6bac7c}{}\#define \hyperlink{main_8h_aabd1426260432c2855ff6ceb5d6bac7c}{B\+U\+Z\+Z\+E\+R\+\_\+\+S\+O\+U\+N\+D}(x)~(x ? \hyperlink{main_8h_a7085be3fe836b609e8da58bebd72d2ee}{B\+U\+Z\+Z\+E\+R\+\_\+\+O\+N}() \+: \hyperlink{main_8h_ac0d47a81f4f9b105b3004d493bef3d1c}{B\+U\+Z\+Z\+E\+R\+\_\+\+O\+F\+F}())\label{main_8h_aabd1426260432c2855ff6ceb5d6bac7c}
+
+\begin{DoxyCompactList}\small\item\em Active ou desactive le buzzer en fonction de{\bfseries x}. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ace2ed51f091538a1608084153efa5ae9}{}\#define {\bfseries D\+E\+C\+I\+M\+A\+L\+P\+O\+S\+B\+Y\+D\+E\+F\+A\+U\+L\+T}~2\label{main_8h_ace2ed51f091538a1608084153efa5ae9}
+
+\item 
+\hypertarget{main_8h_a6c8659bb9897704034b0a14a42cdf0b9}{}\#define \hyperlink{main_8h_a6c8659bb9897704034b0a14a42cdf0b9}{K\+E\+Y\+N\+A\+M\+E}~\char`\"{}M\+D\+I\char`\"{}\label{main_8h_a6c8659bb9897704034b0a14a42cdf0b9}
+
+\begin{DoxyCompactList}\small\item\em Nom de volume de la clé U\+S\+B si le nom de volume de la clé est différent, celle-\/ci ne sera pas reconnue. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a43f97eefbd1e99ca9d2c9c2ef37b87e5}{}\#define \hyperlink{main_8h_a43f97eefbd1e99ca9d2c9c2ef37b87e5}{A\+U\+D\+I\+T\+F\+I\+L\+E\+N\+A\+M\+E}~\char`\"{}A\+E\char`\"{}\label{main_8h_a43f97eefbd1e99ca9d2c9c2ef37b87e5}
+
+\begin{DoxyCompactList}\small\item\em Nom du fichier permettant ou non l\textquotesingle{}accès aux audits. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ac15506078aa934d8561a07407cb43996}{}\#define \hyperlink{main_8h_ac15506078aa934d8561a07407cb43996}{P\+A\+R\+A\+M\+E\+T\+R\+E\+F\+I\+L\+E\+N\+A\+M\+E}~\char`\"{}P\+A\char`\"{}\label{main_8h_ac15506078aa934d8561a07407cb43996}
+
+\begin{DoxyCompactList}\small\item\em Nom du fichier contenant l\textquotesingle{}autorisation d\textquotesingle{}entrée dans le menu audit. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a135d01baf3812d89e6e1b8ad8feec628}{}\#define \hyperlink{main_8h_a135d01baf3812d89e6e1b8ad8feec628}{R\+A\+Z\+F\+I\+L\+E\+N\+A\+M\+E}~\char`\"{}R\+Z\char`\"{}\label{main_8h_a135d01baf3812d89e6e1b8ad8feec628}
+
+\begin{DoxyCompactList}\small\item\em Nom du fichier contenant l\textquotesingle{}autorisation d\textquotesingle{}entrée dans le menu audit. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a622caf454c0b331e692145375fbcdc05}{}\#define \hyperlink{main_8h_a622caf454c0b331e692145375fbcdc05}{R\+E\+F\+I\+L\+L\+I\+N\+G\+F\+I\+L\+E\+N\+A\+M\+E}~\char`\"{}R\+F\char`\"{}\label{main_8h_a622caf454c0b331e692145375fbcdc05}
+
+\begin{DoxyCompactList}\small\item\em Nom du fichier contenant l\textquotesingle{}autorisation d\textquotesingle{}entrée dans le menu audit. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_af3b28d6da8841c3204fe4c677d18f0c2}{}\#define \hyperlink{main_8h_af3b28d6da8841c3204fe4c677d18f0c2}{H\+I\+S\+T\+O\+F\+I\+L\+E\+N\+A\+M\+E}~\char`\"{}H\+E\char`\"{}\label{main_8h_af3b28d6da8841c3204fe4c677d18f0c2}
+
+\begin{DoxyCompactList}\small\item\em Nom du fichier contenant l\textquotesingle{}autorisation d\textquotesingle{}entrée dans le menu audit. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a308cbfc42eb6076a2a51fd9cf4e2dd59}{}\#define \hyperlink{main_8h_a308cbfc42eb6076a2a51fd9cf4e2dd59}{R\+E\+I\+N\+I\+C\+O\+D\+E\+F\+I\+L\+E\+N\+A\+M\+E}~\char`\"{}I\+N\char`\"{}\label{main_8h_a308cbfc42eb6076a2a51fd9cf4e2dd59}
+
+\begin{DoxyCompactList}\small\item\em Prefixe du nom du fichier contenant l\textquotesingle{}autorisation d\textquotesingle{}entrée dans le menu audit. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a439713ec13312bea4f2c79e09268a57b}{}\#define \hyperlink{main_8h_a439713ec13312bea4f2c79e09268a57b}{C\+R\+E\+D\+I\+T\+F\+I\+L\+E\+N\+A\+M\+E}~\char`\"{}C\+R\char`\"{}\label{main_8h_a439713ec13312bea4f2c79e09268a57b}
+
+\begin{DoxyCompactList}\small\item\em Prefixe du nom du fichier contenant les crédits de la clé U\+S\+B. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a7d2a54b48f4ea8533ed844037963d313}{}\#define \hyperlink{main_8h_a7d2a54b48f4ea8533ed844037963d313}{S\+A\+V\+E\+A\+U\+D\+I\+T\+E\+N\+A\+B\+L\+E\+F\+I\+L\+E\+N\+A\+M\+E}~\char`\"{}A\+F\char`\"{}\label{main_8h_a7d2a54b48f4ea8533ed844037963d313}
+
+\begin{DoxyCompactList}\small\item\em nom du fichier contenant l\textquotesingle{}autorisation d\textquotesingle{}effectuer une sauvegarde du fichier des audits. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a749fd346b686a0b1d564468a8bec063f}{}\#define \hyperlink{main_8h_a749fd346b686a0b1d564468a8bec063f}{S\+A\+V\+E\+H\+I\+S\+T\+O\+E\+N\+A\+B\+L\+E\+F\+I\+L\+E\+N\+A\+M\+E}~\char`\"{}H\+F\char`\"{}\label{main_8h_a749fd346b686a0b1d564468a8bec063f}
+
+\begin{DoxyCompactList}\small\item\em nom du fichier contenant l\textquotesingle{}autorisation d\textquotesingle{}effectuer une sauvegarde du fichier des audits. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a8a1514632b8c9b6157f5a303ef52c083}{}\#define {\bfseries S\+T\+A\+C\+K\+H\+E\+A\+R\+T\+B\+E\+A\+T\+I\+N\+G}~255\label{main_8h_a8a1514632b8c9b6157f5a303ef52c083}
+
+\item 
+\hypertarget{main_8h_ac12395cd33b098deca801d775ec3d60e}{}\#define {\bfseries S\+T\+A\+C\+K\+D\+S\+T}~255\label{main_8h_ac12395cd33b098deca801d775ec3d60e}
+
+\item 
+\hypertarget{main_8h_a4b829d757deacbc39aa32ac51ebe7b03}{}\#define {\bfseries S\+T\+A\+C\+K\+M\+D\+B}~511\label{main_8h_a4b829d757deacbc39aa32ac51ebe7b03}
+
+\item 
+\hypertarget{main_8h_ab875422110c4199225bdd3f06118c962}{}\#define {\bfseries S\+T\+A\+C\+K\+K\+B\+D}~255\label{main_8h_ab875422110c4199225bdd3f06118c962}
+
+\item 
+\hypertarget{main_8h_a0f72400fa07786781bf4145f01271ea5}{}\#define {\bfseries S\+T\+A\+C\+K\+T\+R\+E\+A\+T\+K\+E\+Y}~511\label{main_8h_a0f72400fa07786781bf4145f01271ea5}
+
+\item 
+\hypertarget{main_8h_a0074a68a3534a4043c55dad8715d9ffb}{}\#define {\bfseries S\+T\+A\+C\+K\+U\+S\+B}~511\label{main_8h_a0074a68a3534a4043c55dad8715d9ffb}
+
+\item 
+\hypertarget{main_8h_a4b1b71333ada074f718b6ea924f48207}{}\#define {\bfseries S\+T\+A\+C\+K\+D\+S\+P\+T\+I\+M\+E}~255\label{main_8h_a4b1b71333ada074f718b6ea924f48207}
+
+\item 
+\hypertarget{main_8h_a0a0961cabdc6378d80d0d709feb1a531}{}\#define {\bfseries S\+T\+A\+C\+K\+F\+L\+I\+P}~255\label{main_8h_a0a0961cabdc6378d80d0d709feb1a531}
+
+\item 
+\hypertarget{main_8h_aa1193c01889a2629ca0a0b77add319ea}{}\#define {\bfseries S\+T\+A\+C\+K\+T\+E\+S\+T}~255\label{main_8h_aa1193c01889a2629ca0a0b77add319ea}
+
+\item 
+\hypertarget{main_8h_a430867d7d50a8eb2d23582a993af0d1a}{}\#define {\bfseries S\+T\+A\+C\+K\+C\+H\+A\+N\+G\+E}~512\label{main_8h_a430867d7d50a8eb2d23582a993af0d1a}
+
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+{\bfseries E\+X\+C\+E\+P\+\_\+\+I\+R\+Q} = 0, 
+{\bfseries E\+X\+C\+E\+P\+\_\+\+Ad\+E\+L} = 4, 
+{\bfseries E\+X\+C\+E\+P\+\_\+\+Ad\+E\+S}, 
+{\bfseries E\+X\+C\+E\+P\+\_\+\+I\+B\+E}, 
+\\*
+{\bfseries E\+X\+C\+E\+P\+\_\+\+D\+B\+E}, 
+{\bfseries E\+X\+C\+E\+P\+\_\+\+Sys}, 
+{\bfseries E\+X\+C\+E\+P\+\_\+\+Bp}, 
+{\bfseries E\+X\+C\+E\+P\+\_\+\+R\+I}, 
+\\*
+{\bfseries E\+X\+C\+E\+P\+\_\+\+Cp\+U}, 
+{\bfseries E\+X\+C\+E\+P\+\_\+\+Overflow}, 
+{\bfseries E\+X\+C\+E\+P\+\_\+\+Trap}, 
+{\bfseries E\+X\+C\+E\+P\+\_\+\+I\+S1} = 16, 
+\\*
+{\bfseries E\+X\+C\+E\+P\+\_\+\+C\+E\+U}, 
+{\bfseries E\+X\+C\+E\+P\+\_\+\+C2\+E}
+ \}
+\item 
+enum \hyperlink{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40}{E\+S\+E\+N\+D\+E\+R} \{ \\*
+\hyperlink{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40ae2d30a195cee6b2961cc2c23ea4b520b}{U\+S\+E\+R}, 
+\hyperlink{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40aab5af7ac19c23a164dd578f29245fe54}{M\+A\+N\+U\+A\+L\+M\+A\+C\+H\+I\+N\+E}, 
+\hyperlink{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40af39a1e1792e202cdb892fd58c3188501}{M\+O\+D\+I\+F\+M\+A\+C\+H\+I\+N\+E\+S}, 
+{\bfseries R\+E\+F\+M\+A\+C\+H\+I\+N\+E}, 
+\\*
+\hyperlink{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40a2b1d7ece74fe6a41026bdf073b8c06d2}{R\+E\+M\+O\+V\+E\+S\+A\+T\+E\+L\+L\+I\+T\+E}, 
+\hyperlink{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40acacf4a3ea6c01a98151584c3983666ef}{R\+E\+M\+O\+V\+E\+A\+L\+L\+S\+A\+T\+T\+E\+L\+I\+T\+E}, 
+\hyperlink{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40a217c3150188f121b4a17e822f2fff7ab}{M\+A\+I\+N\+M\+A\+I\+N\+T\+E\+N\+A\+N\+C\+E}, 
+\hyperlink{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40a76fe4016faf924f193d43c4095f751a6}{H\+I\+S\+T\+O\+R\+I\+Q\+U\+E\+M\+E\+N\+U}
+ \}
+\begin{DoxyCompactList}\small\item\em Enumeration des origines de l\textquotesingle{}utilisation d\textquotesingle{}une requête. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a2e58557452571093d5dc8d822480d02d}{}enum \hyperlink{main_8h_a2e58557452571093d5dc8d822480d02d}{E\+M\+O\+D\+E} \{ {\bfseries M\+O\+D\+E\+U\+S\+E\+R}, 
+{\bfseries M\+O\+D\+E\+M\+A\+I\+N\+T\+E\+N\+A\+N\+C\+E}
+ \}\label{main_8h_a2e58557452571093d5dc8d822480d02d}
+
+\begin{DoxyCompactList}\small\item\em Mode de fonctionnement du système. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a745add09450c669b36da7f3039139b56}{}enum \hyperlink{main_8h_a745add09450c669b36da7f3039139b56}{E\+A\+U\+D\+I\+T} \{ {\bfseries T\+E\+M\+P\+O\+R\+A\+R\+Y}, 
+{\bfseries P\+E\+R\+M\+A\+N\+E\+N\+T}
+ \}\label{main_8h_a745add09450c669b36da7f3039139b56}
+
+\begin{DoxyCompactList}\small\item\em enumeration des types d\textquotesingle{}audit. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a4058d8498af43e7a287306f910bd965f}{}enum \hyperlink{main_8h_a4058d8498af43e7a287306f910bd965f}{P\+R\+O\+C\+E\+S\+S\+I\+O\+S\+T\+A\+T\+E} \{ {\bfseries I\+N\+I\+T\+I\+A\+L\+I\+Z\+E}, 
+{\bfseries D\+E\+T\+A\+C\+H\+\_\+\+S\+T\+A\+T\+E}, 
+{\bfseries A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+E\+R\+R\+O\+R}, 
+{\bfseries A\+P\+P\+L\+I\+C\+A\+T\+I\+O\+N\+\_\+\+R\+U\+N\+N\+I\+N\+G}
+ \}\label{main_8h_a4058d8498af43e7a287306f910bd965f}
+
+\begin{DoxyCompactList}\small\item\em Device state on the U\+S\+B. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+B\+O\+O\+L \hyperlink{main_8h_a9a9555d9ca35ac3d3424869d97e25212}{bo\+Test} (B\+Y\+T\+E by\+Test)
+\item 
+void \hyperlink{main_8h_ad6105af57742f221e1d54935534b62aa}{v\+Initialization} (void)
+\begin{DoxyCompactList}\small\item\em Configure les périphériques du microcontroleur. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a0ad68bfdb31c404527cdb4ead57d1738}{}void \hyperlink{main_8h_a0ad68bfdb31c404527cdb4ead57d1738}{v\+Init\+\_\+\+I\+O} (void)\label{main_8h_a0ad68bfdb31c404527cdb4ead57d1738}
+
+\begin{DoxyCompactList}\small\item\em Initialisaiton des entrées sorties. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a11e25e2bc9da14b062fd3a056840133e}{}void {\bfseries v\+Beating\+Hearth} (void $\ast$pv\+Parmeter)\label{main_8h_a11e25e2bc9da14b062fd3a056840133e}
+
+\item 
+\hypertarget{main_8h_a9877ff35e1849f6b2d81e3d658afbb85}{}void {\bfseries v\+H\+T\+T\+P} (void $\ast$pv\+Parameter)\label{main_8h_a9877ff35e1849f6b2d81e3d658afbb85}
+
+\item 
+\hypertarget{main_8h_a0979b58389d54b38a350ca19835232cc}{}void {\bfseries v\+Check\+Key\+Board} (void $\ast$pv\+Parmeter)\label{main_8h_a0979b58389d54b38a350ca19835232cc}
+
+\item 
+\hypertarget{main_8h_a80ba0c17bb94997d48ec23235fcee10e}{}void {\bfseries v\+Treat\+Key} (void $\ast$pv\+Parameter)\label{main_8h_a80ba0c17bb94997d48ec23235fcee10e}
+
+\item 
+\hypertarget{main_8h_ae9994dba5c2519f651d70c3ab2caa647}{}void {\bfseries v\+Screen\+Historique} (const B\+Y\+T\+E by\+Key\+Hit)\label{main_8h_ae9994dba5c2519f651d70c3ab2caa647}
+
+\item 
+\hypertarget{main_8h_aa1110253b3df006b1eceefebb592654b}{}void {\bfseries v\+Confirm\+Satellite\+Remove} (const B\+Y\+T\+E by\+Key)\label{main_8h_aa1110253b3df006b1eceefebb592654b}
+
+\item 
+\hypertarget{main_8h_ac9b1357aa5546bfb138c6e77108e5abb}{}void {\bfseries v\+Poll\+M\+D\+B} (void $\ast$pv\+Parameter)\label{main_8h_ac9b1357aa5546bfb138c6e77108e5abb}
+
+\item 
+\hypertarget{main_8h_aa9188c5fc6906313b24e66725091f8ab}{}void {\bfseries v\+Display\+Time} (void $\ast$pv\+Parameter)\label{main_8h_aa9188c5fc6906313b24e66725091f8ab}
+
+\item 
+\hypertarget{main_8h_aaae53fa5024c0cc44af9eeb90498682b}{}void {\bfseries v\+Test} (void $\ast$pv\+Parameter)\label{main_8h_aaae53fa5024c0cc44af9eeb90498682b}
+
+\item 
+\hypertarget{main_8h_a17ceb0676711a39bd68dff146db69139}{}void {\bfseries v\+Change\+D\+S\+T} (void $\ast$pv\+Parameter)\label{main_8h_a17ceb0676711a39bd68dff146db69139}
+
+\item 
+\hypertarget{main_8h_af91dcf6688c55f155ad033ac2888c99a}{}void {\bfseries v\+Flip\+Display} (void $\ast$pv\+Parameter)\label{main_8h_af91dcf6688c55f155ad033ac2888c99a}
+
+\item 
+\hypertarget{main_8h_aa28a478641b393e2e08c96cb353feca4}{}void {\bfseries v\+Make\+Change} (void $\ast$pv\+Parameter)\label{main_8h_aa28a478641b393e2e08c96cb353feca4}
+
+\item 
+\hypertarget{main_8h_a6d96ae464b64bc033f729c1f3fde7e7b}{}void \hyperlink{main_8h_a6d96ae464b64bc033f729c1f3fde7e7b}{v\+Init\+Uart} (void)\label{main_8h_a6d96ae464b64bc033f729c1f3fde7e7b}
+
+\begin{DoxyCompactList}\small\item\em Initialisation des ports séries. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a7b53633bc41deeddf9021966a704ea05}{}void \hyperlink{main_8h_a7b53633bc41deeddf9021966a704ea05}{v\+Init485} (void)\label{main_8h_a7b53633bc41deeddf9021966a704ea05}
+
+\begin{DoxyCompactList}\small\item\em Initialisation du port R\+S485. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a36e615d2ae04979cde907c0b67fffea3}{}void {\bfseries v\+Display\+Amount} (D\+W\+O\+R\+D dw\+Amount, const char $\ast$by\+Text, const B\+O\+O\+L bo\+Delay)\label{main_8h_a36e615d2ae04979cde907c0b67fffea3}
+
+\item 
+\hypertarget{main_8h_a3a888f477d526c3d1c2c3bc29902332b}{}void {\bfseries v\+Timer\+Machine\+End\+Cycle} (const Timer\+Handle\+\_\+t px\+Timer)\label{main_8h_a3a888f477d526c3d1c2c3bc29902332b}
+
+\item 
+\hypertarget{main_8h_a804548d4406711995ea06cbfcf86cf57}{}void {\bfseries v\+Timer\+Machine\+End\+Pulse} (const Timer\+Handle\+\_\+t px\+Timer)\label{main_8h_a804548d4406711995ea06cbfcf86cf57}
+
+\item 
+\hypertarget{main_8h_a2802bfcfc57e7a55a789f632c59895f7}{}void {\bfseries v\+Maintenance\+Menu} (void $\ast$v\+Parameter)\label{main_8h_a2802bfcfc57e7a55a789f632c59895f7}
+
+\item 
+\hypertarget{main_8h_a61cc5af9c001fde3496a0b0a67222237}{}void {\bfseries v\+Display\+Enable\+Choice} (const char $\ast$by\+Texte\+To\+Display, const B\+O\+O\+L bo\+Enable)\label{main_8h_a61cc5af9c001fde3496a0b0a67222237}
+
+\item 
+\hypertarget{main_8h_a9af51fdd13b804efe152151fbc6c0bc3}{}void \hyperlink{main_8h_a9af51fdd13b804efe152151fbc6c0bc3}{v\+Reset} (void)\label{main_8h_a9af51fdd13b804efe152151fbc6c0bc3}
+
+\begin{DoxyCompactList}\small\item\em Effectue un soft reset. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a1507cbd81fbb8009c4f5acbf84749502}{}void \hyperlink{main_8h_a1507cbd81fbb8009c4f5acbf84749502}{v\+Get\+Parameters\+Audits} (void)\label{main_8h_a1507cbd81fbb8009c4f5acbf84749502}
+
+\begin{DoxyCompactList}\small\item\em Lecture des paramètres du site. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a17b94895eceb713cf61ba77f956b0038}{}B\+Y\+T\+E {\bfseries by\+Check\+Machine} (const B\+Y\+T\+E by\+Number)\label{main_8h_a17b94895eceb713cf61ba77f956b0038}
+
+\item 
+\hypertarget{main_8h_a19945a8ac5be8efea35ec44e569aea4d}{}void {\bfseries v\+Set\+Histo} (const D\+W\+O\+R\+D dw\+Num\+Media, const B\+Y\+T\+E by\+Num\+Machine, const E\+H\+I\+S\+T\+O\+O\+P operation, const W\+O\+R\+D w\+Amount, const E\+R\+E\+S\+U\+L\+T result)\label{main_8h_a19945a8ac5be8efea35ec44e569aea4d}
+
+\item 
+\hypertarget{main_8h_abc82124e79957aa3074d51b51de50987}{}void \hyperlink{main_8h_abc82124e79957aa3074d51b51de50987}{v\+Reset\+Select\+Machine} (void)\label{main_8h_abc82124e79957aa3074d51b51de50987}
+
+\begin{DoxyCompactList}\small\item\em Positionne la machine en attende d\textquotesingle{}une descision de l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_af896f71423a01900f3a8d580b2475fc0}{}B\+O\+O\+L {\bfseries bo\+Make\+Change} (long l\+Amount)\label{main_8h_af896f71423a01900f3a8d580b2475fc0}
+
+\item 
+\hypertarget{main_8h_ac051deceb532a21faff900c4cd8df5d8}{}B\+O\+O\+L {\bfseries is\+Exact\+Change} (const long l\+Amount\+To\+Check)\label{main_8h_ac051deceb532a21faff900c4cd8df5d8}
+
+\item 
+\hypertarget{main_8h_a45982be73662d35fdc03b28f7c5c3a97}{}B\+Y\+T\+E {\bfseries is\+Machine\+Available} (rtcc\+Time $\ast$time)\label{main_8h_a45982be73662d35fdc03b28f7c5c3a97}
+
+\item 
+\hypertarget{main_8h_aa6fba83ae45e5b71ca0b37cb6d6f7cf3}{}void \hyperlink{main_8h_aa6fba83ae45e5b71ca0b37cb6d6f7cf3}{v\+Launch\+Machine} (void)\label{main_8h_aa6fba83ae45e5b71ca0b37cb6d6f7cf3}
+
+\begin{DoxyCompactList}\small\item\em Effectue les opérations correspondant au numéro de machine. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a90ca40ade38f6d21193aed7756b50b36}{}void \hyperlink{main_8h_a90ca40ade38f6d21193aed7756b50b36}{v\+Check\+Cash\+Amount} (void)\label{main_8h_a90ca40ade38f6d21193aed7756b50b36}
+
+\begin{DoxyCompactList}\small\item\em Vérifie le montant disponible en cash et effectue les opérations appropriées. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_abdb9b2130ed197dd3ebb0879d16ca7cf}{}void {\bfseries v\+T\+O\+\_\+\+K\+B\+D} (Timer\+Handle\+\_\+t px\+Timer)\label{main_8h_abdb9b2130ed197dd3ebb0879d16ca7cf}
+
+\item 
+\hypertarget{main_8h_a1e4451a3392bbf2eb7c9ee2efd831d0e}{}void \hyperlink{main_8h_a1e4451a3392bbf2eb7c9ee2efd831d0e}{v\+T\+O\+Reached} (void)\label{main_8h_a1e4451a3392bbf2eb7c9ee2efd831d0e}
+
+\begin{DoxyCompactList}\small\item\em Effectue le contrôle et les opérations liées au T\+O du clavier ou du cumul. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ad9930226cbeb6f03cef0ffdcd241df95}{}void {\bfseries v\+Timer\+Flip} (Timer\+Handle\+\_\+t px\+Timer)\label{main_8h_ad9930226cbeb6f03cef0ffdcd241df95}
+
+\item 
+\hypertarget{main_8h_ad7bce8e48ceb54b56bc56134efedcc5c}{}void \hyperlink{main_8h_ad7bce8e48ceb54b56bc56134efedcc5c}{v\+Buzzer\+T\+O} ()\label{main_8h_ad7bce8e48ceb54b56bc56134efedcc5c}
+
+\begin{DoxyCompactList}\small\item\em Arrête le buzzer. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_af8f6d447ec5bbcf34b814badd1f3cb01}{}void {\bfseries v\+Get\+Digit\+Number} (D\+W\+O\+R\+D dw\+Number, B\+Y\+T\+E $\ast$by\+Billion, B\+Y\+T\+E $\ast$by\+Hundred\+Million, B\+Y\+T\+E $\ast$by\+Ten\+Million, B\+Y\+T\+E $\ast$\hyperlink{main_8h_a227d12189a44925d733323dec049a364}{by\+Million}, B\+Y\+T\+E $\ast$by\+Hundred\+Thousand, B\+Y\+T\+E $\ast$by\+Ten\+Thousand, B\+Y\+T\+E $\ast$by\+Thousand, B\+Y\+T\+E $\ast$by\+Hundred, B\+Y\+T\+E $\ast$by\+Decade, B\+Y\+T\+E $\ast$by\+Unit)\label{main_8h_af8f6d447ec5bbcf34b814badd1f3cb01}
+
+\item 
+\hypertarget{main_8h_aefcae8f089687d895b907902a493e212}{}void {\bfseries v\+Display\+Cash\+Enable} (B\+Y\+T\+E by\+Index, B\+O\+O\+L bo\+Enable)\label{main_8h_aefcae8f089687d895b907902a493e212}
+
+\item 
+B\+Y\+T\+E \hyperlink{main_8h_ae35bf44b244711233646655a12594b02}{by\+Get\+Char\+Under\+Cursor} (void)
+\begin{DoxyCompactList}\small\item\em Renvoie le code ascii du caractère sous le curseur. \end{DoxyCompactList}\item 
+void \hyperlink{main_8h_a71db365c5da2959ceaaac347db866abd}{v\+Warning} (char $\ast$by\+Message)
+\begin{DoxyCompactList}\small\item\em Affiche un message sur la ligne 3 de l\textquotesingle{}afficheur. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aebe992b400516ce14c5da47acb5e525a}{}void {\bfseries Init\+R\+S485} (const U\+A\+R\+T\+\_\+\+M\+O\+D\+U\+L\+E U\+A\+R\+T, const D\+W\+O\+R\+D dw\+S\+Y\+S\+\_\+\+F\+R\+E\+Q, const D\+W\+O\+R\+D dw\+B\+A\+U\+D\+R\+A\+T\+E, const U\+A\+R\+T\+\_\+\+L\+I\+N\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+O\+D\+E data\+Size, const U\+A\+R\+T\+\_\+\+L\+I\+N\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+O\+D\+E parity, const U\+A\+R\+T\+\_\+\+L\+I\+N\+E\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+M\+O\+D\+E stop\+\_\+bits, const Io\+Port\+Id Direction\+Port, D\+W\+O\+R\+D dw\+Direction\+Bit)\label{main_8h_aebe992b400516ce14c5da47acb5e525a}
+
+\item 
+void \hyperlink{main_8h_a1bbf6a1a849cf7717d872a7bd1a89a2f}{v\+Poll\+Satellite} (void $\ast$pv\+Parameter)
+\begin{DoxyCompactList}\small\item\em Interroge les satellites. \end{DoxyCompactList}\item 
+B\+O\+O\+L \hyperlink{main_8h_aaf6fde8e5ad92f4167f2af2373092763}{v\+Is\+Media\+Full} (void)
+\begin{DoxyCompactList}\small\item\em Vérifie si la clé est rechargeable. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a5071fa213fef5ff471390461c42cba65}{}void {\bfseries v\+Set\+Date\+Time} (const rtcc\+Date date, const rtcc\+Time time)\label{main_8h_a5071fa213fef5ff471390461c42cba65}
+
+\item 
+\hypertarget{main_8h_af10dfeb4b6debe78facdebcb2d8fcb11}{}void {\bfseries v\+Config\+Devices} (B\+Y\+T\+E by\+Key)\label{main_8h_af10dfeb4b6debe78facdebcb2d8fcb11}
+
+\item 
+\hypertarget{main_8h_a3200e5251b2cd08d00b91e9b7091126e}{}void {\bfseries v\+Screen\+Main\+Maintenance} (const B\+Y\+T\+E by\+Key)\label{main_8h_a3200e5251b2cd08d00b91e9b7091126e}
+
+\item 
+\hypertarget{main_8h_a6bbc98a512d0858ace9ebeeb8998bff7}{}void {\bfseries v\+Sub\+Parameters} (B\+Y\+T\+E by\+Key)\label{main_8h_a6bbc98a512d0858ace9ebeeb8998bff7}
+
+\item 
+\hypertarget{main_8h_a69fcd0424073bd76f84eb292684ce1a4}{}void {\bfseries v\+Screen\+Cash\+Device} (B\+Y\+T\+E by\+Key)\label{main_8h_a69fcd0424073bd76f84eb292684ce1a4}
+
+\item 
+\hypertarget{main_8h_ae3d79e122477e427657fb72c6466b634}{}void {\bfseries v\+Screen\+Cash\+Less} (B\+Y\+T\+E by\+Key)\label{main_8h_ae3d79e122477e427657fb72c6466b634}
+
+\item 
+\hypertarget{main_8h_a2d1c9873e693f66efeb29341dd8523f1}{}void {\bfseries v\+Screen\+Satellite} (B\+Y\+T\+E by\+Key)\label{main_8h_a2d1c9873e693f66efeb29341dd8523f1}
+
+\item 
+\hypertarget{main_8h_a8cc6ef9807d950f1fb4a333a6102e2cf}{}void {\bfseries v\+Screen\+Date\+Time} (B\+Y\+T\+E by\+Key)\label{main_8h_a8cc6ef9807d950f1fb4a333a6102e2cf}
+
+\item 
+\hypertarget{main_8h_af8d3a45597632d3c7d702069029b16a7}{}void {\bfseries v\+Screen\+Configuration} (B\+Y\+T\+E by\+Key)\label{main_8h_af8d3a45597632d3c7d702069029b16a7}
+
+\item 
+void \hyperlink{main_8h_a989ee9cd6dc543f8b40f690d50feb047}{v\+Screen\+Dsp\+Time\+Remaining} (B\+Y\+T\+E by\+Key)
+\begin{DoxyCompactList}\small\item\em Traite la touche utilisée dans l\textquotesingle{}écran de choix de l\textquotesingle{}affichage du temps restant et enregistre les paramètres de la machine le cas échéant. \end{DoxyCompactList}\item 
+void \hyperlink{main_8h_aae1009cf3a4cce0212a1ad8880fee9f5}{v\+Screen\+Cumul} (B\+Y\+T\+E by\+Key)
+\begin{DoxyCompactList}\small\item\em Traite la touche utilisée dans l\textquotesingle{}écran de choix du cumul autorisé et enregistre les paramètres de la machine le cas échéant. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ada7e364043f9186ae812471921cb4940}{}void {\bfseries v\+Select\+Machine} (B\+Y\+T\+E by\+Key)\label{main_8h_ada7e364043f9186ae812471921cb4940}
+
+\item 
+\hypertarget{main_8h_a173a664879c5b718413b57ee93088434}{}void {\bfseries v\+Select\+Machine\+Error} (char $\ast$by\+Message)\label{main_8h_a173a664879c5b718413b57ee93088434}
+
+\item 
+\hypertarget{main_8h_ae4c208c4b43a4f32c15ec1600b641da1}{}void {\bfseries v\+Set\+Price} (B\+Y\+T\+E by\+Key)\label{main_8h_ae4c208c4b43a4f32c15ec1600b641da1}
+
+\item 
+\hypertarget{main_8h_a245eed7e559dcbc506dd76250846665b}{}void {\bfseries v\+Set\+Delay} (B\+Y\+T\+E by\+Key)\label{main_8h_a245eed7e559dcbc506dd76250846665b}
+
+\item 
+\hypertarget{main_8h_aea74584d97049e4cddcf2effa45da192}{}void {\bfseries v\+Set\+Time} (B\+Y\+T\+E by\+Key)\label{main_8h_aea74584d97049e4cddcf2effa45da192}
+
+\item 
+\hypertarget{main_8h_a167c83cc1e2a214264ce3118b05e47a9}{}B\+Y\+T\+E {\bfseries by\+Machine\+Exist} (const B\+Y\+T\+E by\+Machine)\label{main_8h_a167c83cc1e2a214264ce3118b05e47a9}
+
+\item 
+long \hyperlink{main_8h_a7fa42be69b82d80e3585edb9f2b1c06a}{l\+Get\+Amount\+To\+Pay} (void)
+\begin{DoxyCompactList}\small\item\em Renvoi le montant à payer en fonction du moyen et de l\textquotesingle{}heure. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a1bf8dee6ad96a9086ed4f12a6863aea8}{}void \hyperlink{main_8h_a1bf8dee6ad96a9086ed4f12a6863aea8}{v\+Screen\+Leave} (void)\label{main_8h_a1bf8dee6ad96a9086ed4f12a6863aea8}
+
+\begin{DoxyCompactList}\small\item\em Affiche une message indiquant l\textquotesingle{}absence d\textquotesingle{}un module libre. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_af04a3ca9d294b7f4d635b6f6083cd0a4}{}long {\bfseries l\+Convert\+Timeto\+M\+S} (const rtcc\+Time $\ast$time)\label{main_8h_af04a3ca9d294b7f4d635b6f6083cd0a4}
+
+\item 
+\hypertarget{main_8h_acd8b323ea5dccbca41054657d5cd6d26}{}rtcc\+Time {\bfseries convert\+Long\+To\+Time} (long l\+Milli\+Seconde)\label{main_8h_acd8b323ea5dccbca41054657d5cd6d26}
+
+\item 
+\hypertarget{main_8h_a9ce08ce1614616e0a140c377f7504b18}{}void \hyperlink{main_8h_a9ce08ce1614616e0a140c377f7504b18}{v\+Sleep\+M\+C\+U} (void)\label{main_8h_a9ce08ce1614616e0a140c377f7504b18}
+
+\begin{DoxyCompactList}\small\item\em Positionne le système en mode basse consomation. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a94166ff055fc5fb104148e93aa5bc1aa}{}void \hyperlink{main_8h_a94166ff055fc5fb104148e93aa5bc1aa}{v\+Erase\+E\+Eprom} (void)\label{main_8h_a94166ff055fc5fb104148e93aa5bc1aa}
+
+\begin{DoxyCompactList}\small\item\em Efface le contenu de l\textquotesingle{}eeprom. Les quatre derniers octets ne seront pas effacés. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a9783a13c9adeb7b1e68d7123d7756914}{}void {\bfseries v\+Enable\+Cash\+Device} (B\+O\+O\+L bo\+Enable)\label{main_8h_a9783a13c9adeb7b1e68d7123d7756914}
+
+\item 
+\hypertarget{main_8h_a6224e12fb511498615084aa7e281ee37}{}void {\bfseries v\+T\+O\+\_\+\+Over\+Pay} (Timer\+Handle\+\_\+t px\+Timer)\label{main_8h_a6224e12fb511498615084aa7e281ee37}
+
+\item 
+\hypertarget{main_8h_ab21143afa105c4684ae94ed61f43b4d9}{}void {\bfseries v\+T\+O\+\_\+\+Cumul} (Timer\+Handle\+\_\+t px\+Timer)\label{main_8h_ab21143afa105c4684ae94ed61f43b4d9}
+
+\item 
+\hypertarget{main_8h_aec7892016b1f2f177af287f9cc3d4f2d}{}void \hyperlink{main_8h_aec7892016b1f2f177af287f9cc3d4f2d}{v\+Escrow\+Requested} (void)\label{main_8h_aec7892016b1f2f177af287f9cc3d4f2d}
+
+\begin{DoxyCompactList}\small\item\em Effectue le rendu des espèces insérées. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a7657829b8c6ce7eb84a77d371f9336fc}{}void {\bfseries v\+Display\+Time\+Info} (D\+W\+O\+R\+D dw\+Time\+In\+M\+S)\label{main_8h_a7657829b8c6ce7eb84a77d371f9336fc}
+
+\item 
+\hypertarget{main_8h_a2f356d6db8aa4fdaabe83f7ed2b04bf3}{}B\+O\+O\+L {\bfseries bo\+Route\+Bill} (const E\+S\+C\+R\+O\+W\+D\+I\+R escrow\+Direction)\label{main_8h_a2f356d6db8aa4fdaabe83f7ed2b04bf3}
+
+\item 
+void \hyperlink{main_8h_a101afd5cb63d21e59f217290f84373a0}{v\+Check\+U\+S\+B} (void $\ast$pv\+Parmeter)
+\item 
+\hypertarget{main_8h_ac046b98ea902f7cd88eded5f1026dcc7}{}void \hyperlink{main_8h_ac046b98ea902f7cd88eded5f1026dcc7}{v\+Process\+U\+S\+B} (void)\label{main_8h_ac046b98ea902f7cd88eded5f1026dcc7}
+
+\begin{DoxyCompactList}\small\item\em Vérification de l\textquotesingle{}activité du port U\+S\+B host. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ac0b4f18ce71f40fa6c96ec2a00ba18f1}{}void \hyperlink{main_8h_ac0b4f18ce71f40fa6c96ec2a00ba18f1}{v\+Save\+Audit} (void)\label{main_8h_ac0b4f18ce71f40fa6c96ec2a00ba18f1}
+
+\begin{DoxyCompactList}\small\item\em Enregistrement du fichier des audits. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a2582045dc5e747af214adb3d487e5ec8}{}void \hyperlink{main_8h_a2582045dc5e747af214adb3d487e5ec8}{v\+Save\+Histo} (void)\label{main_8h_a2582045dc5e747af214adb3d487e5ec8}
+
+\begin{DoxyCompactList}\small\item\em Enregistre le fichier historique. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ada042036b017684008a26a4d497a2f1e}{}long {\bfseries l\+Get\+U\+S\+B\+Amount\+Or\+Enable} (char $\ast$file\+Name, const W\+O\+R\+D w\+E\+E\+Address)\label{main_8h_ada042036b017684008a26a4d497a2f1e}
+
+\item 
+\hypertarget{main_8h_a0f1c0fc99e6b2f4e1b3de01a20c38493}{}B\+O\+O\+L {\bfseries v\+Set\+U\+S\+B\+Amount\+Or\+Enable} (char $\ast$file\+Name, const W\+O\+R\+D w\+E\+E\+Address, const long l\+Amount)\label{main_8h_a0f1c0fc99e6b2f4e1b3de01a20c38493}
+
+\item 
+\hypertarget{main_8h_aee1d2b933bd3aaebb127f8225860001d}{}B\+O\+O\+L \hyperlink{main_8h_aee1d2b933bd3aaebb127f8225860001d}{bo\+Check\+S\+N} (void)\label{main_8h_aee1d2b933bd3aaebb127f8225860001d}
+
+\begin{DoxyCompactList}\small\item\em Lit dans le fichier et vérifie le numéro de la centrale. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_abaebd970d138d53cc38c0de799e0b632}{}B\+O\+O\+L {\bfseries bo\+Code\+Check} (const W\+O\+R\+D w\+E\+E\+Address)\label{main_8h_abaebd970d138d53cc38c0de799e0b632}
+
+\item 
+\hypertarget{main_8h_aba2e2a597d9a150107d452e6da37f6e5}{}void \hyperlink{main_8h_aba2e2a597d9a150107d452e6da37f6e5}{v\+Enable\+C\+N} (void)\label{main_8h_aba2e2a597d9a150107d452e6da37f6e5}
+
+\begin{DoxyCompactList}\small\item\em Valide les interruption des notification de changement d\textquotesingle{}état. \end{DoxyCompactList}\item 
+B\+O\+O\+L \hyperlink{main_8h_a11edd49d2b13deb3fcffb42f6f3e0f5e}{bo\+R\+A\+Z\+Audit} ()
+\begin{DoxyCompactList}\small\item\em Remet à zéro les audits. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aa574cb7e5b16fdc8c7f8107e31a075b7}{}void \hyperlink{main_8h_aa574cb7e5b16fdc8c7f8107e31a075b7}{v\+Set\+Rnd\+Gap} (void)\label{main_8h_aa574cb7e5b16fdc8c7f8107e31a075b7}
+
+\begin{DoxyCompactList}\small\item\em Crée un nombre aléatoire de byte dans le fichier. Crée aussi le code du numéro de série. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a4c4c73d0766a6d8fc26db4b912c186c5}{}void \hyperlink{main_8h_a4c4c73d0766a6d8fc26db4b912c186c5}{v\+Return\+From\+Test} (void)\label{main_8h_a4c4c73d0766a6d8fc26db4b912c186c5}
+
+\begin{DoxyCompactList}\small\item\em Retourne en mode utilisateur. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aaf84b749e117d35ea443953c80bb2e74}{}void {\bfseries v\+Start\+Buzzer} (B\+O\+O\+L bo\+Activel, int i\+Buzzer\+Len)\label{main_8h_aaf84b749e117d35ea443953c80bb2e74}
+
+\item 
+void \hyperlink{main_8h_ab7e5c95cf72a3f819bc4462a7fb62ca3}{v\+Application\+Malloc\+Failed\+Hook} (void)
+\begin{DoxyCompactList}\small\item\em Fonction appelée en cas d\textquotesingle{}echec d\textquotesingle{}allocation dans Free\+R\+T\+O\+S. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8h_a2ed69f5735c1053a7323f182d85ec308}{}Semaphore\+Handle\+\_\+t \hyperlink{main_8h_a2ed69f5735c1053a7323f182d85ec308}{D\+S\+T\+Semaphore}\label{main_8h_a2ed69f5735c1053a7323f182d85ec308}
+
+\begin{DoxyCompactList}\small\item\em Informe le système que l\textquotesingle{}heure doit être modifié. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_adc68baf1479ffd60df709f3c77df4823}{}Semaphore\+Handle\+\_\+t \hyperlink{main_8h_adc68baf1479ffd60df709f3c77df4823}{test\+Semaphore}\label{main_8h_adc68baf1479ffd60df709f3c77df4823}
+
+\begin{DoxyCompactList}\small\item\em Indique la demande d\textquotesingle{}entrée en mode test. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aa36844648145957fd17049f7e5f30f39}{}Semaphore\+Handle\+\_\+t \hyperlink{main_8h_aa36844648145957fd17049f7e5f30f39}{change\+Semaphore}\label{main_8h_aa36844648145957fd17049f7e5f30f39}
+
+\begin{DoxyCompactList}\small\item\em Indique une demande de change. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_adf5d9cd77048f8bc628df941a41eae0f}{}Queue\+Handle\+\_\+t \hyperlink{main_8h_adf5d9cd77048f8bc628df941a41eae0f}{queue\+Key\+Hit}\label{main_8h_adf5d9cd77048f8bc628df941a41eae0f}
+
+\begin{DoxyCompactList}\small\item\em Queue contenant le numéro de la touche utilisée. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a9a9c9c04091c89d483ab611d7da927bc}{}B\+O\+O\+L \hyperlink{main_8h_a9a9c9c04091c89d483ab611d7da927bc}{bo\+Key\+Present}\label{main_8h_a9a9c9c04091c89d483ab611d7da927bc}
+
+\begin{DoxyCompactList}\small\item\em Indique la présence d\textquotesingle{}une clé. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a6ed1ffb78985f69e58c39298632d856f}{}B\+Y\+T\+E \hyperlink{main_8h_a6ed1ffb78985f69e58c39298632d856f}{by\+Cash\+Pos}\label{main_8h_a6ed1ffb78985f69e58c39298632d856f}
+
+\begin{DoxyCompactList}\small\item\em Position du canal à visualiser dans les menus de maintenance. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_af8c63d827f2452f1f04c1e5601d13759}{}long \hyperlink{main_8h_af8c63d827f2452f1f04c1e5601d13759}{l\+Amount\+In\+Cash\+Dispo}\label{main_8h_af8c63d827f2452f1f04c1e5601d13759}
+
+\begin{DoxyCompactList}\small\item\em Montant disponible en cash. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_adac9cc4888c00c4b5dffc46496cb3070}{}long \hyperlink{main_8h_adac9cc4888c00c4b5dffc46496cb3070}{l\+Amount\+To\+Pay}\label{main_8h_adac9cc4888c00c4b5dffc46496cb3070}
+
+\begin{DoxyCompactList}\small\item\em Montant à payer. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a33d1977eb8fdc4a9bb3c7fefd2c491b2}{}long \hyperlink{main_8h_a33d1977eb8fdc4a9bb3c7fefd2c491b2}{l\+Amount\+To\+Display}\label{main_8h_a33d1977eb8fdc4a9bb3c7fefd2c491b2}
+
+\begin{DoxyCompactList}\small\item\em Montant à afficher. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a218d662ebee615b6771fbad084c16ac1}{}long \hyperlink{main_8h_a218d662ebee615b6771fbad084c16ac1}{l\+Old\+Amount\+In\+Cash\+Dispo}\label{main_8h_a218d662ebee615b6771fbad084c16ac1}
+
+\begin{DoxyCompactList}\small\item\em Montant disponible précédent. Utilisé par différence pour détecter l\textquotesingle{}insertion de cash. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ae02a4502734b8e81bb5f5fdabcc17c69}{}long \hyperlink{main_8h_ae02a4502734b8e81bb5f5fdabcc17c69}{l\+Amount\+U\+S\+B\+Dispo}\label{main_8h_ae02a4502734b8e81bb5f5fdabcc17c69}
+
+\begin{DoxyCompactList}\small\item\em Montant disponible dans la clé U\+S\+B. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a5a363320403f3fa8c8f79b75a9e32226}{}long \hyperlink{main_8h_a5a363320403f3fa8c8f79b75a9e32226}{l\+Old\+Amount\+U\+S\+B\+Dispo}\label{main_8h_a5a363320403f3fa8c8f79b75a9e32226}
+
+\begin{DoxyCompactList}\small\item\em Sauvegarde du montant disponible dans la clé U\+S\+B. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a9e2bd9386514af9af61d618cee26e0ff}{}long {\bfseries l\+Time\+Remaining}\label{main_8h_a9e2bd9386514af9af61d618cee26e0ff}
+
+\item 
+\hypertarget{main_8h_abbf2dbdbb04aed87ed424052bbe8c4c5}{}B\+Y\+T\+E \hyperlink{main_8h_abbf2dbdbb04aed87ed424052bbe8c4c5}{by\+Pos\+Num}\label{main_8h_abbf2dbdbb04aed87ed424052bbe8c4c5}
+
+\begin{DoxyCompactList}\small\item\em Position du caractère dans la chaîne saisie. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ad547e9c01b8323bb16796337660f65d7}{}B\+O\+O\+L \hyperlink{main_8h_ad547e9c01b8323bb16796337660f65d7}{bo\+Display\+Time}\label{main_8h_ad547e9c01b8323bb16796337660f65d7}
+
+\begin{DoxyCompactList}\small\item\em Autorise l\textquotesingle{}affichage de l\textquotesingle{}heure. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a80b3014f4919957f2da61aeeb50243f1}{}B\+O\+O\+L \hyperlink{main_8h_a80b3014f4919957f2da61aeeb50243f1}{bo\+Flip}\label{main_8h_a80b3014f4919957f2da61aeeb50243f1}
+
+\begin{DoxyCompactList}\small\item\em Autorise l\textquotesingle{}échange entre la ligne 1 et la ligne 2;. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aca7a8cf727bbc1f96dd9e5a5916aac7d}{}char \hyperlink{main_8h_aca7a8cf727bbc1f96dd9e5a5916aac7d}{by\+Buffer} \mbox{[}40\mbox{]}\label{main_8h_aca7a8cf727bbc1f96dd9e5a5916aac7d}
+
+\begin{DoxyCompactList}\small\item\em buffer intermédiaire pour l\textquotesingle{}affichage. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aae676af8470ad7e3072416a0496f3b08}{}char \hyperlink{main_8h_aae676af8470ad7e3072416a0496f3b08}{by\+Credit\+File\+Name} \mbox{[}13\mbox{]}\label{main_8h_aae676af8470ad7e3072416a0496f3b08}
+
+\begin{DoxyCompactList}\small\item\em buffer contenant le nom du fichier de crédit. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ae86a3bd0fae679e300efb6b3691bfb3e}{}B\+O\+O\+L \hyperlink{main_8h_ae86a3bd0fae679e300efb6b3691bfb3e}{bo\+Cancel}\label{main_8h_ae86a3bd0fae679e300efb6b3691bfb3e}
+
+\begin{DoxyCompactList}\small\item\em Indique que la transaction a été annulé \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a11a016bb5de7674f52fd13a304603b5b}{}\hyperlink{main_8h_a745add09450c669b36da7f3039139b56}{E\+A\+U\+D\+I\+T} \hyperlink{main_8h_a11a016bb5de7674f52fd13a304603b5b}{e\+Audit}\label{main_8h_a11a016bb5de7674f52fd13a304603b5b}
+
+\begin{DoxyCompactList}\small\item\em Indique le type d\textquotesingle{}audit en cours. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a89b822b0d99d29563ace9cd6b0e6d34a}{}W\+O\+R\+D \hyperlink{main_8h_a89b822b0d99d29563ace9cd6b0e6d34a}{w\+Price}\label{main_8h_a89b822b0d99d29563ace9cd6b0e6d34a}
+
+\begin{DoxyCompactList}\small\item\em Prix intérmédaire dans les saisies de prix. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a8c0e44b39236dd4575cc9e102a31ea3c}{}D\+W\+O\+R\+D \hyperlink{main_8h_a8c0e44b39236dd4575cc9e102a31ea3c}{dw\+Value}\label{main_8h_a8c0e44b39236dd4575cc9e102a31ea3c}
+
+\begin{DoxyCompactList}\small\item\em Variable temporaire contenant la valeur en cours de saisie. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ad939ac47a8190cb10e130b024b047d21}{}Timer\+Handle\+\_\+t \hyperlink{main_8h_ad939ac47a8190cb10e130b024b047d21}{h\+Timer\+T\+O\+K\+B\+D}\label{main_8h_ad939ac47a8190cb10e130b024b047d21}
+
+\begin{DoxyCompactList}\small\item\em Handle du timer gérant le time-\/out du clavier. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aca3e52221ab02d39e1199e48cb41fbc4}{}Timer\+Handle\+\_\+t \hyperlink{main_8h_aca3e52221ab02d39e1199e48cb41fbc4}{h\+Timer\+T\+O\+Overpay}\label{main_8h_aca3e52221ab02d39e1199e48cb41fbc4}
+
+\begin{DoxyCompactList}\small\item\em Handle du timer gérant le time-\/out du trop perçu. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a6c7e32e8d4e9f77e8bf8a9dc92cdb99f}{}Timer\+Handle\+\_\+t \hyperlink{main_8h_a6c7e32e8d4e9f77e8bf8a9dc92cdb99f}{h\+Timer\+T\+O\+Cumul}\label{main_8h_a6c7e32e8d4e9f77e8bf8a9dc92cdb99f}
+
+\begin{DoxyCompactList}\small\item\em Handle du timer gérant le time-\/out du cumul. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a071b910985617e5b85b7ec92eb5a9489}{}B\+Y\+T\+E \hyperlink{main_8h_a071b910985617e5b85b7ec92eb5a9489}{by\+Unite}\label{main_8h_a071b910985617e5b85b7ec92eb5a9489}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant le nombre d\textquotesingle{}unités d\textquotesingle{}un nombre. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a7289fb821100e2e948d1885c6a98da13}{}B\+Y\+T\+E \hyperlink{main_8h_a7289fb821100e2e948d1885c6a98da13}{by\+Dizaine}\label{main_8h_a7289fb821100e2e948d1885c6a98da13}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant le nombre de dizaines d\textquotesingle{}un nombre. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a21cad68f9b2342d8873a933715f852b1}{}B\+Y\+T\+E \hyperlink{main_8h_a21cad68f9b2342d8873a933715f852b1}{by\+Centaine}\label{main_8h_a21cad68f9b2342d8873a933715f852b1}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant le nombre de centaines d\textquotesingle{}un nombre. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ac1a7904cef903d2d2db80f1e9779b69c}{}B\+Y\+T\+E \hyperlink{main_8h_ac1a7904cef903d2d2db80f1e9779b69c}{by\+Millier}\label{main_8h_ac1a7904cef903d2d2db80f1e9779b69c}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant le nombre de milliers d\textquotesingle{}un nombre. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_af1b6e4cee7c2187f4fc7cfea3aee3017}{}B\+Y\+T\+E \hyperlink{main_8h_af1b6e4cee7c2187f4fc7cfea3aee3017}{by\+Dix\+Mille}\label{main_8h_af1b6e4cee7c2187f4fc7cfea3aee3017}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant le contenu du rang des dix milles. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a44b1d80c84717df41924801b0b626bf9}{}B\+Y\+T\+E \hyperlink{main_8h_a44b1d80c84717df41924801b0b626bf9}{by\+Cent\+Mille}\label{main_8h_a44b1d80c84717df41924801b0b626bf9}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant le contenu du rang des cent mille. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a227d12189a44925d733323dec049a364}{}B\+Y\+T\+E \hyperlink{main_8h_a227d12189a44925d733323dec049a364}{by\+Million}\label{main_8h_a227d12189a44925d733323dec049a364}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant le contenu du rang des millions. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a4df9937b268ad11195988e364b84de0a}{}B\+Y\+T\+E \hyperlink{main_8h_a4df9937b268ad11195988e364b84de0a}{by\+Dix\+Million}\label{main_8h_a4df9937b268ad11195988e364b84de0a}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant le contenu du rang des dix millions. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ad342385d16e3f28a4aaf87eca89856d0}{}B\+Y\+T\+E \hyperlink{main_8h_ad342385d16e3f28a4aaf87eca89856d0}{by\+Cent\+Million}\label{main_8h_ad342385d16e3f28a4aaf87eca89856d0}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant le contenu du rang des cent millions. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a213295f2cd45c2e7617d9e388be80620}{}B\+Y\+T\+E \hyperlink{main_8h_a213295f2cd45c2e7617d9e388be80620}{by\+Milliard}\label{main_8h_a213295f2cd45c2e7617d9e388be80620}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant le contenu du rang des milliards. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a178bb6b011d07a133a044189ea6464ba}{}B\+O\+O\+L \hyperlink{main_8h_a178bb6b011d07a133a044189ea6464ba}{bo\+Return\+Maintenance}\label{main_8h_a178bb6b011d07a133a044189ea6464ba}
+
+\begin{DoxyCompactList}\small\item\em Indique si le programme doit afficher le menu de maintenance en cours. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a58326b010bbfe8ae28a86491047ab9a1}{}void $\ast$ \hyperlink{main_8h_a58326b010bbfe8ae28a86491047ab9a1}{ptr\+Parameter\+Menu}\label{main_8h_a58326b010bbfe8ae28a86491047ab9a1}
+
+\begin{DoxyCompactList}\small\item\em pointeur sur le paramètre à passer à l\textquotesingle{}écran de maintenance. Valeur, heure, délai... \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a36991c336ee015d23deb16efd5863301}{}B\+Y\+T\+E \hyperlink{main_8h_a36991c336ee015d23deb16efd5863301}{by\+Hour}\label{main_8h_a36991c336ee015d23deb16efd5863301}
+
+\begin{DoxyCompactList}\small\item\em Variable intermédaire stockant l\textquotesingle{}heure en cours de saisie. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a7692bbe5683da641c0a445a62a4a365b}{}B\+Y\+T\+E \hyperlink{main_8h_a7692bbe5683da641c0a445a62a4a365b}{by\+Min}\label{main_8h_a7692bbe5683da641c0a445a62a4a365b}
+
+\begin{DoxyCompactList}\small\item\em Variable intermédiaire stockant les minute en cours de saisie. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a1556ceaf385ac2dfc67cce65fee47ecd}{}\hyperlink{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40}{E\+S\+E\+N\+D\+E\+R} \hyperlink{main_8h_a1556ceaf385ac2dfc67cce65fee47ecd}{sender}\label{main_8h_a1556ceaf385ac2dfc67cce65fee47ecd}
+
+\begin{DoxyCompactList}\small\item\em Variable permettant de connaître l\textquotesingle{}origine de la demande de selection d\textquotesingle{}une machine. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a75923a8011f269a7add2f421c4053a24}{}rtcc\+Date \hyperlink{main_8h_a75923a8011f269a7add2f421c4053a24}{Today}\label{main_8h_a75923a8011f269a7add2f421c4053a24}
+
+\begin{DoxyCompactList}\small\item\em Variable contenant une date. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a8d4a5bd1c8a67524f3d823bf7754123b}{}B\+O\+O\+L \hyperlink{main_8h_a8d4a5bd1c8a67524f3d823bf7754123b}{bo\+Media\+C\+L\+Full}\label{main_8h_a8d4a5bd1c8a67524f3d823bf7754123b}
+
+\begin{DoxyCompactList}\small\item\em Indique que la clé cashless présente est ne peut plus être rechargée. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a2cd7a35fdbce87c9dbd3571ab67a88f6}{}B\+O\+O\+L \hyperlink{main_8h_a2cd7a35fdbce87c9dbd3571ab67a88f6}{bo\+Revalue\+Requested}\label{main_8h_a2cd7a35fdbce87c9dbd3571ab67a88f6}
+
+\begin{DoxyCompactList}\small\item\em Indique qu\textquotesingle{}une demande de recharge de la clé a été faite. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a1dd1da252672c07eea494a462f9b99df}{}B\+O\+O\+L \hyperlink{main_8h_a1dd1da252672c07eea494a462f9b99df}{bo\+Change\+Autorized}\label{main_8h_a1dd1da252672c07eea494a462f9b99df}
+
+\begin{DoxyCompactList}\small\item\em Indique si une opération de rendu peut-\/être effectuée. Autorisé seulement si une pièce a été insérée. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a2914db88620740b544b907d6e69a2fe0}{}B\+Y\+T\+E \hyperlink{main_8h_a2914db88620740b544b907d6e69a2fe0}{by\+Before\+Retry\+C\+L}\label{main_8h_a2914db88620740b544b907d6e69a2fe0}
+
+\begin{DoxyCompactList}\small\item\em Nombre de boucle avant de réessayer d\textquotesingle{}initialiser le lecteur cashless. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a59bbfcf26b848bf60b1b4d7620da4d46}{}B\+Y\+T\+E \hyperlink{main_8h_a59bbfcf26b848bf60b1b4d7620da4d46}{by\+Before\+Retry\+C\+G}\label{main_8h_a59bbfcf26b848bf60b1b4d7620da4d46}
+
+\begin{DoxyCompactList}\small\item\em Nombre de boucle avant de réessayer d\textquotesingle{}initialiser le rendeur. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a72cf1361f169612185aacfa6177d1374}{}B\+Y\+T\+E \hyperlink{main_8h_a72cf1361f169612185aacfa6177d1374}{by\+Before\+Retry\+B\+V}\label{main_8h_a72cf1361f169612185aacfa6177d1374}
+
+\begin{DoxyCompactList}\small\item\em Nombre de boucle avant de réessayer d\textquotesingle{}initialiser le lecteur de billet. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a98722b5b96d26befd035e0580f4aedf0}{}B\+O\+O\+L \hyperlink{main_8h_a98722b5b96d26befd035e0580f4aedf0}{bo\+Display\+Remaining}\label{main_8h_a98722b5b96d26befd035e0580f4aedf0}
+
+\begin{DoxyCompactList}\small\item\em Indique si le prochain affichage du montant dispo sera le restant. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a66453ef199a6a3c4fd617deaa402f51b}{}B\+O\+O\+L \hyperlink{main_8h_a66453ef199a6a3c4fd617deaa402f51b}{bo\+T\+O\+\_\+\+K\+B\+D}\label{main_8h_a66453ef199a6a3c4fd617deaa402f51b}
+
+\begin{DoxyCompactList}\small\item\em Flag indiquant que le timer du clavier est actif. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a0902b881b81a40e3b802aa91740a83d5}{}B\+O\+O\+L \hyperlink{main_8h_a0902b881b81a40e3b802aa91740a83d5}{bo\+T\+O\+Cumul}\label{main_8h_a0902b881b81a40e3b802aa91740a83d5}
+
+\begin{DoxyCompactList}\small\item\em Flag indiquant que le timer du cumul est actif. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aef2d8115a90b115ecf48d05c2104e0a3}{}B\+O\+O\+L \hyperlink{main_8h_aef2d8115a90b115ecf48d05c2104e0a3}{bo\+Be\+O\+F\+F}\label{main_8h_aef2d8115a90b115ecf48d05c2104e0a3}
+
+\begin{DoxyCompactList}\small\item\em Flag indiquant que la C\+P\+U doit passer en mode S\+L\+E\+E\+P. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ad57d1e2c9fe3b98fa710c62328246d74}{}B\+Y\+T\+E \hyperlink{main_8h_ad57d1e2c9fe3b98fa710c62328246d74}{by\+Bill\+Number}\label{main_8h_ad57d1e2c9fe3b98fa710c62328246d74}
+
+\begin{DoxyCompactList}\small\item\em Numéro du canal du dernier billet introduit. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a08d62e1fb78c5751b04d9380549cb6fd}{}B\+O\+O\+L \hyperlink{main_8h_a08d62e1fb78c5751b04d9380549cb6fd}{bo\+To\+Escrow}\label{main_8h_a08d62e1fb78c5751b04d9380549cb6fd}
+
+\begin{DoxyCompactList}\small\item\em Indique que la fonction v\+Escrow\+Requested doit être effectuée. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a21b979f128b31013821c1e6a519af176}{}B\+O\+O\+L \hyperlink{main_8h_a21b979f128b31013821c1e6a519af176}{thumb\+Drive\+Attached}\label{main_8h_a21b979f128b31013821c1e6a519af176}
+
+\begin{DoxyCompactList}\small\item\em Boolean indiquant si une clé usb est connectée. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a556816248596a3b4da712b6568e72f6f}{}Search\+Rec \hyperlink{main_8h_a556816248596a3b4da712b6568e72f6f}{search\+Rec}\label{main_8h_a556816248596a3b4da712b6568e72f6f}
+
+\begin{DoxyCompactList}\small\item\em Structure qui contiendra les paramètres du fichier recherché. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_af6d22f5327884b985bfa64067cb02919}{}F\+S\+F\+I\+L\+E $\ast$ \hyperlink{main_8h_af6d22f5327884b985bfa64067cb02919}{credit\+File}\label{main_8h_af6d22f5327884b985bfa64067cb02919}
+
+\begin{DoxyCompactList}\small\item\em Pointeur sur la structure du fichier de crédits. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aa51a7d902c4596ec000573cedbb4c92b}{}\hyperlink{main_8h_a4058d8498af43e7a287306f910bd965f}{P\+R\+O\+C\+E\+S\+S\+I\+O\+S\+T\+A\+T\+E} {\bfseries Process\+I\+O\+State}\label{main_8h_aa51a7d902c4596ec000573cedbb4c92b}
+
+\item 
+\hypertarget{main_8h_ace4cdc80f757ffc4a255c4aad1f685a7}{}B\+O\+O\+L \hyperlink{main_8h_ace4cdc80f757ffc4a255c4aad1f685a7}{bo\+Audit\+Enable}\label{main_8h_ace4cdc80f757ffc4a255c4aad1f685a7}
+
+\begin{DoxyCompactList}\small\item\em Variable indiquant que l\textquotesingle{}audit est autorisé. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a6e807e804f80931938e047c976e5f42a}{}B\+O\+O\+L \hyperlink{main_8h_a6e807e804f80931938e047c976e5f42a}{bo\+Config\+Enable}\label{main_8h_a6e807e804f80931938e047c976e5f42a}
+
+\begin{DoxyCompactList}\small\item\em Variable indiquant que le paramétrage de la centrale est autorisé \end{DoxyCompactList}\item 
+\hypertarget{main_8h_afe497f187c0eb362aaf0c6cce2113456}{}B\+O\+O\+L \hyperlink{main_8h_afe497f187c0eb362aaf0c6cce2113456}{bo\+Histo\+Enable}\label{main_8h_afe497f187c0eb362aaf0c6cce2113456}
+
+\begin{DoxyCompactList}\small\item\em Variable indiquant que la lecture de l\textquotesingle{}historique est autorisé. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aac89e08b07573f22909bc44690fab224}{}B\+O\+O\+L \hyperlink{main_8h_aac89e08b07573f22909bc44690fab224}{bo\+R\+A\+Z\+Enable}\label{main_8h_aac89e08b07573f22909bc44690fab224}
+
+\begin{DoxyCompactList}\small\item\em Variable indiquant que la remise à zéro des audits est autorisé. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_aa59937633c534feb1a9163f2f66125c4}{}B\+O\+O\+L \hyperlink{main_8h_aa59937633c534feb1a9163f2f66125c4}{bo\+Refilling\+Enable}\label{main_8h_aa59937633c534feb1a9163f2f66125c4}
+
+\begin{DoxyCompactList}\small\item\em Variable indiquant que le refilling est autorisé. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a73754878e0b726467ba052ad0af8682a}{}B\+O\+O\+L \hyperlink{main_8h_a73754878e0b726467ba052ad0af8682a}{bo\+File\+Credit\+Present}\label{main_8h_a73754878e0b726467ba052ad0af8682a}
+
+\begin{DoxyCompactList}\small\item\em Indique qu\textquotesingle{}une clé U\+S\+B est présente qu\textquotesingle{}elle contient un fichier de crédit. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_ac6c0d405fd13cf87191a6ee7435a84e6}{}B\+O\+O\+L \hyperlink{main_8h_ac6c0d405fd13cf87191a6ee7435a84e6}{bo\+Change\+In\+Progress}\label{main_8h_ac6c0d405fd13cf87191a6ee7435a84e6}
+
+\begin{DoxyCompactList}\small\item\em Indique si le rendeur effectue une opération de change. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a7935dd75e3949ef3a3d3e8b6aefdc087}{}Timer\+Handle\+\_\+t \hyperlink{main_8h_a7935dd75e3949ef3a3d3e8b6aefdc087}{h\+Timer\+T\+O\+Buzzer}\label{main_8h_a7935dd75e3949ef3a3d3e8b6aefdc087}
+
+\begin{DoxyCompactList}\small\item\em Timer du buzzer. \end{DoxyCompactList}\item 
+\hypertarget{main_8h_a67540808395519081be1333c4e9aa1f8}{}A\+P\+P\+\_\+\+C\+O\+N\+F\+I\+G {\bfseries App\+Config}\label{main_8h_a67540808395519081be1333c4e9aa1f8}
+
+\item 
+\hypertarget{main_8h_a1d2695576a013dec4ae11c6afe9d5c69}{}Task\+Handle\+\_\+t {\bfseries h\+Heart\+Beating}\label{main_8h_a1d2695576a013dec4ae11c6afe9d5c69}
+
+\item 
+\hypertarget{main_8h_a9969d69e2d1e2833edbae222fa88f339}{}Task\+Handle\+\_\+t {\bfseries h\+D\+S\+T}\label{main_8h_a9969d69e2d1e2833edbae222fa88f339}
+
+\item 
+\hypertarget{main_8h_aa161f004399bf26187d8eda5ee067772}{}Task\+Handle\+\_\+t {\bfseries h\+M\+D\+B}\label{main_8h_aa161f004399bf26187d8eda5ee067772}
+
+\item 
+\hypertarget{main_8h_a4fe5bd82fa0d982fd1acaacbbd1e0729}{}Task\+Handle\+\_\+t {\bfseries h\+Key\+Board}\label{main_8h_a4fe5bd82fa0d982fd1acaacbbd1e0729}
+
+\item 
+\hypertarget{main_8h_ac35e2cbd8ca3cb6b562ad16bbd26de52}{}Task\+Handle\+\_\+t {\bfseries h\+Treat\+Key}\label{main_8h_ac35e2cbd8ca3cb6b562ad16bbd26de52}
+
+\item 
+\hypertarget{main_8h_a5ff1356534b770100d6af88f56c6debd}{}Task\+Handle\+\_\+t {\bfseries h\+U\+S\+B}\label{main_8h_a5ff1356534b770100d6af88f56c6debd}
+
+\item 
+\hypertarget{main_8h_aebf5e3663bdde3cd002b73f3068d9bd4}{}Task\+Handle\+\_\+t {\bfseries h\+Time\+Display}\label{main_8h_aebf5e3663bdde3cd002b73f3068d9bd4}
+
+\item 
+\hypertarget{main_8h_af0cd65dd2562eede34fefa228799d7a7}{}Task\+Handle\+\_\+t {\bfseries h\+Flip}\label{main_8h_af0cd65dd2562eede34fefa228799d7a7}
+
+\item 
+\hypertarget{main_8h_a472d6444bbe7f5cbba16141a0cb6dd0c}{}Task\+Handle\+\_\+t {\bfseries h\+Test}\label{main_8h_a472d6444bbe7f5cbba16141a0cb6dd0c}
+
+\item 
+\hypertarget{main_8h_a7d84ea732ce9ec1ed7e1374ee4052637}{}Task\+Handle\+\_\+t {\bfseries h\+Change}\label{main_8h_a7d84ea732ce9ec1ed7e1374ee4052637}
+
+\item 
+\hypertarget{main_8h_a5043c85d0cfd9324659aae9e9af6a521}{}B\+Y\+T\+E {\bfseries by\+Check\+Stack} \mbox{[}20\mbox{]}\label{main_8h_a5043c85d0cfd9324659aae9e9af6a521}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Rachid A\+K\+K\+O\+U\+C\+H\+E 
+\end{DoxyAuthor}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{main_8h_a99fb83031ce9923c84392b4e92f956b5}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{main_8h_a99fb83031ce9923c84392b4e92f956b5}
+Enumération \hypertarget{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40}{}\index{main.\+h@{main.\+h}!E\+S\+E\+N\+D\+E\+R@{E\+S\+E\+N\+D\+E\+R}}
+\index{E\+S\+E\+N\+D\+E\+R@{E\+S\+E\+N\+D\+E\+R}!main.\+h@{main.\+h}}
+\subsubsection[{E\+S\+E\+N\+D\+E\+R}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf E\+S\+E\+N\+D\+E\+R}}\label{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40}
+
+
+Enumeration des origines de l\textquotesingle{}utilisation d\textquotesingle{}une requête. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{U\+S\+E\+R@{U\+S\+E\+R}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!U\+S\+E\+R@{U\+S\+E\+R}}\item[{\em 
+\hypertarget{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40ae2d30a195cee6b2961cc2c23ea4b520b}{}U\+S\+E\+R\label{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40ae2d30a195cee6b2961cc2c23ea4b520b}
+}]La requête est effectuée en mode user. \index{M\+A\+N\+U\+A\+L\+M\+A\+C\+H\+I\+N\+E@{M\+A\+N\+U\+A\+L\+M\+A\+C\+H\+I\+N\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!M\+A\+N\+U\+A\+L\+M\+A\+C\+H\+I\+N\+E@{M\+A\+N\+U\+A\+L\+M\+A\+C\+H\+I\+N\+E}}\item[{\em 
+\hypertarget{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40aab5af7ac19c23a164dd578f29245fe54}{}M\+A\+N\+U\+A\+L\+M\+A\+C\+H\+I\+N\+E\label{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40aab5af7ac19c23a164dd578f29245fe54}
+}]La requête est effectuée en parametrage manuel d\textquotesingle{}une nouvelle machine. \index{M\+O\+D\+I\+F\+M\+A\+C\+H\+I\+N\+E\+S@{M\+O\+D\+I\+F\+M\+A\+C\+H\+I\+N\+E\+S}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!M\+O\+D\+I\+F\+M\+A\+C\+H\+I\+N\+E\+S@{M\+O\+D\+I\+F\+M\+A\+C\+H\+I\+N\+E\+S}}\item[{\em 
+\hypertarget{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40af39a1e1792e202cdb892fd58c3188501}{}M\+O\+D\+I\+F\+M\+A\+C\+H\+I\+N\+E\+S\label{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40af39a1e1792e202cdb892fd58c3188501}
+}]La requête est effectuée en modification d\textquotesingle{}une machine. \index{R\+E\+M\+O\+V\+E\+S\+A\+T\+E\+L\+L\+I\+T\+E@{R\+E\+M\+O\+V\+E\+S\+A\+T\+E\+L\+L\+I\+T\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!R\+E\+M\+O\+V\+E\+S\+A\+T\+E\+L\+L\+I\+T\+E@{R\+E\+M\+O\+V\+E\+S\+A\+T\+E\+L\+L\+I\+T\+E}}\item[{\em 
+\hypertarget{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40a2b1d7ece74fe6a41026bdf073b8c06d2}{}R\+E\+M\+O\+V\+E\+S\+A\+T\+E\+L\+L\+I\+T\+E\label{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40a2b1d7ece74fe6a41026bdf073b8c06d2}
+}]La requête est effectuée pour obtenir la machine de référente. \index{R\+E\+M\+O\+V\+E\+A\+L\+L\+S\+A\+T\+T\+E\+L\+I\+T\+E@{R\+E\+M\+O\+V\+E\+A\+L\+L\+S\+A\+T\+T\+E\+L\+I\+T\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!R\+E\+M\+O\+V\+E\+A\+L\+L\+S\+A\+T\+T\+E\+L\+I\+T\+E@{R\+E\+M\+O\+V\+E\+A\+L\+L\+S\+A\+T\+T\+E\+L\+I\+T\+E}}\item[{\em 
+\hypertarget{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40acacf4a3ea6c01a98151584c3983666ef}{}R\+E\+M\+O\+V\+E\+A\+L\+L\+S\+A\+T\+T\+E\+L\+I\+T\+E\label{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40acacf4a3ea6c01a98151584c3983666ef}
+}]La requête est effectuée pour supprimer une machine. La requête est effectuée pour supprimer toutes les machines. \index{M\+A\+I\+N\+M\+A\+I\+N\+T\+E\+N\+A\+N\+C\+E@{M\+A\+I\+N\+M\+A\+I\+N\+T\+E\+N\+A\+N\+C\+E}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!M\+A\+I\+N\+M\+A\+I\+N\+T\+E\+N\+A\+N\+C\+E@{M\+A\+I\+N\+M\+A\+I\+N\+T\+E\+N\+A\+N\+C\+E}}\item[{\em 
+\hypertarget{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40a217c3150188f121b4a17e822f2fff7ab}{}M\+A\+I\+N\+M\+A\+I\+N\+T\+E\+N\+A\+N\+C\+E\label{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40a217c3150188f121b4a17e822f2fff7ab}
+}]La requête est effectuée à partir du menu principal de maintenance. \index{H\+I\+S\+T\+O\+R\+I\+Q\+U\+E\+M\+E\+N\+U@{H\+I\+S\+T\+O\+R\+I\+Q\+U\+E\+M\+E\+N\+U}!main.\+h@{main.\+h}}\index{main.\+h@{main.\+h}!H\+I\+S\+T\+O\+R\+I\+Q\+U\+E\+M\+E\+N\+U@{H\+I\+S\+T\+O\+R\+I\+Q\+U\+E\+M\+E\+N\+U}}\item[{\em 
+\hypertarget{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40a76fe4016faf924f193d43c4095f751a6}{}H\+I\+S\+T\+O\+R\+I\+Q\+U\+E\+M\+E\+N\+U\label{main_8h_ad8afefbcfa7e83d89b3a2be8814a5f40a76fe4016faf924f193d43c4095f751a6}
+}]
+\begin{DoxyItemize}
+\item La requête est effectuée à partir du menu historique. 
+\end{DoxyItemize}\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8h_a11edd49d2b13deb3fcffb42f6f3e0f5e}{}\index{main.\+h@{main.\+h}!bo\+R\+A\+Z\+Audit@{bo\+R\+A\+Z\+Audit}}
+\index{bo\+R\+A\+Z\+Audit@{bo\+R\+A\+Z\+Audit}!main.\+h@{main.\+h}}
+\subsubsection[{bo\+R\+A\+Z\+Audit}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L bo\+R\+A\+Z\+Audit (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{main_8h_a11edd49d2b13deb3fcffb42f6f3e0f5e}
+
+
+Remet à zéro les audits. 
+
+\begin{DoxyReturn}{Returns}
+True si les audits sont effacés. 
+\end{DoxyReturn}
+\hypertarget{main_8h_a9a9555d9ca35ac3d3424869d97e25212}{}\index{main.\+h@{main.\+h}!bo\+Test@{bo\+Test}}
+\index{bo\+Test@{bo\+Test}!main.\+h@{main.\+h}}
+\subsubsection[{bo\+Test}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L bo\+Test (
+\begin{DoxyParamCaption}
+\item[{B\+Y\+T\+E}]{by\+Test}
+\end{DoxyParamCaption}
+)}\label{main_8h_a9a9555d9ca35ac3d3424869d97e25212}
+Prototypes \hypertarget{main_8h_ae35bf44b244711233646655a12594b02}{}\index{main.\+h@{main.\+h}!by\+Get\+Char\+Under\+Cursor@{by\+Get\+Char\+Under\+Cursor}}
+\index{by\+Get\+Char\+Under\+Cursor@{by\+Get\+Char\+Under\+Cursor}!main.\+h@{main.\+h}}
+\subsubsection[{by\+Get\+Char\+Under\+Cursor}]{\setlength{\rightskip}{0pt plus 5cm}B\+Y\+T\+E by\+Get\+Char\+Under\+Cursor (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main_8h_ae35bf44b244711233646655a12594b02}
+
+
+Renvoie le code ascii du caractère sous le curseur. 
+
+\begin{DoxyReturn}{Returns}
+Code ascii du caractère sous le curseur. 
+\end{DoxyReturn}
+\hypertarget{main_8h_a7fa42be69b82d80e3585edb9f2b1c06a}{}\index{main.\+h@{main.\+h}!l\+Get\+Amount\+To\+Pay@{l\+Get\+Amount\+To\+Pay}}
+\index{l\+Get\+Amount\+To\+Pay@{l\+Get\+Amount\+To\+Pay}!main.\+h@{main.\+h}}
+\subsubsection[{l\+Get\+Amount\+To\+Pay}]{\setlength{\rightskip}{0pt plus 5cm}long l\+Get\+Amount\+To\+Pay (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main_8h_a7fa42be69b82d80e3585edb9f2b1c06a}
+
+
+Renvoi le montant à payer en fonction du moyen et de l\textquotesingle{}heure. 
+
+\begin{DoxyReturn}{Returns}
+le montant à payer. 
+\end{DoxyReturn}
+\hypertarget{main_8h_ab7e5c95cf72a3f819bc4462a7fb62ca3}{}\index{main.\+h@{main.\+h}!v\+Application\+Malloc\+Failed\+Hook@{v\+Application\+Malloc\+Failed\+Hook}}
+\index{v\+Application\+Malloc\+Failed\+Hook@{v\+Application\+Malloc\+Failed\+Hook}!main.\+h@{main.\+h}}
+\subsubsection[{v\+Application\+Malloc\+Failed\+Hook}]{\setlength{\rightskip}{0pt plus 5cm}void v\+Application\+Malloc\+Failed\+Hook (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main_8h_ab7e5c95cf72a3f819bc4462a7fb62ca3}
+
+
+Fonction appelée en cas d\textquotesingle{}echec d\textquotesingle{}allocation dans Free\+R\+T\+O\+S. 
+
+\hyperlink{main_8h_ab7e5c95cf72a3f819bc4462a7fb62ca3}{v\+Application\+Malloc\+Failed\+Hook()} will only be called if config\+U\+S\+E\+\_\+\+M\+A\+L\+L\+O\+C\+\_\+\+F\+A\+I\+L\+E\+D\+\_\+\+H\+O\+O\+K is set to 1 in \hyperlink{_free_r_t_o_s_config_8h_source}{Free\+R\+T\+O\+S\+Config.\+h}. It is a hook function that will get called if a call to pv\+Port\+Malloc() fails. pv\+Port\+Malloc() is called internally by the kernel whenever a task, queue, timer or semaphore is created. It is also called by various parts of the demo application. If heap\+\_\+1.\+c or heap\+\_\+2.\+c are used, then the size of the heap available to pv\+Port\+Malloc() is defined by config\+T\+O\+T\+A\+L\+\_\+\+H\+E\+A\+P\+\_\+\+S\+I\+Z\+E in \hyperlink{_free_r_t_o_s_config_8h_source}{Free\+R\+T\+O\+S\+Config.\+h}, and the x\+Port\+Get\+Free\+Heap\+Size() A\+P\+I function can be used to query the size of free heap space that remains (although it does not provide information on how the remaining heap might be fragmented). \hypertarget{main_8h_a101afd5cb63d21e59f217290f84373a0}{}\index{main.\+h@{main.\+h}!v\+Check\+U\+S\+B@{v\+Check\+U\+S\+B}}
+\index{v\+Check\+U\+S\+B@{v\+Check\+U\+S\+B}!main.\+h@{main.\+h}}
+\subsubsection[{v\+Check\+U\+S\+B}]{\setlength{\rightskip}{0pt plus 5cm}void v\+Check\+U\+S\+B (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pv\+Parmeter}
+\end{DoxyParamCaption}
+)}\label{main_8h_a101afd5cb63d21e59f217290f84373a0}
+
+\begin{DoxyParams}{Parameters}
+{\em pv\+Parmeter} & Pointeur vers un éventuel paramètre. (réclamé par Freertos) \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8h_ad6105af57742f221e1d54935534b62aa}{}\index{main.\+h@{main.\+h}!v\+Initialization@{v\+Initialization}}
+\index{v\+Initialization@{v\+Initialization}!main.\+h@{main.\+h}}
+\subsubsection[{v\+Initialization}]{\setlength{\rightskip}{0pt plus 5cm}void v\+Initialization (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main_8h_ad6105af57742f221e1d54935534b62aa}
+
+
+Configure les périphériques du microcontroleur. 
+
+Positionne le port et éteint la led, prépare l\textquotesingle{}interruption pour le bouton sur la carte positonne le port et éteint le buzzer et positionne les entrées sorties du clavier. \hypertarget{main_8h_aaf6fde8e5ad92f4167f2af2373092763}{}\index{main.\+h@{main.\+h}!v\+Is\+Media\+Full@{v\+Is\+Media\+Full}}
+\index{v\+Is\+Media\+Full@{v\+Is\+Media\+Full}!main.\+h@{main.\+h}}
+\subsubsection[{v\+Is\+Media\+Full}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+L v\+Is\+Media\+Full (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main_8h_aaf6fde8e5ad92f4167f2af2373092763}
+
+
+Vérifie si la clé est rechargeable. 
+
+\begin{DoxyReturn}{Returns}
+T\+R\+U\+E si la clé est pleine. 
+\end{DoxyReturn}
+\hypertarget{main_8h_a1bbf6a1a849cf7717d872a7bd1a89a2f}{}\index{main.\+h@{main.\+h}!v\+Poll\+Satellite@{v\+Poll\+Satellite}}
+\index{v\+Poll\+Satellite@{v\+Poll\+Satellite}!main.\+h@{main.\+h}}
+\subsubsection[{v\+Poll\+Satellite}]{\setlength{\rightskip}{0pt plus 5cm}void v\+Poll\+Satellite (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{pv\+Parameter}
+\end{DoxyParamCaption}
+)}\label{main_8h_a1bbf6a1a849cf7717d872a7bd1a89a2f}
+
+
+Interroge les satellites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pv\+Parameter} & Pointeur vers un éventuel paramètre (réclamé par Freertos) \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8h_aae1009cf3a4cce0212a1ad8880fee9f5}{}\index{main.\+h@{main.\+h}!v\+Screen\+Cumul@{v\+Screen\+Cumul}}
+\index{v\+Screen\+Cumul@{v\+Screen\+Cumul}!main.\+h@{main.\+h}}
+\subsubsection[{v\+Screen\+Cumul}]{\setlength{\rightskip}{0pt plus 5cm}void v\+Screen\+Cumul (
+\begin{DoxyParamCaption}
+\item[{B\+Y\+T\+E}]{by\+Key}
+\end{DoxyParamCaption}
+)}\label{main_8h_aae1009cf3a4cce0212a1ad8880fee9f5}
+
+
+Traite la touche utilisée dans l\textquotesingle{}écran de choix du cumul autorisé et enregistre les paramètres de la machine le cas échéant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em by\+Key} & Numéro de la touche utilisée. \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8h_a989ee9cd6dc543f8b40f690d50feb047}{}\index{main.\+h@{main.\+h}!v\+Screen\+Dsp\+Time\+Remaining@{v\+Screen\+Dsp\+Time\+Remaining}}
+\index{v\+Screen\+Dsp\+Time\+Remaining@{v\+Screen\+Dsp\+Time\+Remaining}!main.\+h@{main.\+h}}
+\subsubsection[{v\+Screen\+Dsp\+Time\+Remaining}]{\setlength{\rightskip}{0pt plus 5cm}void v\+Screen\+Dsp\+Time\+Remaining (
+\begin{DoxyParamCaption}
+\item[{B\+Y\+T\+E}]{by\+Key}
+\end{DoxyParamCaption}
+)}\label{main_8h_a989ee9cd6dc543f8b40f690d50feb047}
+
+
+Traite la touche utilisée dans l\textquotesingle{}écran de choix de l\textquotesingle{}affichage du temps restant et enregistre les paramètres de la machine le cas échéant. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em by\+Key} & Numéro de la touche utilisée. \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8h_a71db365c5da2959ceaaac347db866abd}{}\index{main.\+h@{main.\+h}!v\+Warning@{v\+Warning}}
+\index{v\+Warning@{v\+Warning}!main.\+h@{main.\+h}}
+\subsubsection[{v\+Warning}]{\setlength{\rightskip}{0pt plus 5cm}void v\+Warning (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{by\+Message}
+\end{DoxyParamCaption}
+)}\label{main_8h_a71db365c5da2959ceaaac347db866abd}
+
+
+Affiche un message sur la ligne 3 de l\textquotesingle{}afficheur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em by\+Message} & Buffer du message à afficher. \\
+\hline
+\end{DoxyParams}

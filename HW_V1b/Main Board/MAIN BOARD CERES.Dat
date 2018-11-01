@@ -1,0 +1,49 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~MAIN BOARD CERES.PrjPcb|ReportField=ProjectFullPath~G:\Projets\20130718CERES\HW\Main Board\MAIN BOARD CERES.PrjPcb|ReportField=Title~Bill of Materials For Project [MAIN BOARD CERES.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~109|ReportField=ReportTime~13:47:35|ReportField=ReportDate~25/08/2013|ReportField=ReportDateTime~25/08/2013 13:47:35|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Date~21013/07/20|ReportField=Telephone~+33651604047|ReportField=Address1~52 J03, rue de la crèche|ReportField=Address2~77100 MEAUX|ReportField=Address3~FRANCE|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~Rachid AKKOUCHE|ReportField=CheckedBy~|ReportField=CompanyName~RASoftware|ReportField=CurrentDate~25/08/2013|ReportField=CurrentTime~13:47:16|ReportField=DocumentFullPathAndName~G:\Projets\20130718CERES\HW\Main Board\MAIN.SchDoc|ReportField=DocumentName~MAIN.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Email~rachid.akkouche@wanadoo.fr|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~25/08/2013|ReportField=Organization~RASoftware|ReportField=ProjectName~MAIN BOARD CERES.PrjPcb|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=ConfigurationParameters~|ReportField=ConfiguratorName~|ReportField=IsUserConfigurable~|ReportField=VersionControl_RevNumber~|ReportField=DataSourceFileName~MAIN BOARD CERES.PrjPcb|ReportField=DataSourceFullPath~G:\Projets\20130718CERES\HW\Main Board\MAIN BOARD CERES.PrjPcb
+AA|Multicell Battery|BT1, BT2|BAT-2|Battery|2
+10uF|Polarized Capacitor|C1, C20, C21, C23, C24, C25|KEMET_4|Cap Pol1|6
+100nF|Capacitor|C2, C4, C5, C6, C7, C8, C11, C12, C13, C14, C15, C16, C17, C19|C0805|Cap 0805 100nF, Cap 0805 100nF, Cap 0805 100nF, Cap 0805 100nF, Cap 0805 100nF, Cap 0805 100nF, Cap 0805 100nF, Cap, Cap, Cap, Cap, Cap, Cap 0805 100nF, Cap 0805 100nF|14
+Cap Pol1|Polarized Capacitor (Radial)|C3|RB7.6-15|Cap Pol1|1
+22pF|Capacitor|C9, C10|C0805|Cap 0805 22pF|2
+100uF|Polarized Capacitor|C18, C26, C27|Kemet_63|Cap Pol 100uF|3
+1uF|Capacitor|C22|C0805|Cap 0805 1uF|1
+1000uF|Polarized Capacitor|C28|KEMET_10|Cap Pol 1000uF|1
+BAT54S|Schottky Barrier Double Diode|D1, D2, D3, D4, D8|SOT-23|BAT54S|5
+BAT54A|Schottky Barrier Double Diode|D5, D6||BAT54A|2
+HSMH-C190|Surface Mount Chip LED, Red|D7, D12, D13, D14|0603-LEDR|HSMH-C190|4
+SCHOTTKY 40V 3A|Schottky Diode|D9, D10, D11|SMB|D Schottky|3
+2A|Fuse|F1|PIN-W2/E2.8|Fuse 1|1
+220uH 3A|Inductor|L1|0402-A|Inductor|1
+DISPLAY|Header, 16-Pin|P1|HDR1X16|Header 16|1
+KEYBOARD|Header, 8-Pin|P2|HDR1X8|Header 8|1
+M20-8770642|Header, 6-Pin|P3|M20_1X6|Header 6|1
+MOLEX 39-30-1060|Header, 6-Pin|P4|HDR1X6|Header 6|1
+DB9|Receptacle Assembly, 9 Position, Right Angle|P5, P6|SUBD9_F_V|D Connector 9|2
+BUS 485|Header, 4-Pin|P7|HDR1X4|Header 4|1
+EIA-485 TERMINAISON|Header, 2-Pin|P8|HDR1X2|Header 2|1
+USB A|USB 2.0 Connector A|P9||Header 4|1
+MICRO USB A/B|Header, 5-Pin|P10||Header 5|1
+Header 2|15-40 VDC|P11|HDR1X2|Header 2|1
+Header 3X2|Header, 3-Pin, Dual row|P12|HDR2X3|Header 3X2|1
+10K|Square Trimming Potentiometer|PT1|POT4MM-2|RPot SM|1
+BC857|PNP Switching Transistor|Q1, Q2|SOT-23|PMBT2907A|2
+0R|Resistor or Jumper|R1, R2, R3, R4|R0805|Resistor 0805 0R|4
+56K|Resistor|R5, R6, R7, R8, R9, R10, R11, R12, R33|R0805|Resistor 0805 56K|9
+1K|Resistor|R13, R14, R15, R16, R30, R36|R0805|Res2, Res2, Res2, Res2, Resistor 0805 1K, Resistor 0805 1K|6
+270|Resistor|R17, R37|R0805|Resistor 0805 1K|2
+10K|Resistor|R18, R19|R0805|Resistor 0805 10K|2
+Res2|Resistor|R20, R21, R22, R23, R24|AXIAL-0.4|Res2|5
+470|Resistor|R25, R26|R0805|Res2|2
+4.7K|Resistor|R27, R31, R34|R0805|Resistor 0805 4.7K|3
+56|Resistor|R28, R29|R0805|Resistor 0805 56|2
+120|Resistor|R32, R38|R0805|Resistor 0805 120, Resistor 0805 1K|2
+100K|Resistor|R35|R0805|Resistor 0805 100K|1
+PIC32MX795F512H-80I/PT|High Performance 80 MHz MIPS-Based 32-Bit Flash Microcontroller with USB, CAN and Ethernet, 512KB Program Memory, 64-pin TQFP, Industrial Temperature|U1|TQFP-PT64_N|PIC32MX795F512H-80I/PT|1
+M24512|EEPROM 512K I2C|U2|SOIC8|M24512-MN|1
+ST232CDR|Dual EIA-232 Driver/Receiver|U3|SO-16|MAX232D|1
+ADM4851ARZ|Low-Power, Slew-Rate-Limited RS-485/RS-422 Transceiver|U4|NSO8_N|MAX485ESA|1
+TPS2041|Power DIST Switch|U5||TPS2041-DBV|1
+MCP1253-33X50I/MS|Low Noise, Positive-Regulated Charge Pump, 1MHz, Fixed Output, 8-Pin MSOP, Industrial Temperature|U6|MSOP-MS8_N|MCP1253-33X50I/MS|1
+LM1117DT-5.0|800mA Low-Dropout Linear Regulator, 3-pin TO-252|U7|SOT223|LM1117DT-5.0|1
+LM1117 3.3|800mA Low-Dropout Linear Regulator, 3-pin TO-252|U8|DPACK-3|LM1117DT-3.3|1
+LM2576S-12|SIMPLE SWITCHER® 3A Step-Down Voltage Regulator, 5-pin TO-220|U9|T05A|LM2576HVT-12|1
+32.768 KHZ||Y1||CRYSTAL2|1

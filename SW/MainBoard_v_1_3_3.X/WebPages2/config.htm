@@ -1,0 +1,76 @@
+~inc:header.inc~
+<meta name="description" content="Page principale du serveur de gestion des centrales MDI" />
+<title>Configuration centrale</title>
+</head>
+<body>
+    <br/>
+    <br/>
+    <div class="TitrePage">
+        CONFIGURATION
+    </div>
+    <br/>
+    <br/>
+    <fieldset class="fieldset">
+        <div id="display">            
+            <br/>
+            <span>&nbsp;<b>Heure de la centrale : </b>&nbsp;</span>
+            <span id="timeCentrale" name="timeCentrale">~timeCentrale~</span>
+            <!-- <div id="timeCentrale">00:00</div> -->
+        </div>
+        <form method ="get" action="config.htm" name="Heure" id="Heure">          
+            <input id="Time" type="hidden" name="Time" value = '' />
+            <input id="Date" type="hidden" name="Date" value = '' />
+            <table>
+                <tr>
+                    <td>
+                        &nbsp;<input type="submit" value="Mise &agrave; l'heure" />                        
+                    </td>
+                    <td>&nbsp;</td>
+                    <td>
+                        <label>Synchronise l'heure de la centrale avec celle du PC.</label>                        
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    <br/>
+    <table cellpadding="10" class="left">
+        <tr>
+            <td class = "backGroundBlue">
+                <a href="parametres.htm">Param&egrave;tres</a>
+            </td>
+            <td>
+                Param&egrave;tres de la centrale.
+            </td>
+        </tr>
+        <tr>
+            <td class = "backGroundBlue">
+                <a href="peripheriques.htm">P&eacute;riph&eacute;riques</a>
+            </td>
+            <td>
+                Configuration des moyens de paiement.
+            </td>
+        </tr>
+        <tr>
+            <td class = "backGroundBlue">
+                <a href="macParam.htm">Param&egrave;tres machines</a>
+            </td>
+            <td>
+                Configuration des machines.
+            </td>
+        </tr>
+        <tr>
+            <td class = "backGroundBlue">
+                <a href="index.htm">Page principale</a>
+            </td>
+            <td>
+                Retour &agrave; la page principale.
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript"><!--
+        getTimeCentral();
+        getDateTimeSystem();
+        -->
+    </script>
+    ~inc:footer.inc~

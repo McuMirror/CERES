@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MAINBOARD MDI: Gestion de la mémoire eeprom i2c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../rasoftware.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MAINBOARD MDI
+   &#160;<span id="projectnumber">1.3.4</span>
+   </div>
+   <div id="projectbrief">Gestion de la centrale d&#39;une laverie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d1/de7/group__EEPROM__I2C.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Gestion de la mémoire eeprom i2c</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga072399648dccc2e724aea40bfb28dd69"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de7/group__EEPROM__I2C.html#ga072399648dccc2e724aea40bfb28dd69">EE_ADDR</a>&#160;&#160;&#160;0xA0</td></tr>
+<tr class="memdesc:ga072399648dccc2e724aea40bfb28dd69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identificateur eeprom i2c pour une écriture.  <a href="#ga072399648dccc2e724aea40bfb28dd69">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga072399648dccc2e724aea40bfb28dd69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga65dd15c61397abf8c66738f80c342740"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de7/group__EEPROM__I2C.html#ga65dd15c61397abf8c66738f80c342740">EEREAD</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memdesc:ga65dd15c61397abf8c66738f80c342740"><td class="mdescLeft">&#160;</td><td class="mdescRight">bit indiquant que l'eeprom doit être lue.  <a href="#ga65dd15c61397abf8c66738f80c342740">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga65dd15c61397abf8c66738f80c342740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga20aae57f1b4cc3f8034c88b1549bec76"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de7/group__EEPROM__I2C.html#ga20aae57f1b4cc3f8034c88b1549bec76">I2CE2promLReadBuffer</a> (const WORD wAddress, void *data, const size_t size)</td></tr>
+<tr class="memdesc:ga20aae57f1b4cc3f8034c88b1549bec76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tansfert les données lues dans l'eeprom dans un buffer.  <a href="#ga20aae57f1b4cc3f8034c88b1549bec76">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga20aae57f1b4cc3f8034c88b1549bec76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d317e8fca51c656908e8e540bce139d"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de7/group__EEPROM__I2C.html#ga5d317e8fca51c656908e8e540bce139d">I2CE2promLWriteBuffer</a> (const WORD wAddress, void *data, const size_t size)</td></tr>
+<tr class="memdesc:ga5d317e8fca51c656908e8e540bce139d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ecrit les données contenu dans un buffer dans l'eeprom.  <a href="#ga5d317e8fca51c656908e8e540bce139d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga5d317e8fca51c656908e8e540bce139d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac1721141ad0fbff7ad33f82fb6f0fd9c"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de7/group__EEPROM__I2C.html#gac1721141ad0fbff7ad33f82fb6f0fd9c">I2CE2promLWriteByte</a> (const WORD wAddress, BYTE byData)</td></tr>
+<tr class="memdesc:gac1721141ad0fbff7ad33f82fb6f0fd9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ecrit un octet dans l'eeprom à l'adresse indiquée.  <a href="#gac1721141ad0fbff7ad33f82fb6f0fd9c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gac1721141ad0fbff7ad33f82fb6f0fd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f7d969d7169e9449ce1927b19a1b435"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de7/group__EEPROM__I2C.html#ga3f7d969d7169e9449ce1927b19a1b435">InitI2CE2promL</a> (const I2C_MODULE module, const UINT32 ui32Frequence)</td></tr>
+<tr class="separator:ga3f7d969d7169e9449ce1927b19a1b435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga7999ce31693f8df62009a6af63775c17"><td class="memItemLeft" align="right" valign="top">I2C_MODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a></td></tr>
+<tr class="memdesc:ga7999ce31693f8df62009a6af63775c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Module du port I2C.  <a href="#ga7999ce31693f8df62009a6af63775c17">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga7999ce31693f8df62009a6af63775c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="ga072399648dccc2e724aea40bfb28dd69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga072399648dccc2e724aea40bfb28dd69">&#9670;&nbsp;</a></span>EE_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EE_ADDR&#160;&#160;&#160;0xA0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Identificateur eeprom i2c pour une écriture. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html#l00024">24</a> du fichier <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html">I2CE2PROML.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00123">I2CE2promLReadBuffer()</a>, et <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00048">SetE2promAddress()</a>.</p>
+
+</div>
+</div>
+<a id="ga65dd15c61397abf8c66738f80c342740"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga65dd15c61397abf8c66738f80c342740">&#9670;&nbsp;</a></span>EEREAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EEREAD&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>bit indiquant que l'eeprom doit être lue. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html#l00029">29</a> du fichier <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html">I2CE2PROML.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00123">I2CE2promLReadBuffer()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga20aae57f1b4cc3f8034c88b1549bec76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20aae57f1b4cc3f8034c88b1549bec76">&#9670;&nbsp;</a></span>I2CE2promLReadBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL I2CE2promLReadBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const WORD&#160;</td>
+          <td class="paramname"><em>wAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tansfert les données lues dans l'eeprom dans un buffer. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wAddress</td><td>Adresse de début des données dans l'eeprom </td></tr>
+    <tr><td class="paramname">data</td><td>Buffer qui contiendra les données lues. </td></tr>
+    <tr><td class="paramname">size</td><td>Nombre d'octet à lire </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>TRUE si les données ont pu être lus. </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00123">123</a> du fichier <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html">I2CE2PROML.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html#l00024">EE_ADDR</a>, <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html#l00029">EEREAD</a>, <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html#l00037">I2CPort</a>, <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00013">isSendByteToE2promL()</a>, et <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00048">SetE2promAddress()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/d37/CustomHTTPApp_8c_source.html#l01922">HTTPPrint_Op()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l04117">isCodeCheck()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l05710">vGetParametersAudits()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l04914">vSaveHisto()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l00328">vScreenHistorique()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    BYTE *byData;</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    byData = data;</div><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span>(!size)</div><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    }</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">if</span>(!<a class="code" href="../../d5/d10/I2CE2PROML_8c.html#a18967914010e542227af969cc6c89599">SetE2promAddress</a>(wAddress))</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    {</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        BYTE byLoop = 0xFF, byIndex;</div><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">if</span>(I2CStart(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>) != I2C_SUCCESS)</div><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        {</div><div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div><div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="comment">//Vérifie si le bus I2C est à l&#39;état Start.</span></div><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">while</span>(!(I2CGetStatus(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>) &amp; I2C_START))</div><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        {</div><div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="keywordflow">if</span>(!byLoop--)</div><div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            {</div><div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            }</div><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        byLoop = 0xFF;</div><div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d5/d10/I2CE2PROML_8c.html#acd87ca598b92569b0100820b67c104f6">isSendByteToE2promL</a>(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga072399648dccc2e724aea40bfb28dd69">EE_ADDR</a> | <a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga65dd15c61397abf8c66738f80c342740">EEREAD</a>))</div><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        {</div><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            <span class="keywordflow">while</span>(!I2CTransmissionHasCompleted(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>))</div><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            {</div><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <span class="keywordflow">if</span>(!byLoop--)</div><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                {</div><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                }</div><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            }</div><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        }</div><div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">for</span>(byIndex = 0; byIndex &lt; size;)</div><div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        {</div><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            byLoop = 0xFF;</div><div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <span class="keywordflow">if</span>(I2CReceiverEnable(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>, TRUE) == I2C_SUCCESS)</div><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            {</div><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="keywordflow">while</span>(!I2CReceivedDataIsAvailable(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>))</div><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                {</div><div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                    <span class="keywordflow">if</span>(!byLoop--)</div><div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    {</div><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                        <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                    }</div><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                }</div><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                byData[byIndex] = I2CGetByte(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>);</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                byLoop = 0xFF;                </div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                (++byIndex &lt; size) ? I2CAcknowledgeByte(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>, TRUE) : I2CAcknowledgeByte(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>, FALSE);</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="keywordflow">while</span>(!I2CAcknowledgeHasCompleted(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>))</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                {</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                    <span class="keywordflow">if</span>(!byLoop--)</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    {</div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                        <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    }</div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                }</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        }</div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        byLoop = 0xFF;</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        I2CStop(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>);</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">while</span>(!(I2CGetStatus(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>) &amp; I2C_STOP))</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        {</div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordflow">if</span>(!byLoop--)</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            {</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            }</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div><div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordflow">return</span> TRUE;</div><div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;}</div><div class="ttc" id="group__EEPROM__I2C_html_ga65dd15c61397abf8c66738f80c342740"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#ga65dd15c61397abf8c66738f80c342740">EEREAD</a></div><div class="ttdeci">#define EEREAD</div><div class="ttdoc">bit indiquant que l&amp;#39;eeprom doit être lue. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d38/I2CE2PROML_8h_source.html#l00029">I2CE2PROML.h:29</a></div></div>
+<div class="ttc" id="group__EEPROM__I2C_html_ga072399648dccc2e724aea40bfb28dd69"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#ga072399648dccc2e724aea40bfb28dd69">EE_ADDR</a></div><div class="ttdeci">#define EE_ADDR</div><div class="ttdoc">Identificateur eeprom i2c pour une écriture. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d38/I2CE2PROML_8h_source.html#l00024">I2CE2PROML.h:24</a></div></div>
+<div class="ttc" id="group__EEPROM__I2C_html_ga7999ce31693f8df62009a6af63775c17"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a></div><div class="ttdeci">I2C_MODULE I2CPort</div><div class="ttdoc">Module du port I2C. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d38/I2CE2PROML_8h_source.html#l00037">I2CE2PROML.h:37</a></div></div>
+<div class="ttc" id="I2CE2PROML_8c_html_a18967914010e542227af969cc6c89599"><div class="ttname"><a href="../../d5/d10/I2CE2PROML_8c.html#a18967914010e542227af969cc6c89599">SetE2promAddress</a></div><div class="ttdeci">static BOOL SetE2promAddress(WORD wAddress)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d10/I2CE2PROML_8c_source.html#l00048">I2CE2PROML.c:48</a></div></div>
+<div class="ttc" id="I2CE2PROML_8c_html_acd87ca598b92569b0100820b67c104f6"><div class="ttname"><a href="../../d5/d10/I2CE2PROML_8c.html#acd87ca598b92569b0100820b67c104f6">isSendByteToE2promL</a></div><div class="ttdeci">static BOOL isSendByteToE2promL(BYTE byData)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d10/I2CE2PROML_8c_source.html#l00013">I2CE2PROML.c:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga5d317e8fca51c656908e8e540bce139d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d317e8fca51c656908e8e540bce139d">&#9670;&nbsp;</a></span>I2CE2promLWriteBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL I2CE2promLWriteBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const WORD&#160;</td>
+          <td class="paramname"><em>wAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ecrit les données contenu dans un buffer dans l'eeprom. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wAddress</td><td>Adresse de début des données dans l'eeprom. </td></tr>
+    <tr><td class="paramname">data</td><td>Buffer qui contient les données à écrire dans la mémoire eeprom. </td></tr>
+    <tr><td class="paramname">size</td><td>Nombre d'octets à écrire dans l'eeprom </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>TRUE si les données sont écrites correctement. </dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00082">82</a> du fichier <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html">I2CE2PROML.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html#l00037">I2CPort</a>, <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00013">isSendByteToE2promL()</a>, et <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00048">SetE2promAddress()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/d37/CustomHTTPApp_8c_source.html#l00245">HTTPExecuteGet()</a>, <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00116">I2CE2promLWriteByte()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l03545">isRAZAudit()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l04296">isRouteBill()</a>, <a class="el" href="../../d9/d37/CustomHTTPApp_8c_source.html#l02477">UpdateCashActivation()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l00441">vConfirmSatelliteRemove()</a>, <a class="el" href="../../d3/d06/code_8c_source.html#l00027">vCreateCode()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l05710">vGetParametersAudits()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l05904">vLaunchMachine()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l00938">vMaintenanceMenu()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l02224">vRecordMachineData()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l01712">vScreenCashDevice()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l01808">vScreenCashLess()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l03077">vSetDelay()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l00488">vSetHisto()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l05480">vTaskDoChange()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l04374">vTaskPollMDB()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l03583">vTaskTreatKey()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l00586">vTOOverPayTreat()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    BYTE *byData;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    byData = data;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span>(!size || (size &gt; 128))</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d5/d10/I2CE2PROML_8c.html#a18967914010e542227af969cc6c89599">SetE2promAddress</a>(wAddress))</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        BYTE byLoop = 0XFF, byIndex;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">for</span>(byIndex = 0; byIndex &lt; size; byIndex++)</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="../../d5/d10/I2CE2PROML_8c.html#acd87ca598b92569b0100820b67c104f6">isSendByteToE2promL</a>(byData[byIndex]))</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        I2CStop(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>);</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">while</span>(!(I2CGetStatus(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>) &amp; I2C_STOP))</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">if</span>(!byLoop--)</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            {</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            }</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">return</span> TRUE;</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> FALSE;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div><div class="ttc" id="group__EEPROM__I2C_html_ga7999ce31693f8df62009a6af63775c17"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a></div><div class="ttdeci">I2C_MODULE I2CPort</div><div class="ttdoc">Module du port I2C. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d38/I2CE2PROML_8h_source.html#l00037">I2CE2PROML.h:37</a></div></div>
+<div class="ttc" id="I2CE2PROML_8c_html_a18967914010e542227af969cc6c89599"><div class="ttname"><a href="../../d5/d10/I2CE2PROML_8c.html#a18967914010e542227af969cc6c89599">SetE2promAddress</a></div><div class="ttdeci">static BOOL SetE2promAddress(WORD wAddress)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d10/I2CE2PROML_8c_source.html#l00048">I2CE2PROML.c:48</a></div></div>
+<div class="ttc" id="I2CE2PROML_8c_html_acd87ca598b92569b0100820b67c104f6"><div class="ttname"><a href="../../d5/d10/I2CE2PROML_8c.html#acd87ca598b92569b0100820b67c104f6">isSendByteToE2promL</a></div><div class="ttdeci">static BOOL isSendByteToE2promL(BYTE byData)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d10/I2CE2PROML_8c_source.html#l00013">I2CE2PROML.c:13</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="gac1721141ad0fbff7ad33f82fb6f0fd9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac1721141ad0fbff7ad33f82fb6f0fd9c">&#9670;&nbsp;</a></span>I2CE2promLWriteByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL I2CE2promLWriteByte </td>
+          <td>(</td>
+          <td class="paramtype">const WORD&#160;</td>
+          <td class="paramname"><em>wAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE&#160;</td>
+          <td class="paramname"><em>byData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ecrit un octet dans l'eeprom à l'adresse indiquée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wAddress</td><td>Adresse dans l'eeprom à laquelle doit être ecrit l'octet. </td></tr>
+    <tr><td class="paramname">byData</td><td>Octet à enregistrer dans l'eeprom. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd></dd></dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00116">116</a> du fichier <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html">I2CE2PROML.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00082">I2CE2promLWriteBuffer()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l05835">vEraseEEprom()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l05164">vProcessUSB()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga5d317e8fca51c656908e8e540bce139d">I2CE2promLWriteBuffer</a>(wAddress, &amp;byData, <span class="keyword">sizeof</span> (byData));</div><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}</div><div class="ttc" id="group__EEPROM__I2C_html_ga5d317e8fca51c656908e8e540bce139d"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#ga5d317e8fca51c656908e8e540bce139d">I2CE2promLWriteBuffer</a></div><div class="ttdeci">BOOL I2CE2promLWriteBuffer(const WORD wAddress, void *data, const size_t size)</div><div class="ttdoc">Ecrit les données contenu dans un buffer dans l&amp;#39;eeprom. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d10/I2CE2PROML_8c_source.html#l00082">I2CE2PROML.c:82</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga3f7d969d7169e9449ce1927b19a1b435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3f7d969d7169e9449ce1927b19a1b435">&#9670;&nbsp;</a></span>InitI2CE2promL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitI2CE2promL </td>
+          <td>(</td>
+          <td class="paramtype">const I2C_MODULE&#160;</td>
+          <td class="paramname"><em>module</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UINT32&#160;</td>
+          <td class="paramname"><em>ui32Frequence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">module</td><td>Module utilisé dans la communication du port I2C. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ui32Frequence</td><td>Frequence de fonctionne du bus des périphériques. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00200">200</a> du fichier <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html">I2CE2PROML.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html#l00037">I2CPort</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l06231">main()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;{</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a> = module;</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    I2CConfigure(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>, I2C_ENABLE_SLAVE_CLOCK_STRETCHING | I2C_STOP_IN_IDLE | I2C_ENABLE_HIGH_SPEED);</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    I2CSetFrequency(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>, ui32Frequence, 100000);</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    I2CEnable(<a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>, TRUE);</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div><div class="ttc" id="group__EEPROM__I2C_html_ga7999ce31693f8df62009a6af63775c17"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a></div><div class="ttdeci">I2C_MODULE I2CPort</div><div class="ttdoc">Module du port I2C. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d38/I2CE2PROML_8h_source.html#l00037">I2CE2PROML.h:37</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="ga7999ce31693f8df62009a6af63775c17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7999ce31693f8df62009a6af63775c17">&#9670;&nbsp;</a></span>I2CPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">I2CPort</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Module du port I2C. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html#l00037">37</a> du fichier <a class="el" href="../../de/d38/I2CE2PROML_8h_source.html">I2CE2PROML.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00123">I2CE2promLReadBuffer()</a>, <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00082">I2CE2promLWriteBuffer()</a>, <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00200">InitI2CE2promL()</a>, <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00013">isSendByteToE2promL()</a>, et <a class="el" href="../../d5/d10/I2CE2PROML_8c_source.html#l00048">SetE2promAddress()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<hr class="footer"/><address class="footer"><small>MAINBOARD MDI 1.3.4 documentation by&#160;
+<a href="http://www.rasoftware.fr"> 
+<img class="footer" src="rasoftware.jpg" alt="www.rasoftware"/></a></small></address> 
+</body> 
+</html> 

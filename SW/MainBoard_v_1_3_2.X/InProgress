@@ -1,0 +1,19 @@
+2014 07 12 15:45
+-------------------------------------------------------------------------------
+mdb.c
+
+Suprresion de l'include mdb_cl.h
+
+main.c
+Modification de la position du délai d'affiche quand une machine est sélectionnée
+pour permettre l'activation du rendeur pendant ce délai.
+
+Création d'une fonction vEnableDevice.
+
+Modification de la fonction vIsMediaFull.
+
+Modification du délai entre le polling des périphériques.
+
+Suppresion de l'affichage du montant contenu dans la clé quand la vente est validée.
+
+--------------------------------------------------------------------------------

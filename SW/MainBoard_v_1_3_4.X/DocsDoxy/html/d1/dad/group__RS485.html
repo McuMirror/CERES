@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MAINBOARD MDI: Gestion du port RS485</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../rasoftware.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MAINBOARD MDI
+   &#160;<span id="projectnumber">1.3.4</span>
+   </div>
+   <div id="projectbrief">Gestion de la centrale d&#39;une laverie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d1/dad/group__RS485.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Gestion du port RS485</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga7cbb485a62fcc6863031cd46e0dcec9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dad/group__RS485.html#ga7cbb485a62fcc6863031cd46e0dcec9f">SETREAD</a>()&#160;&#160;&#160;PORTClearBits(<a class="el" href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">RS485port</a>, <a class="el" href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">RS485Io</a>)</td></tr>
+<tr class="memdesc:ga7cbb485a62fcc6863031cd46e0dcec9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Positionne le port RS485 en mode lecture.  <a href="#ga7cbb485a62fcc6863031cd46e0dcec9f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga7cbb485a62fcc6863031cd46e0dcec9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae6f36461789ba8168e8fff65d43cb1bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dad/group__RS485.html#gae6f36461789ba8168e8fff65d43cb1bf">SETWRITE</a>()&#160;&#160;&#160;PORTSetBits(<a class="el" href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">RS485port</a>, <a class="el" href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">RS485Io</a>)</td></tr>
+<tr class="memdesc:gae6f36461789ba8168e8fff65d43cb1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Positionne le port RS485 en mode ecriture.  <a href="#gae6f36461789ba8168e8fff65d43cb1bf">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gae6f36461789ba8168e8fff65d43cb1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ga1becdb17930d87530691b2f0f3f14127"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dad/group__RS485.html#ga1becdb17930d87530691b2f0f3f14127">InitRS485</a> (const UART_MODULE UART, const DWORD dwSYS_FREQ, const DWORD dwBAUDRATE, const UART_LINE_CONTROL_MODE dataSize, const UART_LINE_CONTROL_MODE parity, const UART_LINE_CONTROL_MODE stop_bits, const IoPortId EnablePort, DWORD dwEnableBit)</td></tr>
+<tr class="separator:ga1becdb17930d87530691b2f0f3f14127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50f134fcd317a8c5149b2165d73215de"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dad/group__RS485.html#ga50f134fcd317a8c5149b2165d73215de">RS485GetBuffer</a> (void *pBuffer, WORD wLen)</td></tr>
+<tr class="separator:ga50f134fcd317a8c5149b2165d73215de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9279185f6d61b151d4e17f84aec7a9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dad/group__RS485.html#gae9279185f6d61b151d4e17f84aec7a9a">RS485WriteBuffer</a> (const void *pBuffer, const BYTE byLen)</td></tr>
+<tr class="memdesc:gae9279185f6d61b151d4e17f84aec7a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmet un nombre défini d'octet sur la ligne 485.  <a href="#gae9279185f6d61b151d4e17f84aec7a9a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gae9279185f6d61b151d4e17f84aec7a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga37f03b3ebe29147df413cd9b30ab5904"><td class="memItemLeft" align="right" valign="top">DWORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">RS485Io</a></td></tr>
+<tr class="separator:ga37f03b3ebe29147df413cd9b30ab5904"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06c9312956ce6c6f6cfd96955fb7ea41"><td class="memItemLeft" align="right" valign="top">IoPortId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">RS485port</a></td></tr>
+<tr class="memdesc:ga06c9312956ce6c6f6cfd96955fb7ea41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port utilisé par l'io de direction du RS485.  <a href="#ga06c9312956ce6c6f6cfd96955fb7ea41">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga06c9312956ce6c6f6cfd96955fb7ea41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeabfdbf75dac5024e28f3fe0f4d3a42f"><td class="memItemLeft" align="right" valign="top">UART_MODULE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a></td></tr>
+<tr class="memdesc:gaeabfdbf75dac5024e28f3fe0f4d3a42f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable contenant le nom du module utilisé.  <a href="#gaeabfdbf75dac5024e28f3fe0f4d3a42f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaeabfdbf75dac5024e28f3fe0f4d3a42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des macros</h2>
+<a id="ga7cbb485a62fcc6863031cd46e0dcec9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7cbb485a62fcc6863031cd46e0dcec9f">&#9670;&nbsp;</a></span>SETREAD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SETREAD</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;PORTClearBits(<a class="el" href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">RS485port</a>, <a class="el" href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">RS485Io</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Positionne le port RS485 en mode lecture. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d5/d78/RS485_8h_source.html#l00027">27</a> du fichier <a class="el" href="../../d5/d78/RS485_8h_source.html">RS485.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../de/d73/satellites_8c_source.html#l00029">isReceiveAnswer()</a>, et <a class="el" href="../../dd/d46/RS485_8c_source.html#l00029">RS485GetBuffer()</a>.</p>
+
+</div>
+</div>
+<a id="gae6f36461789ba8168e8fff65d43cb1bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae6f36461789ba8168e8fff65d43cb1bf">&#9670;&nbsp;</a></span>SETWRITE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SETWRITE</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;PORTSetBits(<a class="el" href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">RS485port</a>, <a class="el" href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">RS485Io</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Positionne le port RS485 en mode ecriture. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d5/d78/RS485_8h_source.html#l00033">33</a> du fichier <a class="el" href="../../d5/d78/RS485_8h_source.html">RS485.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dd/d46/RS485_8c_source.html#l00048">RS485WriteBuffer()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ga1becdb17930d87530691b2f0f3f14127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1becdb17930d87530691b2f0f3f14127">&#9670;&nbsp;</a></span>InitRS485()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InitRS485 </td>
+          <td>(</td>
+          <td class="paramtype">const UART_MODULE&#160;</td>
+          <td class="paramname"><em>UART</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DWORD&#160;</td>
+          <td class="paramname"><em>dwSYS_FREQ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DWORD&#160;</td>
+          <td class="paramname"><em>dwBAUDRATE</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UART_LINE_CONTROL_MODE&#160;</td>
+          <td class="paramname"><em>dataSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UART_LINE_CONTROL_MODE&#160;</td>
+          <td class="paramname"><em>parity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UART_LINE_CONTROL_MODE&#160;</td>
+          <td class="paramname"><em>stop_bits</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const IoPortId&#160;</td>
+          <td class="paramname"><em>EnablePort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DWORD&#160;</td>
+          <td class="paramname"><em>dwEnableBit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dd/d46/RS485_8c_source.html#l00013">13</a> du fichier <a class="el" href="../../dd/d46/RS485_8c_source.html">RS485.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../d4/dc1/UARTLib_8C_source.html#l00042">OpenUART()</a>, <a class="el" href="../../d5/d78/RS485_8h_source.html#l00047">RS485Io</a>, <a class="el" href="../../d5/d78/RS485_8h_source.html#l00041">RS485port</a>, et <a class="el" href="../../d5/d78/RS485_8h_source.html#l00053">UART485</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d0/d29/main_8c_source.html#l00237">vInitialization()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a> = UART;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="../../d4/de9/group__URAT.html#gae8dfc9357e9511454e17808efa1a242f">OpenUART</a>(<a class="code" href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a>, dwSYS_FREQ, dwBAUDRATE, dataSize, parity, stop_bits);</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">RS485port</a> = EnablePort;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">RS485Io</a> = dwEnableBit;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    PORTSetPinsDigitalOut(<a class="code" href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">RS485port</a>, <a class="code" href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">RS485Io</a>);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="ttc" id="group__RS485_html_gaeabfdbf75dac5024e28f3fe0f4d3a42f"><div class="ttname"><a href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a></div><div class="ttdeci">UART_MODULE UART485</div><div class="ttdoc">Variable contenant le nom du module utilisé. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d78/RS485_8h_source.html#l00053">RS485.h:53</a></div></div>
+<div class="ttc" id="group__RS485_html_ga37f03b3ebe29147df413cd9b30ab5904"><div class="ttname"><a href="../../d1/dad/group__RS485.html#ga37f03b3ebe29147df413cd9b30ab5904">RS485Io</a></div><div class="ttdeci">DWORD RS485Io</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d78/RS485_8h_source.html#l00047">RS485.h:47</a></div></div>
+<div class="ttc" id="group__URAT_html_gae8dfc9357e9511454e17808efa1a242f"><div class="ttname"><a href="../../d4/de9/group__URAT.html#gae8dfc9357e9511454e17808efa1a242f">OpenUART</a></div><div class="ttdeci">void OpenUART(const UART_MODULE UART, const DWORD dwSYS_FREQ, const DWORD dwBAUDRATE, const UART_LINE_CONTROL_MODE dataSize, const UART_LINE_CONTROL_MODE parity, const UART_LINE_CONTROL_MODE stop_bits)</div><div class="ttdoc">Initialisation du port série. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc1/UARTLib_8C_source.html#l00042">UARTLib.C:42</a></div></div>
+<div class="ttc" id="group__RS485_html_ga06c9312956ce6c6f6cfd96955fb7ea41"><div class="ttname"><a href="../../d1/dad/group__RS485.html#ga06c9312956ce6c6f6cfd96955fb7ea41">RS485port</a></div><div class="ttdeci">IoPortId RS485port</div><div class="ttdoc">Port utilisé par l&amp;#39;io de direction du RS485. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d78/RS485_8h_source.html#l00041">RS485.h:41</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga50f134fcd317a8c5149b2165d73215de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50f134fcd317a8c5149b2165d73215de">&#9670;&nbsp;</a></span>RS485GetBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL RS485GetBuffer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WORD&#160;</td>
+          <td class="paramname"><em>wLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dd/d46/RS485_8c_source.html#l00029">29</a> du fichier <a class="el" href="../../dd/d46/RS485_8c_source.html">RS485.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../d5/d78/RS485_8h_source.html#l00027">SETREAD</a>, <a class="el" href="../../d5/d78/RS485_8h_source.html#l00053">UART485</a>, <a class="el" href="../../d4/dc1/UARTLib_8C_source.html#l00066">UARTGetByte()</a>, et <a class="el" href="../../d7/d94/UARTlib_8h_source.html#l00022">wTORequest</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../de/d73/satellites_8c_source.html#l00029">isReceiveAnswer()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    BYTE *byLBuffer = pBuffer;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="../../d1/dad/group__RS485.html#ga7cbb485a62fcc6863031cd46e0dcec9f">SETREAD</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">//vTaskSuspendAll();</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">while</span>(wLen-- &amp;&amp; <a class="code" href="../../d4/de9/group__URAT.html#ga46994350daa77dc4c8677498e184f7eb">wTORequest</a>)</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">while</span>(<a class="code" href="../../d4/de9/group__URAT.html#ga46994350daa77dc4c8677498e184f7eb">wTORequest</a> &amp;&amp; !UARTReceivedDataIsAvailable(<a class="code" href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a>));</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d4/de9/group__URAT.html#ga46994350daa77dc4c8677498e184f7eb">wTORequest</a>)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            *byLBuffer++ = <a class="code" href="../../d4/de9/group__URAT.html#ga31e464a60f1cb2a068bc857cb43cc100">UARTGetByte</a>(<a class="code" href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a>);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        }</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//xTaskResumeAll();</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">return</span> (<a class="code" href="../../d4/de9/group__URAT.html#ga46994350daa77dc4c8677498e184f7eb">wTORequest</a> != 0);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="ttc" id="group__RS485_html_ga7cbb485a62fcc6863031cd46e0dcec9f"><div class="ttname"><a href="../../d1/dad/group__RS485.html#ga7cbb485a62fcc6863031cd46e0dcec9f">SETREAD</a></div><div class="ttdeci">#define SETREAD()</div><div class="ttdoc">Positionne le port RS485 en mode lecture. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d78/RS485_8h_source.html#l00027">RS485.h:27</a></div></div>
+<div class="ttc" id="group__RS485_html_gaeabfdbf75dac5024e28f3fe0f4d3a42f"><div class="ttname"><a href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a></div><div class="ttdeci">UART_MODULE UART485</div><div class="ttdoc">Variable contenant le nom du module utilisé. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d78/RS485_8h_source.html#l00053">RS485.h:53</a></div></div>
+<div class="ttc" id="group__URAT_html_ga46994350daa77dc4c8677498e184f7eb"><div class="ttname"><a href="../../d4/de9/group__URAT.html#ga46994350daa77dc4c8677498e184f7eb">wTORequest</a></div><div class="ttdeci">WORD wTORequest</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d94/UARTlib_8h_source.html#l00022">UARTlib.h:22</a></div></div>
+<div class="ttc" id="group__URAT_html_ga31e464a60f1cb2a068bc857cb43cc100"><div class="ttname"><a href="../../d4/de9/group__URAT.html#ga31e464a60f1cb2a068bc857cb43cc100">UARTGetByte</a></div><div class="ttdeci">BYTE UARTGetByte(const UART_MODULE UART)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc1/UARTLib_8C_source.html#l00066">UARTLib.C:66</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="gae9279185f6d61b151d4e17f84aec7a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae9279185f6d61b151d4e17f84aec7a9a">&#9670;&nbsp;</a></span>RS485WriteBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RS485WriteBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const void *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BYTE&#160;</td>
+          <td class="paramname"><em>byLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Transmet un nombre défini d'octet sur la ligne 485. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pBuffer</td><td>Buffer contenant les octets à transmettre. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">byLen</td><td>Nombre d'octet à transmettre. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../dd/d46/RS485_8c_source.html#l00048">48</a> du fichier <a class="el" href="../../dd/d46/RS485_8c_source.html">RS485.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../d5/d78/RS485_8h_source.html#l00033">SETWRITE</a>, <a class="el" href="../../d5/d78/RS485_8h_source.html#l00053">UART485</a>, et <a class="el" href="../../d4/dc1/UARTLib_8C_source.html#l00056">UARTWriteBuffer()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../de/d73/satellites_8c_source.html#l00069">isSendCommand()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d1/dad/group__RS485.html#gae6f36461789ba8168e8fff65d43cb1bf">SETWRITE</a>();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d4/de9/group__URAT.html#ga5272cc28720d4da331a10bd576a511a1">UARTWriteBuffer</a>(<a class="code" href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a>, pBuffer, byLen);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="ttc" id="group__RS485_html_gae6f36461789ba8168e8fff65d43cb1bf"><div class="ttname"><a href="../../d1/dad/group__RS485.html#gae6f36461789ba8168e8fff65d43cb1bf">SETWRITE</a></div><div class="ttdeci">#define SETWRITE()</div><div class="ttdoc">Positionne le port RS485 en mode ecriture. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d78/RS485_8h_source.html#l00033">RS485.h:33</a></div></div>
+<div class="ttc" id="group__RS485_html_gaeabfdbf75dac5024e28f3fe0f4d3a42f"><div class="ttname"><a href="../../d1/dad/group__RS485.html#gaeabfdbf75dac5024e28f3fe0f4d3a42f">UART485</a></div><div class="ttdeci">UART_MODULE UART485</div><div class="ttdoc">Variable contenant le nom du module utilisé. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d78/RS485_8h_source.html#l00053">RS485.h:53</a></div></div>
+<div class="ttc" id="group__URAT_html_ga5272cc28720d4da331a10bd576a511a1"><div class="ttname"><a href="../../d4/de9/group__URAT.html#ga5272cc28720d4da331a10bd576a511a1">UARTWriteBuffer</a></div><div class="ttdeci">void UARTWriteBuffer(const UART_MODULE UART, const BYTE *pBuffer, BYTE byLen)</div><div class="ttdoc">Envoi un nombre fixé d&amp;#39;octets sur le port série. </div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc1/UARTLib_8C_source.html#l00056">UARTLib.C:56</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="ga37f03b3ebe29147df413cd9b30ab5904"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga37f03b3ebe29147df413cd9b30ab5904">&#9670;&nbsp;</a></span>RS485Io</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RS485Io</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>brief IO utilisé pour la direction du 485. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d5/d78/RS485_8h_source.html#l00047">47</a> du fichier <a class="el" href="../../d5/d78/RS485_8h_source.html">RS485.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dd/d46/RS485_8c_source.html#l00013">InitRS485()</a>.</p>
+
+</div>
+</div>
+<a id="ga06c9312956ce6c6f6cfd96955fb7ea41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06c9312956ce6c6f6cfd96955fb7ea41">&#9670;&nbsp;</a></span>RS485port</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RS485port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Port utilisé par l'io de direction du RS485. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d5/d78/RS485_8h_source.html#l00041">41</a> du fichier <a class="el" href="../../d5/d78/RS485_8h_source.html">RS485.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dd/d46/RS485_8c_source.html#l00013">InitRS485()</a>.</p>
+
+</div>
+</div>
+<a id="gaeabfdbf75dac5024e28f3fe0f4d3a42f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeabfdbf75dac5024e28f3fe0f4d3a42f">&#9670;&nbsp;</a></span>UART485</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UART485</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Variable contenant le nom du module utilisé. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d5/d78/RS485_8h_source.html#l00053">53</a> du fichier <a class="el" href="../../d5/d78/RS485_8h_source.html">RS485.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dd/d46/RS485_8c_source.html#l00013">InitRS485()</a>, <a class="el" href="../../de/d73/satellites_8c_source.html#l00029">isReceiveAnswer()</a>, <a class="el" href="../../de/d73/satellites_8c_source.html#l00069">isSendCommand()</a>, <a class="el" href="../../dd/d46/RS485_8c_source.html#l00029">RS485GetBuffer()</a>, et <a class="el" href="../../dd/d46/RS485_8c_source.html#l00048">RS485WriteBuffer()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<hr class="footer"/><address class="footer"><small>MAINBOARD MDI 1.3.4 documentation by&#160;
+<a href="http://www.rasoftware.fr"> 
+<img class="footer" src="rasoftware.jpg" alt="www.rasoftware"/></a></small></address> 
+</body> 
+</html> 

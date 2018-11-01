@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MAINBOARD MDI: Gestion des ports série</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../rasoftware.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MAINBOARD MDI
+   &#160;<span id="projectnumber">1.3.4</span>
+   </div>
+   <div id="projectbrief">Gestion de la centrale d&#39;une laverie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d4/de9/group__URAT.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Gestion des ports série</div>  </div>
+</div><!--header-->
+<div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:gae8dfc9357e9511454e17808efa1a242f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de9/group__URAT.html#gae8dfc9357e9511454e17808efa1a242f">OpenUART</a> (const UART_MODULE UART, const DWORD dwSYS_FREQ, const DWORD dwBAUDRATE, const UART_LINE_CONTROL_MODE dataSize, const UART_LINE_CONTROL_MODE parity, const UART_LINE_CONTROL_MODE stop_bits)</td></tr>
+<tr class="memdesc:gae8dfc9357e9511454e17808efa1a242f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation du port série.  <a href="#gae8dfc9357e9511454e17808efa1a242f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gae8dfc9357e9511454e17808efa1a242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31e464a60f1cb2a068bc857cb43cc100"><td class="memItemLeft" align="right" valign="top">BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de9/group__URAT.html#ga31e464a60f1cb2a068bc857cb43cc100">UARTGetByte</a> (const UART_MODULE UART)</td></tr>
+<tr class="separator:ga31e464a60f1cb2a068bc857cb43cc100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5272cc28720d4da331a10bd576a511a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de9/group__URAT.html#ga5272cc28720d4da331a10bd576a511a1">UARTWriteBuffer</a> (const UART_MODULE UART, const BYTE *pBuffer, BYTE byLen)</td></tr>
+<tr class="memdesc:ga5272cc28720d4da331a10bd576a511a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envoi un nombre fixé d'octets sur le port série.  <a href="#ga5272cc28720d4da331a10bd576a511a1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga5272cc28720d4da331a10bd576a511a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ga46994350daa77dc4c8677498e184f7eb"><td class="memItemLeft" align="right" valign="top">WORD&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de9/group__URAT.html#ga46994350daa77dc4c8677498e184f7eb">wTORequest</a></td></tr>
+<tr class="separator:ga46994350daa77dc4c8677498e184f7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="gae8dfc9357e9511454e17808efa1a242f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae8dfc9357e9511454e17808efa1a242f">&#9670;&nbsp;</a></span>OpenUART()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OpenUART </td>
+          <td>(</td>
+          <td class="paramtype">const UART_MODULE&#160;</td>
+          <td class="paramname"><em>UART</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DWORD&#160;</td>
+          <td class="paramname"><em>dwSYS_FREQ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const DWORD&#160;</td>
+          <td class="paramname"><em>dwBAUDRATE</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UART_LINE_CONTROL_MODE&#160;</td>
+          <td class="paramname"><em>dataSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UART_LINE_CONTROL_MODE&#160;</td>
+          <td class="paramname"><em>parity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const UART_LINE_CONTROL_MODE&#160;</td>
+          <td class="paramname"><em>stop_bits</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialisation du port série. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">UART</td><td>Port utilisé sur le PIC. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dwSYS_FREQ</td><td>Fréquence du microprocesseur. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dwBAUDRATE</td><td>Vitesse de transmission. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dataSize</td><td>Taille des données. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parity</td><td>Parité. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">stop_bits</td><td>Nombre de bits de stop. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d4/dc1/UARTLib_8C_source.html#l00042">42</a> du fichier <a class="el" href="../../d4/dc1/UARTLib_8C_source.html">UARTLib.C</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../d4/dc1/UARTLib_8C_source.html#l00024">InitIntTimer3()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dc/d47/MDB_8c_source.html#l00038">InitMDB()</a>, <a class="el" href="../../dd/d46/RS485_8c_source.html#l00013">InitRS485()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l00237">vInitialization()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  UARTConfigure(UART, UART_ENABLE_PINS_TX_RX_ONLY);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  UARTSetLineControl(UART, dataSize | parity | stop_bits);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  UARTSetDataRate(UART, dwSYS_FREQ, dwBAUDRATE);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  UARTEnable(UART, UART_ENABLE | UART_PERIPHERAL | UART_RX | UART_TX);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="../../d4/dc1/UARTLib_8C.html#a52a4dd25bb00984a4f5ed18d38fbed61">InitIntTimer3</a>();</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="ttc" id="UARTLib_8C_html_a52a4dd25bb00984a4f5ed18d38fbed61"><div class="ttname"><a href="../../d4/dc1/UARTLib_8C.html#a52a4dd25bb00984a4f5ed18d38fbed61">InitIntTimer3</a></div><div class="ttdeci">static void InitIntTimer3(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc1/UARTLib_8C_source.html#l00024">UARTLib.C:24</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ga31e464a60f1cb2a068bc857cb43cc100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31e464a60f1cb2a068bc857cb43cc100">&#9670;&nbsp;</a></span>UARTGetByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BYTE UARTGetByte </td>
+          <td>(</td>
+          <td class="paramtype">const UART_MODULE&#160;</td>
+          <td class="paramname"><em>UART</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d4/dc1/UARTLib_8C_source.html#l00066">66</a> du fichier <a class="el" href="../../d4/dc1/UARTLib_8C_source.html">UARTLib.C</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dd/d46/RS485_8c_source.html#l00029">RS485GetBuffer()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;{</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">while</span>(!UARTReceivedDataIsAvailable(UART));</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> UARTGetDataByte(UART);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="ga5272cc28720d4da331a10bd576a511a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5272cc28720d4da331a10bd576a511a1">&#9670;&nbsp;</a></span>UARTWriteBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void UARTWriteBuffer </td>
+          <td>(</td>
+          <td class="paramtype">const UART_MODULE&#160;</td>
+          <td class="paramname"><em>UART</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BYTE *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE&#160;</td>
+          <td class="paramname"><em>byLen</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Envoi un nombre fixé d'octets sur le port série. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">UART</td><td>Port série concerné. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pBuffer</td><td>Buffer contenant les octets. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">byLen</td><td>Nombre d'octets à envoyer sur le port série. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d4/dc1/UARTLib_8C_source.html#l00056">56</a> du fichier <a class="el" href="../../d4/dc1/UARTLib_8C_source.html">UARTLib.C</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../d4/dc1/UARTLib_8C_source.html#l00033">UARTWriteByte()</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../dd/d46/RS485_8c_source.html#l00048">RS485WriteBuffer()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keywordflow">while</span>(byLen--)</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../d4/dc1/UARTLib_8C.html#aaa08822f09b79790855209307243d1f1">UARTWriteByte</a>(UART, *pBuffer++);</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div><div class="ttc" id="UARTLib_8C_html_aaa08822f09b79790855209307243d1f1"><div class="ttname"><a href="../../d4/dc1/UARTLib_8C.html#aaa08822f09b79790855209307243d1f1">UARTWriteByte</a></div><div class="ttdeci">void UARTWriteByte(const UART_MODULE UART, const BYTE cData)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/dc1/UARTLib_8C_source.html#l00033">UARTLib.C:33</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="ga46994350daa77dc4c8677498e184f7eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga46994350daa77dc4c8677498e184f7eb">&#9670;&nbsp;</a></span>wTORequest</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WORD wTORequest</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d7/d94/UARTlib_8h_source.html#l00022">22</a> du fichier <a class="el" href="../../d7/d94/UARTlib_8h_source.html">UARTlib.h</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d4/dc1/UARTLib_8C_source.html#l00013">__ISR()</a>, <a class="el" href="../../de/d73/satellites_8c_source.html#l00029">isReceiveAnswer()</a>, <a class="el" href="../../de/d73/satellites_8c_source.html#l00069">isSendCommand()</a>, <a class="el" href="../../dd/d46/RS485_8c_source.html#l00029">RS485GetBuffer()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l00237">vInitialization()</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<hr class="footer"/><address class="footer"><small>MAINBOARD MDI 1.3.4 documentation by&#160;
+<a href="http://www.rasoftware.fr"> 
+<img class="footer" src="rasoftware.jpg" alt="www.rasoftware"/></a></small></address> 
+</body> 
+</html> 

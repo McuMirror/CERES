@@ -1,0 +1,72 @@
+~inc:header.inc~
+<meta name="description" content="Page de param&egrave;trages de la centrale MDI" />
+<title>param&egrave;tres</title>
+</head>
+
+<body>
+    <br />
+    <br />
+    <div class="TitrePage">
+        PARAMETRES CENTRALE
+    </div>
+    <br />
+    <br />
+    <form method ="get" action="parametres.htm" name="CentraleParam" id="CentraleParam">
+        <table class="centre">
+            <tr>
+                <td><b>Buzzer :</b></td>
+                <td><input type="checkbox" name="buzzer" ~buzzer~/></td>
+                <td>Active ou non le buzzer.</td>
+            </tr>
+            <tr>
+                <td><b>Escrow :</b></td>
+                <td><input type="checkbox" name="escrow" ~escrow~/></td>
+                <td>Acrive ou non l'escrow des billets de banque.</td>
+            </tr>
+            <tr>
+                <td><b>Montant exact change : </b></td>
+                <td><input class="textAlignRight" type="text" name="Appoint" value="~appoint~"/>&nbsp;&euro;</td>
+                <td>Montant en dessous duquel sera affich&eacute;e la demande d'appoint.</td>
+            </tr>
+            <tr>
+                <td><b>D&eacute;lai cumul :</b></td>
+                <td><input class="textAlignRight" type="number" name="Cumul" value="~cumul~"/>&nbsp;sec.&nbsp;&nbsp;</td>
+                <td>D&eacute;lai maximum en secondes autoris&eacute; pour cumler si autoris&eacute;.</td>
+            </tr>
+            <tr>
+                <td><b>D&eacute;lai clavier :</b></td>
+                <td><input class="textAlignRight" type="number" name="Clavier" value="~clavier~"/>&nbsp;sec.</td>
+                <td>D&eacute;lai maximum pour utiliser le clavier apr&eacute;s l'appui d'une touche.</td>
+            </tr>
+            <tr>
+                <td><b>D&eacute;lai trop-per&ccedil;u :</b></td>
+                <td><input class="textAlignRight" type="number" name="Overpay" value="~to_overpay~"/>&nbsp;sec.</td>
+                <td>D&eacute;lai maximum en secondes pendant lequel le trop-per&ccedil;u est disponible.</td>
+            </tr>
+            <tr>
+                <td><b>D&eacute;lai messages :</b></td>
+                <td><input class="textAlignRight" type="number" name="Messages" value ="~message~"/>&nbsp;ms</td>
+                <td>D&eacute;lai pendant lequel sont affich&eacute;s les messages.</td>
+            </tr>
+        </table>
+        <br/>
+        <table class="centre">
+            <tr>
+                <td>
+                    <input type="submit" name="send" value="Envoyer"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br/>
+    <table cellpadding="10" class="left">
+        <tr>
+            <td class = "backGroundBlue">
+                <a href="config.htm">Configuration</a>
+            </td>
+            <td>
+                Retour &agrave; la page configuration.
+            </td>
+        </tr>
+    </table>
+    ~inc:footer.inc~

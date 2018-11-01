@@ -1,0 +1,19 @@
+<mchParam>
+    <BasePrice>~BasePrice~</BasePrice>
+    <BasePriceHH>~BasePriceHH~</BasePriceHH>
+    <KeyPrice>~KeyPrice~</KeyPrice>
+    <KeyPriceHH>~KeyPriceHH~</KeyPriceHH>
+    <Pulse>~Pulse~</Pulse>
+    <boRemaining>~boRemaining~</boRemaining>
+    <Displayed>~Displayed~</Displayed>    
+    <OverBusy>~OverBusy~</OverBusy>
+    <Start>~Start~</Start>
+    <End>~End~</End>
+    <StartHH>~StartHH~</StartHH>
+    <EndHH>~EndHH~</EndHH>
+    <Cumul>~boCumul~</Cumul>
+    <Sensi>~Sens~</Sensi>
+    <Power>~boPower~</Power>
+    <Bill>~boBill~</Bill>
+</mchParam>
+    

@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MAINBOARD MDI:  Fichier source de D:/Projets/CERES/SW/MainBoard_v_1_3_4.X/I2CE2PROML.h</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../rasoftware.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MAINBOARD MDI
+   &#160;<span id="projectnumber">1.3.4</span>
+   </div>
+   <div id="projectbrief">Gestion de la centrale d&#39;une laverie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('de/d38/I2CE2PROML_8h_source.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">D:/Projets/CERES/SW/MainBoard_v_1_3_4.X/I2CE2PROML.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../de/d38/I2CE2PROML_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef I2CE2PROML_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define I2CE2PROML_H</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;plib.h&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;TCPIP Stack/delay.h&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">/*Macros**********************************************************************/</span></div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="../../d1/de7/group__EEPROM__I2C.html#ga072399648dccc2e724aea40bfb28dd69">   24</a></span>&#160;<span class="preprocessor">#define EE_ADDR 0xA0</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d1/de7/group__EEPROM__I2C.html#ga65dd15c61397abf8c66738f80c342740">   29</a></span>&#160;<span class="preprocessor">#define EEREAD 0x01</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/*End of macros***************************************************************/</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/*Variables********************************************************************/</span></div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">   37</a></span>&#160;I2C_MODULE <a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/*End of variables*************************************************************/</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">/*Prototypes*******************************************************************/</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga3f7d969d7169e9449ce1927b19a1b435">InitI2CE2promL</a>(<span class="keyword">const</span> I2C_MODULE module, <span class="keyword">const</span> UINT32 ui32Frequence);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;BOOL <a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga5d317e8fca51c656908e8e540bce139d">I2CE2promLWriteBuffer</a>(<span class="keyword">const</span> WORD wAddress, <span class="keywordtype">void</span> *data, <span class="keyword">const</span> <span class="keywordtype">size_t</span> size);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;BOOL <a class="code" href="../../d1/de7/group__EEPROM__I2C.html#gac1721141ad0fbff7ad33f82fb6f0fd9c">I2CE2promLWriteByte</a>(<span class="keyword">const</span> WORD wAddress, BYTE byData);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;BOOL <a class="code" href="../../d1/de7/group__EEPROM__I2C.html#ga20aae57f1b4cc3f8034c88b1549bec76">I2CE2promLReadBuffer</a>(<span class="keyword">const</span> WORD wAddress, <span class="keywordtype">void</span> *data, <span class="keyword">const</span> <span class="keywordtype">size_t</span> size);</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">/*End of prototypes************************************************************/</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* I2CE2PROML_H */</span><span class="preprocessor"></span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="ttc" id="group__EEPROM__I2C_html_ga3f7d969d7169e9449ce1927b19a1b435"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#ga3f7d969d7169e9449ce1927b19a1b435">InitI2CE2promL</a></div><div class="ttdeci">void InitI2CE2promL(const I2C_MODULE module, const UINT32 ui32Frequence)</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d10/I2CE2PROML_8c_source.html#l00200">I2CE2PROML.c:200</a></div></div>
+<div class="ttc" id="group__EEPROM__I2C_html_ga7999ce31693f8df62009a6af63775c17"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#ga7999ce31693f8df62009a6af63775c17">I2CPort</a></div><div class="ttdeci">I2C_MODULE I2CPort</div><div class="ttdoc">Module du port I2C. </div><div class="ttdef"><b>Definition:</b> <a href="../../de/d38/I2CE2PROML_8h_source.html#l00037">I2CE2PROML.h:37</a></div></div>
+<div class="ttc" id="group__EEPROM__I2C_html_ga5d317e8fca51c656908e8e540bce139d"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#ga5d317e8fca51c656908e8e540bce139d">I2CE2promLWriteBuffer</a></div><div class="ttdeci">BOOL I2CE2promLWriteBuffer(const WORD wAddress, void *data, const size_t size)</div><div class="ttdoc">Ecrit les données contenu dans un buffer dans l&amp;#39;eeprom. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d10/I2CE2PROML_8c_source.html#l00082">I2CE2PROML.c:82</a></div></div>
+<div class="ttc" id="group__EEPROM__I2C_html_ga20aae57f1b4cc3f8034c88b1549bec76"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#ga20aae57f1b4cc3f8034c88b1549bec76">I2CE2promLReadBuffer</a></div><div class="ttdeci">BOOL I2CE2promLReadBuffer(const WORD wAddress, void *data, const size_t size)</div><div class="ttdoc">Tansfert les données lues dans l&amp;#39;eeprom dans un buffer. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d10/I2CE2PROML_8c_source.html#l00123">I2CE2PROML.c:123</a></div></div>
+<div class="ttc" id="group__EEPROM__I2C_html_gac1721141ad0fbff7ad33f82fb6f0fd9c"><div class="ttname"><a href="../../d1/de7/group__EEPROM__I2C.html#gac1721141ad0fbff7ad33f82fb6f0fd9c">I2CE2promLWriteByte</a></div><div class="ttdeci">BOOL I2CE2promLWriteByte(const WORD wAddress, BYTE byData)</div><div class="ttdoc">Ecrit un octet dans l&amp;#39;eeprom à l&amp;#39;adresse indiquée. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d10/I2CE2PROML_8c_source.html#l00116">I2CE2PROML.c:116</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<hr class="footer"/><address class="footer"><small>MAINBOARD MDI 1.3.4 documentation by&#160;
+<a href="http://www.rasoftware.fr"> 
+<img class="footer" src="rasoftware.jpg" alt="www.rasoftware"/></a></small></address> 
+</body> 
+</html> 

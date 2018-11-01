@@ -1,0 +1,97 @@
+~inc:header.inc~
+<meta name="description" content="Page de v&eacute;rification du niveau des tubes" />
+<title>Tubes</title>
+</head>
+<br/>
+<div class="TitrePage">
+    NIVEAU TUBES RENDEUR
+</div>
+<br/>
+<br/>
+<span>~cg~</span>
+<table class="centrelarge">
+    <tr >
+        <th>
+            Total :
+        </th>
+        <td id="total">
+        </td>
+    </tr>
+</table>
+<br/>
+~inc:canal.inc~
+<tr class="textAlignRight">
+    <td>~Val(0)~&euro;</td>
+    <td>~Val(1)~&euro;</td>
+    <td>~Val(2)~&euro;</td>
+    <td>~Val(3)~&euro;</td>
+    <td>~Val(4)~&euro;</td>
+    <td>~Val(5)~&euro;</td>
+    <td>~Val(6)~&euro;</td>
+    <td>~Val(7)~&euro;</td>
+    <td>~Val(8)~&euro;</td>
+    <td>~Val(9)~&euro;</td>
+    <td>~Val(10)~&euro;</td>
+    <td>~Val(11)~&euro;</td>
+    <td>~Val(12)~&euro;</td>
+    <td>~Val(13)~&euro;</td>
+    <td>~Val(14)~&euro;</td>
+    <td>~Val(15)~&euro;</td>
+</tr>
+<tr class="textAlignRight">
+    <td id="Lev0"></td>
+    <td id="Lev1"></td>
+    <td id="Lev2"></td>
+    <td id="Lev3"></td>
+    <td id="Lev4"></td>
+    <td id="Lev5"></td>
+    <td id="Lev6"></td>
+    <td id="Lev7"></td>
+    <td id="Lev8"></td>
+    <td id="Lev9"></td>
+    <td id="Lev10"></td>
+    <td id="Lev11"></td>
+    <td id="Lev12"></td>
+    <td id="Lev13"></td>
+    <td id="Lev14"></td>
+    <td id="Lev15"></td>
+</tr>
+</table>
+<br/>
+
+<form  method ="get" action="tubes.htm" name="Distri" id="Distri">
+    <table class="centre" >
+        <tr>
+            <td>Montant &agrave; distribuer (<b>Max. 2.50&euro;</b>) : </td>
+            <td>&nbsp;</td>
+            <td>
+                <input class="textAlignRight" size="5" id="CoinReturn" name="CoinReturn" type="text" value = '0.00' />&euro;
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <table class="centre">
+        <tr>
+            <td>
+                <input type="submit"  name="Distri" value="Rendre" />
+            </td>
+        </tr>
+    </table>
+</form>
+
+<table cellpadding="10" class="left">
+    <tr>
+        <td class = "backGroundBlue">
+            <a href="index.htm">Page principale</a>
+        </td>
+        <td>
+            Retour &agrave; la page principale.
+        </td>
+    </tr>
+</table>
+<script type="text/javascript">
+    <!--
+  getTubesLevel();
+-->
+</script>
+~inc:footer.inc~

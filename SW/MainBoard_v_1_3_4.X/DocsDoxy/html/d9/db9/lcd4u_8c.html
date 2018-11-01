@@ -1,0 +1,833 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MAINBOARD MDI: Référence du fichier D:/Projets/CERES/SW/MainBoard_v_1_3_4.X/lcd4u.c</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="../../rasoftware.jpg"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MAINBOARD MDI
+   &#160;<span id="projectnumber">1.3.4</span>
+   </div>
+   <div id="projectbrief">Gestion de la centrale d&#39;une laverie</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d9/db9/lcd4u_8c.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier D:/Projets/CERES/SW/MainBoard_v_1_3_4.X/lcd4u.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Sources de la gestion de l'afficheur.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../df/d56/lcd4u_8h_source.html">lcd4u.h</a>&quot;</code><br />
+</div>
+<p><a href="../../d9/db9/lcd4u_8c_source.html">Aller au code source de ce fichier.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5d1161b032d6391c1613bfe879baf009"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a5d1161b032d6391c1613bfe879baf009">BUSY_FLAG</a>&#160;&#160;&#160;(1 &lt;&lt; 7)</td></tr>
+<tr class="separator:a5d1161b032d6391c1613bfe879baf009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e2369f0c7b513746c2a8fcd71046ab5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a4e2369f0c7b513746c2a8fcd71046ab5">DATA_LINE</a>&#160;&#160;&#160;<a class="el" href="../../d9/db9/lcd4u_8c.html#acf475e70fa2ffe31079a07ba7ae18116">DB7</a> | <a class="el" href="../../d9/db9/lcd4u_8c.html#ad9cc200e9e406247bd374e44947f2aec">DB6</a> | <a class="el" href="../../d9/db9/lcd4u_8c.html#ac0f7c08c3e95bbb41632e415e6b3f001">DB5</a> | <a class="el" href="../../d9/db9/lcd4u_8c.html#acdecad1b5b1abdca1ba50a47addef513">DB4</a></td></tr>
+<tr class="memdesc:a4e2369f0c7b513746c2a8fcd71046ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">IOs utilisées pour les données de l'afficheur.  <a href="#a4e2369f0c7b513746c2a8fcd71046ab5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4e2369f0c7b513746c2a8fcd71046ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdecad1b5b1abdca1ba50a47addef513"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#acdecad1b5b1abdca1ba50a47addef513">DB4</a>&#160;&#160;&#160;BIT_4</td></tr>
+<tr class="memdesc:acdecad1b5b1abdca1ba50a47addef513"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO utilisée pour le bit de donnée 4.  <a href="#acdecad1b5b1abdca1ba50a47addef513">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acdecad1b5b1abdca1ba50a47addef513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f7c08c3e95bbb41632e415e6b3f001"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#ac0f7c08c3e95bbb41632e415e6b3f001">DB5</a>&#160;&#160;&#160;BIT_5</td></tr>
+<tr class="memdesc:ac0f7c08c3e95bbb41632e415e6b3f001"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO utilisée pour le bit de donnée 5.  <a href="#ac0f7c08c3e95bbb41632e415e6b3f001">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac0f7c08c3e95bbb41632e415e6b3f001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9cc200e9e406247bd374e44947f2aec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#ad9cc200e9e406247bd374e44947f2aec">DB6</a>&#160;&#160;&#160;BIT_6</td></tr>
+<tr class="memdesc:ad9cc200e9e406247bd374e44947f2aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO utilisée pour le bit de donnée 6.  <a href="#ad9cc200e9e406247bd374e44947f2aec">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad9cc200e9e406247bd374e44947f2aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf475e70fa2ffe31079a07ba7ae18116"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#acf475e70fa2ffe31079a07ba7ae18116">DB7</a>&#160;&#160;&#160;BIT_7</td></tr>
+<tr class="memdesc:acf475e70fa2ffe31079a07ba7ae18116"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO utilisée pour le bit de donnée 7.  <a href="#acf475e70fa2ffe31079a07ba7ae18116">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acf475e70fa2ffe31079a07ba7ae18116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22e6626f2c98ed902f8ded47f6438c05"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a22e6626f2c98ed902f8ded47f6438c05">EN</a>&#160;&#160;&#160;BIT_3</td></tr>
+<tr class="memdesc:a22e6626f2c98ed902f8ded47f6438c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO de la ligne EN du HD44780.  <a href="#a22e6626f2c98ed902f8ded47f6438c05">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a22e6626f2c98ed902f8ded47f6438c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5434fc5857bd1456b47ab1f89ad35098"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a5434fc5857bd1456b47ab1f89ad35098">EURO</a>&#160;&#160;&#160;7</td></tr>
+<tr class="memdesc:a5434fc5857bd1456b47ab1f89ad35098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Numéro du caractère €  <a href="#a5434fc5857bd1456b47ab1f89ad35098">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5434fc5857bd1456b47ab1f89ad35098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ffae1d6a86ab6a880e3a15c52999a67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a8ffae1d6a86ab6a880e3a15c52999a67">LCD_8BITS</a>&#160;&#160;&#160;LCD_4BITS | <a class="el" href="../../d9/db9/lcd4u_8c.html#acdecad1b5b1abdca1ba50a47addef513">DB4</a></td></tr>
+<tr class="memdesc:a8ffae1d6a86ab6a880e3a15c52999a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commande de mode 8 bits.  <a href="#a8ffae1d6a86ab6a880e3a15c52999a67">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8ffae1d6a86ab6a880e3a15c52999a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a39fb0cd7749a1a4dbe047e2aabea8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a4a39fb0cd7749a1a4dbe047e2aabea8b">LCD_BUS</a>&#160;&#160;&#160;<a class="el" href="../../d9/db9/lcd4u_8c.html#a4e2369f0c7b513746c2a8fcd71046ab5">DATA_LINE</a> | <a class="el" href="../../d7/d04/group__LCD.html#gaf8903d8eea3868940c60af887473b152">RS</a> | <a class="el" href="../../d9/db9/lcd4u_8c.html#afc4ded33ac0ca43defcce639e965748a">RW</a> | <a class="el" href="../../d9/db9/lcd4u_8c.html#a22e6626f2c98ed902f8ded47f6438c05">EN</a></td></tr>
+<tr class="memdesc:a4a39fb0cd7749a1a4dbe047e2aabea8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">BUS de l'afficheur.  <a href="#a4a39fb0cd7749a1a4dbe047e2aabea8b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4a39fb0cd7749a1a4dbe047e2aabea8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e9d818788f36ed74d7c4579f87f2a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a25e9d818788f36ed74d7c4579f87f2a6">LCD_DATA</a>&#160;&#160;&#160;<a class="el" href="../../d7/d04/group__LCD.html#gabcf42bd88b3c36193f301ca25b033875">LCD_PORT</a>, <a class="el" href="../../d9/db9/lcd4u_8c.html#a4e2369f0c7b513746c2a8fcd71046ab5">DATA_LINE</a></td></tr>
+<tr class="memdesc:a25e9d818788f36ed74d7c4579f87f2a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port et entrée sortie des données de l'afficheur.  <a href="#a25e9d818788f36ed74d7c4579f87f2a6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a25e9d818788f36ed74d7c4579f87f2a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1640ffbc0d8ec0f7edb04a2b93918072"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a1640ffbc0d8ec0f7edb04a2b93918072">LCD_EN</a>&#160;&#160;&#160;<a class="el" href="../../d7/d04/group__LCD.html#gabcf42bd88b3c36193f301ca25b033875">LCD_PORT</a>, <a class="el" href="../../d9/db9/lcd4u_8c.html#a22e6626f2c98ed902f8ded47f6438c05">EN</a></td></tr>
+<tr class="memdesc:a1640ffbc0d8ec0f7edb04a2b93918072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port et IO de la ligne EN.  <a href="#a1640ffbc0d8ec0f7edb04a2b93918072">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a1640ffbc0d8ec0f7edb04a2b93918072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50de1697f1da8ab075a6b4d7aeace64e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a50de1697f1da8ab075a6b4d7aeace64e">LCD_FUNCTION</a>&#160;&#160;&#160;(1 &lt;&lt; 5)</td></tr>
+<tr class="separator:a50de1697f1da8ab075a6b4d7aeace64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd8d2c24bebd814dce8faaf3d2e1b76"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a9dd8d2c24bebd814dce8faaf3d2e1b76">LCD_RESET_PORT_DATA</a>()&#160;&#160;&#160;PORTClearBits(<a class="el" href="../../d9/db9/lcd4u_8c.html#a25e9d818788f36ed74d7c4579f87f2a6">LCD_DATA</a>)</td></tr>
+<tr class="memdesc:a9dd8d2c24bebd814dce8faaf3d2e1b76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Positionne le bus de donnée à l'état bas.  <a href="#a9dd8d2c24bebd814dce8faaf3d2e1b76">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a9dd8d2c24bebd814dce8faaf3d2e1b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26089a10ddd59a0dc7283c19ccc02533"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a26089a10ddd59a0dc7283c19ccc02533">LCD_RW</a>&#160;&#160;&#160;<a class="el" href="../../d7/d04/group__LCD.html#gabcf42bd88b3c36193f301ca25b033875">LCD_PORT</a>, <a class="el" href="../../d9/db9/lcd4u_8c.html#afc4ded33ac0ca43defcce639e965748a">RW</a></td></tr>
+<tr class="memdesc:a26089a10ddd59a0dc7283c19ccc02533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Port et IO de la ligne RW.  <a href="#a26089a10ddd59a0dc7283c19ccc02533">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a26089a10ddd59a0dc7283c19ccc02533"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb237a65fd1053415cb67ba994ae5d6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#abb237a65fd1053415cb67ba994ae5d6c">LCD_SET_CGRAM_ADDR</a>&#160;&#160;&#160;(1 &lt;&lt; 6)</td></tr>
+<tr class="separator:abb237a65fd1053415cb67ba994ae5d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37a6c788f8b04228b5c9085be7f0957"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#ad37a6c788f8b04228b5c9085be7f0957">POUND</a>&#160;&#160;&#160;6</td></tr>
+<tr class="memdesc:ad37a6c788f8b04228b5c9085be7f0957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Numéro du caractère £  <a href="#ad37a6c788f8b04228b5c9085be7f0957">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad37a6c788f8b04228b5c9085be7f0957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc4ded33ac0ca43defcce639e965748a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#afc4ded33ac0ca43defcce639e965748a">RW</a>&#160;&#160;&#160;BIT_2</td></tr>
+<tr class="memdesc:afc4ded33ac0ca43defcce639e965748a"><td class="mdescLeft">&#160;</td><td class="mdescRight">IO de la ligne RW du HD44780.  <a href="#afc4ded33ac0ca43defcce639e965748a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afc4ded33ac0ca43defcce639e965748a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcfbc774a2d97fe0be0e74d2c0d31fad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#afcfbc774a2d97fe0be0e74d2c0d31fad">SetCGRamAddr</a>(addr)&#160;&#160;&#160;<a class="el" href="../../d7/d04/group__LCD.html#gac628e890c74f8ee8de93b49d7704bb0d">LCD_Command</a>(<a class="el" href="../../d9/db9/lcd4u_8c.html#abb237a65fd1053415cb67ba994ae5d6c">LCD_SET_CGRAM_ADDR</a> | addr);</td></tr>
+<tr class="memdesc:afcfbc774a2d97fe0be0e74d2c0d31fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Positionne l'adresse dans la mémoire graphique.  <a href="#afcfbc774a2d97fe0be0e74d2c0d31fad">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afcfbc774a2d97fe0be0e74d2c0d31fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ac94efa94612cda621289a17e8413e488"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#ac94efa94612cda621289a17e8413e488">_LCDGotoXY</a> (BYTE X, BYTE Y)</td></tr>
+<tr class="separator:ac94efa94612cda621289a17e8413e488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga868590ee489413db2bbc2147c0508dab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#ga868590ee489413db2bbc2147c0508dab">_mon_putc</a> (char cData)</td></tr>
+<tr class="memdesc:ga868590ee489413db2bbc2147c0508dab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envoie un caratère à l'afficheur.  <a href="../../d7/d04/group__LCD.html#ga868590ee489413db2bbc2147c0508dab">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga868590ee489413db2bbc2147c0508dab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add5efbb15bf0f35383b03311220e9063"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#add5efbb15bf0f35383b03311220e9063">CreateChar</a> (const BYTE Code, const BYTE *pBuffer)</td></tr>
+<tr class="separator:add5efbb15bf0f35383b03311220e9063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf01bd743bf25f336c648e45a70ec52b5"><td class="memItemLeft" align="right" valign="top">BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#gaf01bd743bf25f336c648e45a70ec52b5">getLCDAddressCounter</a> ()</td></tr>
+<tr class="memdesc:gaf01bd743bf25f336c648e45a70ec52b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Récupère l'adresse actuelle du controleur d'afficheur.  <a href="../../d7/d04/group__LCD.html#gaf01bd743bf25f336c648e45a70ec52b5">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gaf01bd743bf25f336c648e45a70ec52b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad15564ef18cccaf13e985aae33fc5ed2"><td class="memItemLeft" align="right" valign="top">BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#gad15564ef18cccaf13e985aae33fc5ed2">getLCDC</a> ()</td></tr>
+<tr class="memdesc:gad15564ef18cccaf13e985aae33fc5ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lit le caractère de l'afficheur à l'adresse courante.  <a href="../../d7/d04/group__LCD.html#gad15564ef18cccaf13e985aae33fc5ed2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gad15564ef18cccaf13e985aae33fc5ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b52dba7426248cb07510611005fee05"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a1b52dba7426248cb07510611005fee05">LCD_Clock</a> (void)</td></tr>
+<tr class="separator:a1b52dba7426248cb07510611005fee05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac628e890c74f8ee8de93b49d7704bb0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#gac628e890c74f8ee8de93b49d7704bb0d">LCD_Command</a> (const BYTE byCmd)</td></tr>
+<tr class="memdesc:gac628e890c74f8ee8de93b49d7704bb0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">envoie une commande à l'afficheur  <a href="../../d7/d04/group__LCD.html#gac628e890c74f8ee8de93b49d7704bb0d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:gac628e890c74f8ee8de93b49d7704bb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af76b6a1737b7e6eb2891af02e144c4ec"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#af76b6a1737b7e6eb2891af02e144c4ec">LCD_IsBusy</a> (void)</td></tr>
+<tr class="separator:af76b6a1737b7e6eb2891af02e144c4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a94c0f44f76db891e66d98966f904e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#ga3a94c0f44f76db891e66d98966f904e8">LCDClear</a> (void)</td></tr>
+<tr class="memdesc:ga3a94c0f44f76db891e66d98966f904e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface l'écran LCD.  <a href="../../d7/d04/group__LCD.html#ga3a94c0f44f76db891e66d98966f904e8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga3a94c0f44f76db891e66d98966f904e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga187e09eb22af900fb808158582a3546f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#ga187e09eb22af900fb808158582a3546f">LCDClearLine</a> (const BYTE line)</td></tr>
+<tr class="memdesc:ga187e09eb22af900fb808158582a3546f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Efface la ligne.  <a href="../../d7/d04/group__LCD.html#ga187e09eb22af900fb808158582a3546f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga187e09eb22af900fb808158582a3546f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga813f433b81c439b0c41d2d3128e7f6ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#ga813f433b81c439b0c41d2d3128e7f6ca">LCDGotoXY</a> (const BYTE X, const BYTE Y)</td></tr>
+<tr class="memdesc:ga813f433b81c439b0c41d2d3128e7f6ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Postionne le curseur de l'afficheur.  <a href="../../d7/d04/group__LCD.html#ga813f433b81c439b0c41d2d3128e7f6ca">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga813f433b81c439b0c41d2d3128e7f6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga200f22d926b797c9f22aa82152f7187f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#ga200f22d926b797c9f22aa82152f7187f">LCDInit</a> (const BYTE byNumLignes)</td></tr>
+<tr class="memdesc:ga200f22d926b797c9f22aa82152f7187f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation de l'afficheur.  <a href="../../d7/d04/group__LCD.html#ga200f22d926b797c9f22aa82152f7187f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga200f22d926b797c9f22aa82152f7187f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga68c3ac74b45c0001fe582d35b62f5a74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#ga68c3ac74b45c0001fe582d35b62f5a74">LCDSetValue</a> (const BYTE byValue)</td></tr>
+<tr class="memdesc:ga68c3ac74b45c0001fe582d35b62f5a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enregistre la valeur vers l'afficheur.  <a href="../../d7/d04/group__LCD.html#ga68c3ac74b45c0001fe582d35b62f5a74">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga68c3ac74b45c0001fe582d35b62f5a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga79e5c6c1b52f0b4fe415203bbc7cb709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#ga79e5c6c1b52f0b4fe415203bbc7cb709">setLCDAddressCounter</a> (const BYTE byAddress)</td></tr>
+<tr class="memdesc:ga79e5c6c1b52f0b4fe415203bbc7cb709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Positionne le curseur.  <a href="../../d7/d04/group__LCD.html#ga79e5c6c1b52f0b4fe415203bbc7cb709">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga79e5c6c1b52f0b4fe415203bbc7cb709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06a200899025557b19236a9b2446ff54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/group__LCD.html#ga06a200899025557b19236a9b2446ff54">vDisplayLCD</a> (char *format,...)</td></tr>
+<tr class="memdesc:ga06a200899025557b19236a9b2446ff54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmet une chaine à l'afficheur en simulant printf.  <a href="../../d7/d04/group__LCD.html#ga06a200899025557b19236a9b2446ff54">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ga06a200899025557b19236a9b2446ff54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab1c360ba82266d96c9b319221ecb0242"><td class="memItemLeft" align="right" valign="top">const BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#ab1c360ba82266d96c9b319221ecb0242">barr</a> [][8]</td></tr>
+<tr class="memdesc:ab1c360ba82266d96c9b319221ecb0242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Barre de curseur sur l'afficheur.  <a href="#ab1c360ba82266d96c9b319221ecb0242">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab1c360ba82266d96c9b319221ecb0242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6072ac2cbb72703f70cb2432f37c09"><td class="memItemLeft" align="right" valign="top">const BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#afb6072ac2cbb72703f70cb2432f37c09">euro</a> [] = {0x07, 0x08, 0x1E, 0x08, 0x1E, 0x08, 0x07, 0x00}</td></tr>
+<tr class="memdesc:afb6072ac2cbb72703f70cb2432f37c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caractère €  <a href="#afb6072ac2cbb72703f70cb2432f37c09">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afb6072ac2cbb72703f70cb2432f37c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b1092cb2279f12a8fd562d21fd7b822"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a3b1092cb2279f12a8fd562d21fd7b822">isLCDInitialized</a></td></tr>
+<tr class="memdesc:a3b1092cb2279f12a8fd562d21fd7b822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indique si l'afficheur est présent et fonctionnel.  <a href="#a3b1092cb2279f12a8fd562d21fd7b822">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3b1092cb2279f12a8fd562d21fd7b822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164ea31f550b15fd8eb2a32cdc3aa932"><td class="memItemLeft" align="right" valign="top">const BYTE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db9/lcd4u_8c.html#a164ea31f550b15fd8eb2a32cdc3aa932">pound</a> [] = {0X0E, 0X11, 0X10, 0X08, 0X1C, 0X09, 0X1E, 0X00}</td></tr>
+<tr class="memdesc:a164ea31f550b15fd8eb2a32cdc3aa932"><td class="mdescLeft">&#160;</td><td class="mdescRight">caractère £  <a href="#a164ea31f550b15fd8eb2a32cdc3aa932">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a164ea31f550b15fd8eb2a32cdc3aa932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Sources de la gestion de l'afficheur. </p>
+<hr/>
+<dl class="section date"><dt>Date</dt><dd>2013.11.30 </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Rachid AKKOUCHE </dd></dl>
+
+<p class="definition">Définition dans le fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+</div><h2 class="groupheader">Documentation des macros</h2>
+<a id="a5d1161b032d6391c1613bfe879baf009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1161b032d6391c1613bfe879baf009">&#9670;&nbsp;</a></span>BUSY_FLAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BUSY_FLAG&#160;&#160;&#160;(1 &lt;&lt; 7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00118">118</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00222">LCD_IsBusy()</a>.</p>
+
+</div>
+</div>
+<a id="a4e2369f0c7b513746c2a8fcd71046ab5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e2369f0c7b513746c2a8fcd71046ab5">&#9670;&nbsp;</a></span>DATA_LINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA_LINE&#160;&#160;&#160;<a class="el" href="../../d9/db9/lcd4u_8c.html#acf475e70fa2ffe31079a07ba7ae18116">DB7</a> | <a class="el" href="../../d9/db9/lcd4u_8c.html#ad9cc200e9e406247bd374e44947f2aec">DB6</a> | <a class="el" href="../../d9/db9/lcd4u_8c.html#ac0f7c08c3e95bbb41632e415e6b3f001">DB5</a> | <a class="el" href="../../d9/db9/lcd4u_8c.html#acdecad1b5b1abdca1ba50a47addef513">DB4</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IOs utilisées pour les données de l'afficheur. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00068">68</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+</div>
+</div>
+<a id="acdecad1b5b1abdca1ba50a47addef513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdecad1b5b1abdca1ba50a47addef513">&#9670;&nbsp;</a></span>DB4</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DB4&#160;&#160;&#160;BIT_4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IO utilisée pour le bit de donnée 4. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00044">44</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>.</p>
+
+</div>
+</div>
+<a id="ac0f7c08c3e95bbb41632e415e6b3f001"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f7c08c3e95bbb41632e415e6b3f001">&#9670;&nbsp;</a></span>DB5</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DB5&#160;&#160;&#160;BIT_5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IO utilisée pour le bit de donnée 5. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00050">50</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>.</p>
+
+</div>
+</div>
+<a id="ad9cc200e9e406247bd374e44947f2aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9cc200e9e406247bd374e44947f2aec">&#9670;&nbsp;</a></span>DB6</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DB6&#160;&#160;&#160;BIT_6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IO utilisée pour le bit de donnée 6. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00056">56</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>.</p>
+
+</div>
+</div>
+<a id="acf475e70fa2ffe31079a07ba7ae18116"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf475e70fa2ffe31079a07ba7ae18116">&#9670;&nbsp;</a></span>DB7</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DB7&#160;&#160;&#160;BIT_7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IO utilisée pour le bit de donnée 7. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00062">62</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>.</p>
+
+</div>
+</div>
+<a id="a22e6626f2c98ed902f8ded47f6438c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22e6626f2c98ed902f8ded47f6438c05">&#9670;&nbsp;</a></span>EN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EN&#160;&#160;&#160;BIT_3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IO de la ligne EN du HD44780. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00086">86</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+</div>
+</div>
+<a id="a5434fc5857bd1456b47ab1f89ad35098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5434fc5857bd1456b47ab1f89ad35098">&#9670;&nbsp;</a></span>EURO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define EURO&#160;&#160;&#160;7</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Numéro du caractère € </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00137">137</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>.</p>
+
+</div>
+</div>
+<a id="a8ffae1d6a86ab6a880e3a15c52999a67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ffae1d6a86ab6a880e3a15c52999a67">&#9670;&nbsp;</a></span>LCD_8BITS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_8BITS&#160;&#160;&#160;LCD_4BITS | <a class="el" href="../../d9/db9/lcd4u_8c.html#acdecad1b5b1abdca1ba50a47addef513">DB4</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Commande de mode 8 bits. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00110">110</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+</div>
+</div>
+<a id="a4a39fb0cd7749a1a4dbe047e2aabea8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a39fb0cd7749a1a4dbe047e2aabea8b">&#9670;&nbsp;</a></span>LCD_BUS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_BUS&#160;&#160;&#160;<a class="el" href="../../d9/db9/lcd4u_8c.html#a4e2369f0c7b513746c2a8fcd71046ab5">DATA_LINE</a> | <a class="el" href="../../d7/d04/group__LCD.html#gaf8903d8eea3868940c60af887473b152">RS</a> | <a class="el" href="../../d9/db9/lcd4u_8c.html#afc4ded33ac0ca43defcce639e965748a">RW</a> | <a class="el" href="../../d9/db9/lcd4u_8c.html#a22e6626f2c98ed902f8ded47f6438c05">EN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>BUS de l'afficheur. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00104">104</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>.</p>
+
+</div>
+</div>
+<a id="a25e9d818788f36ed74d7c4579f87f2a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25e9d818788f36ed74d7c4579f87f2a6">&#9670;&nbsp;</a></span>LCD_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_DATA&#160;&#160;&#160;<a class="el" href="../../d7/d04/group__LCD.html#gabcf42bd88b3c36193f301ca25b033875">LCD_PORT</a>, <a class="el" href="../../d9/db9/lcd4u_8c.html#a4e2369f0c7b513746c2a8fcd71046ab5">DATA_LINE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Port et entrée sortie des données de l'afficheur. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00074">74</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00263">getLCDAddressCounter()</a>, et <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00598">getLCDC()</a>.</p>
+
+</div>
+</div>
+<a id="a1640ffbc0d8ec0f7edb04a2b93918072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1640ffbc0d8ec0f7edb04a2b93918072">&#9670;&nbsp;</a></span>LCD_EN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_EN&#160;&#160;&#160;<a class="el" href="../../d7/d04/group__LCD.html#gabcf42bd88b3c36193f301ca25b033875">LCD_PORT</a>, <a class="el" href="../../d9/db9/lcd4u_8c.html#a22e6626f2c98ed902f8ded47f6438c05">EN</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Port et IO de la ligne EN. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00098">98</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00263">getLCDAddressCounter()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00598">getLCDC()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00172">LCD_Clock()</a>, et <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00222">LCD_IsBusy()</a>.</p>
+
+</div>
+</div>
+<a id="a50de1697f1da8ab075a6b4d7aeace64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50de1697f1da8ab075a6b4d7aeace64e">&#9670;&nbsp;</a></span>LCD_FUNCTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_FUNCTION&#160;&#160;&#160;(1 &lt;&lt; 5)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00116">116</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+</div>
+</div>
+<a id="a9dd8d2c24bebd814dce8faaf3d2e1b76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd8d2c24bebd814dce8faaf3d2e1b76">&#9670;&nbsp;</a></span>LCD_RESET_PORT_DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_RESET_PORT_DATA</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;PORTClearBits(<a class="el" href="../../d9/db9/lcd4u_8c.html#a25e9d818788f36ed74d7c4579f87f2a6">LCD_DATA</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Positionne le bus de donnée à l'état bas. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00124">124</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00263">getLCDAddressCounter()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00598">getLCDC()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00222">LCD_IsBusy()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>, et <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00302">LCDSetValue()</a>.</p>
+
+</div>
+</div>
+<a id="a26089a10ddd59a0dc7283c19ccc02533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26089a10ddd59a0dc7283c19ccc02533">&#9670;&nbsp;</a></span>LCD_RW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_RW&#160;&#160;&#160;<a class="el" href="../../d7/d04/group__LCD.html#gabcf42bd88b3c36193f301ca25b033875">LCD_PORT</a>, <a class="el" href="../../d9/db9/lcd4u_8c.html#afc4ded33ac0ca43defcce639e965748a">RW</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Port et IO de la ligne RW. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00092">92</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00263">getLCDAddressCounter()</a>, et <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00598">getLCDC()</a>.</p>
+
+</div>
+</div>
+<a id="abb237a65fd1053415cb67ba994ae5d6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb237a65fd1053415cb67ba994ae5d6c">&#9670;&nbsp;</a></span>LCD_SET_CGRAM_ADDR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LCD_SET_CGRAM_ADDR&#160;&#160;&#160;(1 &lt;&lt; 6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00117">117</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+</div>
+</div>
+<a id="ad37a6c788f8b04228b5c9085be7f0957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad37a6c788f8b04228b5c9085be7f0957">&#9670;&nbsp;</a></span>POUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define POUND&#160;&#160;&#160;6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Numéro du caractère £ </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00143">143</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+</div>
+</div>
+<a id="afc4ded33ac0ca43defcce639e965748a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc4ded33ac0ca43defcce639e965748a">&#9670;&nbsp;</a></span>RW</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RW&#160;&#160;&#160;BIT_2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IO de la ligne RW du HD44780. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00080">80</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+</div>
+</div>
+<a id="afcfbc774a2d97fe0be0e74d2c0d31fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcfbc774a2d97fe0be0e74d2c0d31fad">&#9670;&nbsp;</a></span>SetCGRamAddr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SetCGRamAddr</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="../../d7/d04/group__LCD.html#gac628e890c74f8ee8de93b49d7704bb0d">LCD_Command</a>(<a class="el" href="../../d9/db9/lcd4u_8c.html#abb237a65fd1053415cb67ba994ae5d6c">LCD_SET_CGRAM_ADDR</a> | addr);</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Positionne l'adresse dans la mémoire graphique. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">addr</td><td>Adresse dans la mémoire graphique. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00131">131</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00196">CreateChar()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ac94efa94612cda621289a17e8413e488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac94efa94612cda621289a17e8413e488">&#9670;&nbsp;</a></span>_LCDGotoXY()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void _LCDGotoXY </td>
+          <td>(</td>
+          <td class="paramtype">BYTE&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BYTE&#160;</td>
+          <td class="paramname"><em>Y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00239">239</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00337">LCD_Command()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00222">LCD_IsBusy()</a>, et <a class="el" href="../../df/d56/lcd4u_8h_source.html#l00053">LCD_SET_DDRAM_ADDR</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00583">LCDClearLine()</a>, et <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00691">LCDGotoXY()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;{</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">while</span>(<a class="code" href="../../d9/db9/lcd4u_8c.html#af76b6a1737b7e6eb2891af02e144c4ec">LCD_IsBusy</a>());</div><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <a class="code" href="../../d7/d04/group__LCD.html#gac628e890c74f8ee8de93b49d7704bb0d">LCD_Command</a>(<a class="code" href="../../d7/d04/group__LCD.html#gae5fd52eb2dc8c41214d4872644e8f0aa">LCD_SET_DDRAM_ADDR</a> | (--X + (--Y * 64)));</div><div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;}</div><div class="ttc" id="group__LCD_html_gae5fd52eb2dc8c41214d4872644e8f0aa"><div class="ttname"><a href="../../d7/d04/group__LCD.html#gae5fd52eb2dc8c41214d4872644e8f0aa">LCD_SET_DDRAM_ADDR</a></div><div class="ttdeci">#define LCD_SET_DDRAM_ADDR</div><div class="ttdoc">commande d&amp;#39;ecriture de l&amp;#39;adresse dans le contrôleur. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d56/lcd4u_8h_source.html#l00053">lcd4u.h:53</a></div></div>
+<div class="ttc" id="group__LCD_html_gac628e890c74f8ee8de93b49d7704bb0d"><div class="ttname"><a href="../../d7/d04/group__LCD.html#gac628e890c74f8ee8de93b49d7704bb0d">LCD_Command</a></div><div class="ttdeci">void LCD_Command(const BYTE byCmd)</div><div class="ttdoc">envoie une commande à l&amp;#39;afficheur </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db9/lcd4u_8c_source.html#l00337">lcd4u.c:337</a></div></div>
+<div class="ttc" id="lcd4u_8c_html_af76b6a1737b7e6eb2891af02e144c4ec"><div class="ttname"><a href="../../d9/db9/lcd4u_8c.html#af76b6a1737b7e6eb2891af02e144c4ec">LCD_IsBusy</a></div><div class="ttdeci">BOOL LCD_IsBusy(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db9/lcd4u_8c_source.html#l00222">lcd4u.c:222</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="add5efbb15bf0f35383b03311220e9063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add5efbb15bf0f35383b03311220e9063">&#9670;&nbsp;</a></span>CreateChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void CreateChar </td>
+          <td>(</td>
+          <td class="paramtype">const BYTE&#160;</td>
+          <td class="paramname"><em>Code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const BYTE *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00196">196</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../df/d56/lcd4u_8h_source.html#l00101">LCD_Put</a>, et <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00131">SetCGRamAddr</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;{</div><div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    BYTE byIndex;</div><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <a class="code" href="../../d9/db9/lcd4u_8c.html#afcfbc774a2d97fe0be0e74d2c0d31fad">SetCGRamAddr</a>(Code * 8);</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">for</span>(byIndex = 8; byIndex; byIndex--)</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    {</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <a class="code" href="../../d7/d04/group__LCD.html#gae56faaf3a917350db7db0d95c635790e">LCD_Put</a>(*pBuffer++);</div><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    }</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div><div class="ttc" id="group__LCD_html_gae56faaf3a917350db7db0d95c635790e"><div class="ttname"><a href="../../d7/d04/group__LCD.html#gae56faaf3a917350db7db0d95c635790e">LCD_Put</a></div><div class="ttdeci">#define LCD_Put(byData)</div><div class="ttdoc">Envoi un caractère sur l&amp;#39;afficheur. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d56/lcd4u_8h_source.html#l00101">lcd4u.h:101</a></div></div>
+<div class="ttc" id="lcd4u_8c_html_afcfbc774a2d97fe0be0e74d2c0d31fad"><div class="ttname"><a href="../../d9/db9/lcd4u_8c.html#afcfbc774a2d97fe0be0e74d2c0d31fad">SetCGRamAddr</a></div><div class="ttdeci">#define SetCGRamAddr(addr)</div><div class="ttdoc">Positionne l&amp;#39;adresse dans la mémoire graphique. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db9/lcd4u_8c_source.html#l00131">lcd4u.c:131</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1b52dba7426248cb07510611005fee05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b52dba7426248cb07510611005fee05">&#9670;&nbsp;</a></span>LCD_Clock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void LCD_Clock </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00172">172</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00098">LCD_EN</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>, et <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00302">LCDSetValue()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    Delay10us(1);</div><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    PORTSetBits(<a class="code" href="../../d9/db9/lcd4u_8c.html#a1640ffbc0d8ec0f7edb04a2b93918072">LCD_EN</a>);</div><div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    Delay10us(1);</div><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    PORTClearBits(<a class="code" href="../../d9/db9/lcd4u_8c.html#a1640ffbc0d8ec0f7edb04a2b93918072">LCD_EN</a>);</div><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;}</div><div class="ttc" id="lcd4u_8c_html_a1640ffbc0d8ec0f7edb04a2b93918072"><div class="ttname"><a href="../../d9/db9/lcd4u_8c.html#a1640ffbc0d8ec0f7edb04a2b93918072">LCD_EN</a></div><div class="ttdeci">#define LCD_EN</div><div class="ttdoc">Port et IO de la ligne EN. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db9/lcd4u_8c_source.html#l00098">lcd4u.c:98</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af76b6a1737b7e6eb2891af02e144c4ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af76b6a1737b7e6eb2891af02e144c4ec">&#9670;&nbsp;</a></span>LCD_IsBusy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOL LCD_IsBusy </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00222">222</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Références <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00118">BUSY_FLAG</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00263">getLCDAddressCounter()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00152">isLCDInitialized</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00098">LCD_EN</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00124">LCD_RESET_PORT_DATA</a>, et <a class="el" href="../../df/d56/lcd4u_8h_source.html#l00038">LCD_RS</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00239">_LCDGotoXY()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00313">_mon_putc()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l00137">DisplayLine()</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l00618">getLCDAddress()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00598">getLCDC()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00337">LCD_Command()</a>, <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>, et <a class="el" href="../../d0/d29/main_8c_source.html#l00237">vInitialization()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;{</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../d9/db9/lcd4u_8c.html#a3b1092cb2279f12a8fd562d21fd7b822">isLCDInitialized</a>)</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    {</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">return</span> ((<a class="code" href="../../d7/d04/group__LCD.html#gaf01bd743bf25f336c648e45a70ec52b5">getLCDAddressCounter</a>() &amp; <a class="code" href="../../d9/db9/lcd4u_8c.html#a5d1161b032d6391c1613bfe879baf009">BUSY_FLAG</a>) &gt; 0);</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    }</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    {</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        PORTClearBits(<a class="code" href="../../d9/db9/lcd4u_8c.html#a1640ffbc0d8ec0f7edb04a2b93918072">LCD_EN</a>);</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        PORTClearBits(<a class="code" href="../../d7/d04/group__LCD.html#ga4781e073871c6f27f89b9463ad3a4ed1">LCD_RS</a>);</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <a class="code" href="../../d9/db9/lcd4u_8c.html#a9dd8d2c24bebd814dce8faaf3d2e1b76">LCD_RESET_PORT_DATA</a>();</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        Delay10us(15);</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    }</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="keywordflow">return</span> (FALSE);</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;}</div><div class="ttc" id="group__LCD_html_gaf01bd743bf25f336c648e45a70ec52b5"><div class="ttname"><a href="../../d7/d04/group__LCD.html#gaf01bd743bf25f336c648e45a70ec52b5">getLCDAddressCounter</a></div><div class="ttdeci">BYTE getLCDAddressCounter()</div><div class="ttdoc">Récupère l&amp;#39;adresse actuelle du controleur d&amp;#39;afficheur. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db9/lcd4u_8c_source.html#l00263">lcd4u.c:263</a></div></div>
+<div class="ttc" id="lcd4u_8c_html_a3b1092cb2279f12a8fd562d21fd7b822"><div class="ttname"><a href="../../d9/db9/lcd4u_8c.html#a3b1092cb2279f12a8fd562d21fd7b822">isLCDInitialized</a></div><div class="ttdeci">BOOL isLCDInitialized</div><div class="ttdoc">Indique si l&amp;#39;afficheur est présent et fonctionnel. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db9/lcd4u_8c_source.html#l00152">lcd4u.c:152</a></div></div>
+<div class="ttc" id="lcd4u_8c_html_a1640ffbc0d8ec0f7edb04a2b93918072"><div class="ttname"><a href="../../d9/db9/lcd4u_8c.html#a1640ffbc0d8ec0f7edb04a2b93918072">LCD_EN</a></div><div class="ttdeci">#define LCD_EN</div><div class="ttdoc">Port et IO de la ligne EN. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db9/lcd4u_8c_source.html#l00098">lcd4u.c:98</a></div></div>
+<div class="ttc" id="lcd4u_8c_html_a5d1161b032d6391c1613bfe879baf009"><div class="ttname"><a href="../../d9/db9/lcd4u_8c.html#a5d1161b032d6391c1613bfe879baf009">BUSY_FLAG</a></div><div class="ttdeci">#define BUSY_FLAG</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db9/lcd4u_8c_source.html#l00118">lcd4u.c:118</a></div></div>
+<div class="ttc" id="lcd4u_8c_html_a9dd8d2c24bebd814dce8faaf3d2e1b76"><div class="ttname"><a href="../../d9/db9/lcd4u_8c.html#a9dd8d2c24bebd814dce8faaf3d2e1b76">LCD_RESET_PORT_DATA</a></div><div class="ttdeci">#define LCD_RESET_PORT_DATA()</div><div class="ttdoc">Positionne le bus de donnée à l&amp;#39;état bas. </div><div class="ttdef"><b>Definition:</b> <a href="../../d9/db9/lcd4u_8c_source.html#l00124">lcd4u.c:124</a></div></div>
+<div class="ttc" id="group__LCD_html_ga4781e073871c6f27f89b9463ad3a4ed1"><div class="ttname"><a href="../../d7/d04/group__LCD.html#ga4781e073871c6f27f89b9463ad3a4ed1">LCD_RS</a></div><div class="ttdeci">#define LCD_RS</div><div class="ttdoc">Port et IO de la ligne RS. </div><div class="ttdef"><b>Definition:</b> <a href="../../df/d56/lcd4u_8h_source.html#l00038">lcd4u.h:38</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="ab1c360ba82266d96c9b319221ecb0242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1c360ba82266d96c9b319221ecb0242">&#9670;&nbsp;</a></span>barr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">barr</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Valeur initiale :</b><div class="fragment"><div class="line">={</div><div class="line">    {0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10, 0x10},</div><div class="line">    {0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18},</div><div class="line">    {0x1C, 0x1C, 0x1C, 0x1C, 0x1C, 0x1C, 0x1C, 0x1C},</div><div class="line">    {0x1E, 0x1E, 0x1E, 0x1E, 0x1E, 0x1E, 0x1E, 0x1E},</div><div class="line">    {0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F, 0x1F}</div><div class="line">}</div></div><!-- fragment -->
+<p>Barre de curseur sur l'afficheur. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00016">16</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+</div>
+</div>
+<a id="afb6072ac2cbb72703f70cb2432f37c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6072ac2cbb72703f70cb2432f37c09">&#9670;&nbsp;</a></span>euro</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">euro = {0x07, 0x08, 0x1E, 0x08, 0x1E, 0x08, 0x07, 0x00}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Caractère € </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00028">28</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>.</p>
+
+</div>
+</div>
+<a id="a3b1092cb2279f12a8fd562d21fd7b822"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b1092cb2279f12a8fd562d21fd7b822">&#9670;&nbsp;</a></span>isLCDInitialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">isLCDInitialized</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indique si l'afficheur est présent et fonctionnel. </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00152">152</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+<p class="reference">Référencé par <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00222">LCD_IsBusy()</a>, et <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00360">LCDInit()</a>.</p>
+
+</div>
+</div>
+<a id="a164ea31f550b15fd8eb2a32cdc3aa932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164ea31f550b15fd8eb2a32cdc3aa932">&#9670;&nbsp;</a></span>pound</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">pound = {0X0E, 0X11, 0X10, 0X08, 0X1C, 0X09, 0X1E, 0X00}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>caractère £ </p>
+
+<p class="definition">Définition à la ligne <a class="el" href="../../d9/db9/lcd4u_8c_source.html#l00034">34</a> du fichier <a class="el" href="../../d9/db9/lcd4u_8c_source.html">lcd4u.c</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<hr class="footer"/><address class="footer"><small>MAINBOARD MDI 1.3.4 documentation by&#160;
+<a href="http://www.rasoftware.fr"> 
+<img class="footer" src="rasoftware.jpg" alt="www.rasoftware"/></a></small></address> 
+</body> 
+</html> 

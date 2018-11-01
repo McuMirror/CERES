@@ -1,0 +1,168 @@
+~inc:header.inc~
+<title>Param&egrave;tres</title>
+<meta name="description" content="Page de paramètrages des machines" />
+</head>
+<body>
+    <br />
+    <br />
+    <div class="TitrePage">
+        PARAMETRES MACHINES
+    </div><br />
+    <br />
+    <form action="" class="c2">
+        <b>Machine &agrave; param&egrave;trer: </b><input class="textAlignRight" type="text" name="NumMachine" value ="00"/>
+        <br/>
+        <hr size="1" align="left" width="25%"></hr>
+        <br/>
+        <table>
+            <tr>
+                <td><b> Prix de base en esp&egrave;ces: </b></td>
+                <td><input class="textAlignRight" type="text" name="BasePrice" value ="0.00"/>&euro;</td>
+                <td>Montant &agrave; payer pour obtenir le service en esp&egrave;ces hors heures creuses.</td>
+            </tr>
+            <tr>
+                <td><b> Prix avec clef: </b></td>
+                <td><input class="textAlignRight" type="text" name="KeyPrice" value="0.00" />&euro;</td>
+                <td>Montant &agrave; payer pour obtenir le service pour un paiement avec cl&eacute; hors heures creuses.</td>
+            </tr>
+            <tr>
+                <td><b> Prix en heures creuses: </b></td>
+                <td><input class="textAlignRight" type="text" name="HHPrice" value="0.00"/>&euro;</td>
+                <td>Montant &agrave; payer pour obtenir le service en esp&egrave;ces en heures creuses.</td>
+            </tr>
+            <tr>
+                <td><b> Prix avec clef en heures creuses: </b></td>
+                <td><input class="textAlignRight" type="text" name="HHKeyPrice" value="0.00"/>&euro;</td>
+                <td>Montant &agrave; payer pour obtenir le service pour un paiement avec cl&eacute; en heures creuses.</td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Impulsion de commande: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" name="Pulse" value="2000">ms&nbsp;&nbsp;</input>
+                </td>
+                <td>
+                    Dur&eacute;e de l'impulsion de commande en millisecondes.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Affiche le temps restant</b>
+                </td>
+                <td>
+                    <input type="checkbox" name="EnableTimeDisplay"></input>
+                </td>
+                <td>
+                    Autorise ou non l'affichage du temps restant.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Temps d'occupation: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" name="Busy" value="6000">ms</input>
+                </td>
+                <td>
+                    Temps th&eacute;orique d'occupation.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Temps &agrave; afficher: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" name="Displaytime" value="0">s</input>
+                </td>
+                <td>
+                    Temps &agrave; afficher le cas &eacute;ch&eacute;ant.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>D&eacute;lai suroccupation:</b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" name="OverBusy" value="90000">ms</input>
+                </td>
+                <td>
+                    Temps pendant lequel une machine sera consid&eacute;r&eacute;e comme occup&eacute;e apr&egrave;s la fin d'occupation.
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <b>Heure de mise en route: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" name="StartTime" value="00:00:00"></input>
+                </td>
+                <td>
+                    Heure &agrave; laquelle la machine sera disponible.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Heure de fin: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" name="EndTime" value="00:00:00"></input>
+                </td>
+                <td>
+                    Heure &agrave; laquelle la machine ne sera plus disponible.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Heure de d&eacute;but heures creuses: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" name="HHStartTime" value="00:00:00"></input>
+                </td>
+                <td>
+                    Heure de d&eacute;but du tarif heures creuses.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Heure de fin heures creuses: </b>
+                </td>
+                <td>
+                    <input class="textAlignRight" type="text" name="HHEndTime" value="00:00:00"></input>
+                </td>
+                <td>
+                    Heure de fin du tarif heures creuses.
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Cumul autoris&eacute;: </b>
+                </td>
+                <td>
+                    <input type="checkbox" name="EnableCumul"></input>
+                </td>
+                <td>
+                    Autorise ou non le cumul des activations machines.
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div class ="centre">
+        <br/>
+        <br/>
+        <input type="submit" name="Send" value="Envoyer"></input>
+    </div>
+    <br/>
+    <br/>
+    <table cellpadding="10" class="left">
+        <tr>
+            <td class = "backGroundBlue">
+                <a href="config.htm">Configuration</a>
+            </td>
+            <td>
+                Retour &agrave; la page configuration.
+            </td>
+        </tr>
+    </table>
+    ~inc:footer.inc~
